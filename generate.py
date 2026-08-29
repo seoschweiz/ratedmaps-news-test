@@ -1,14 +1,22 @@
-#!/usr/bin/env python3
+from pathlib import Path
+import py_compile, textwrap
+
+code = r'''#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""VideoVediVinci – Chicago generator.
+"""
+RatedMaps – Barcelona News Generator
 
-Generates a static multilingual Chicago video portal from YouTube search results.
-Environment variables:
-  YOUTUBE_API_KEY
-  GOOGLE_TRANSLATE_API_KEY
-Output directory:
-  dist/
+Creates a static Barcelona news page for GitHub Pages.
+
+Features:
+- Fetches recent English-language Barcelona news from the GDELT DOC 2.0 API
+- Up to 24 articles from the last 48 hours
+- Uses a local JSON cache as fallback
+- Does NOT overwrite the current index.html when both API and cache fail
+- Generates a Leaflet + OpenStreetMap map
+- No visible GDELT branding on the generated page
+- Generates SEO metadata and ItemList JSON-LD
 """
 
 from __future__ import annotations
@@ -16,528 +24,642 @@ from __future__ import annotations
 import datetime as dt
 import html
 import json
-import os
-import re
-import shutil
-import hashlib
+import time
 import urllib.parse
 import urllib.request
 from pathlib import Path
 
-DOMAIN = "https://videovedivinci.com"
-CITY = "Chicago"
-CITY_SLUG = "chicago"
-COUNTRY = "United States"
-OUT = Path("dist")
-ARCHIVE_FILE = Path("archive.json")
-SEO_LIBRARY_FILE = Path("seo_keywords_en.json")
+SITE_URL = "https://seoschweiz.github.io/ratedmaps-news-test/"
+BRAND_URL = "https://ratedmaps.com/"
+CITY = "Barcelona"
+COUNTRY = "Spain"
 
-YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", "").strip()
-GOOGLE_TRANSLATE_API_KEY = os.environ.get("GOOGLE_TRANSLATE_API_KEY", "").strip()
+INDEX_FILE = Path("index.html")
+DATA_DIR = Path("data")
+CACHE_FILE = DATA_DIR / "barcelona-news.json"
 
-VIDEOS_PER_CATEGORY = 5
-SEARCH_DAYS_BACK = 30
+MAX_ARTICLES = 24
+LOOKBACK_HOURS = 48
 
-LANGUAGES = {
-    "en": {"name": "English", "target": "en", "dir": "ltr"},
-    "de": {"name": "Deutsch", "target": "de", "dir": "ltr"},
-    "fr": {"name": "Français", "target": "fr", "dir": "ltr"},
-    "it": {"name": "Italiano", "target": "it", "dir": "ltr"},
-    "es": {"name": "Español", "target": "es", "dir": "ltr"},
-    "pt": {"name": "Português", "target": "pt", "dir": "ltr"},
-    "ja": {"name": "日本語", "target": "ja", "dir": "ltr"},
-    "ar": {"name": "العربية", "target": "ar", "dir": "rtl"},
-}
-
-CATEGORIES = [
-    {"id": "CAT01", "slug": "news", "name": "News", "query": "Chicago news"},
-    {"id": "CAT02", "slug": "restaurants-food", "name": "Restaurants & Food", "query": "Chicago restaurants food"},
-    {"id": "CAT03", "slug": "bars-nightlife", "name": "Bars & Nightlife", "query": "Chicago bars nightlife"},
-    {"id": "CAT04", "slug": "events", "name": "Events", "query": "Chicago events"},
-    {"id": "CAT05", "slug": "museums", "name": "Museums", "query": "Chicago museums"},
-    {"id": "CAT06", "slug": "art-street-art", "name": "Art & Street Art", "query": "Chicago art street art"},
-    {"id": "CAT07", "slug": "sports", "name": "Sports", "query": "Chicago sports"},
-    {"id": "CAT08", "slug": "travel-tourism", "name": "Travel & Tourism", "query": "Chicago travel tourism"},
-    {"id": "CAT09", "slug": "hotels", "name": "Hotels", "query": "Chicago hotels"},
-    {"id": "CAT10", "slug": "real-estate", "name": "Real Estate", "query": "Chicago real estate"},
-    {"id": "CAT11", "slug": "shopping", "name": "Shopping", "query": "Chicago shopping"},
-    {"id": "CAT12", "slug": "jobs-business", "name": "Jobs & Business", "query": "Chicago jobs business"},
-    {"id": "CAT13", "slug": "music-concerts", "name": "Music & Concerts", "query": "Chicago music concerts"},
-    {"id": "CAT14", "slug": "lifestyle", "name": "Lifestyle", "query": "Chicago lifestyle"},
-    {"id": "CAT15", "slug": "things-to-do", "name": "Things to Do", "query": "Chicago things to do"},
-    {"id": "CAT16", "slug": "transport-mobility", "name": "Transport & Mobility", "query": "Chicago transport mobility"},
-    {"id": "CAT17", "slug": "nature-outdoors", "name": "Nature & Outdoors", "query": "Chicago nature outdoors"},
-]
-
-UI = {
-    "en": {"latest":"Latest Chicago Videos","intro":"Discover recent videos about Chicago across news, food, nightlife, culture, sports, travel and more.","watch":"Watch video","back":"Back to category","published":"Published","source":"Source","categories":"Explore 17 Chicago categories","more":"More Chicago videos","archive":"Video Archive"},
-    "de": {"latest":"Neueste Videos aus Chicago","intro":"Entdecke aktuelle Videos über Chicago zu News, Essen, Nachtleben, Kultur, Sport, Reisen und mehr.","watch":"Video ansehen","back":"Zurück zur Kategorie","published":"Veröffentlicht","source":"Quelle","categories":"17 Chicago-Kategorien entdecken","more":"Weitere Chicago-Videos","archive":"Video-Archiv"},
-    "fr": {"latest":"Dernières vidéos de Chicago","intro":"Découvrez des vidéos récentes sur Chicago : actualités, gastronomie, vie nocturne, culture, sport, voyage et plus.","watch":"Voir la vidéo","back":"Retour à la catégorie","published":"Publié","source":"Source","categories":"Explorer 17 catégories de Chicago","more":"Plus de vidéos sur Chicago","archive":"Archives vidéo"},
-    "it": {"latest":"Ultimi video di Chicago","intro":"Scopri video recenti su Chicago: notizie, cibo, vita notturna, cultura, sport, viaggi e altro.","watch":"Guarda il video","back":"Torna alla categoria","published":"Pubblicato","source":"Fonte","categories":"Esplora 17 categorie di Chicago","more":"Altri video su Chicago","archive":"Archivio video"},
-    "es": {"latest":"Últimos vídeos de Chicago","intro":"Descubre vídeos recientes sobre Chicago: noticias, gastronomía, vida nocturna, cultura, deporte, viajes y más.","watch":"Ver vídeo","back":"Volver a la categoría","published":"Publicado","source":"Fuente","categories":"Explora 17 categorías de Chicago","more":"Más vídeos de Chicago","archive":"Archivo de vídeos"},
-    "pt": {"latest":"Vídeos mais recentes de Chicago","intro":"Descubra vídeos recentes sobre Chicago: notícias, gastronomia, vida noturna, cultura, esportes, viagens e muito mais.","watch":"Ver vídeo","back":"Voltar à categoria","published":"Publicado","source":"Fonte","categories":"Explore 17 categorias de Chicago","more":"Mais vídeos de Chicago","archive":"Arquivo de vídeos"},
-    "ja": {"latest":"シカゴの最新動画","intro":"ニュース、グルメ、ナイトライフ、文化、スポーツ、旅行など、シカゴに関する最新動画を紹介します。","watch":"動画を見る","back":"カテゴリーに戻る","published":"公開日","source":"出典","categories":"シカゴの17カテゴリーを見る","more":"シカゴのその他の動画","archive":"動画アーカイブ"},
-    "ar": {"latest":"أحدث فيديوهات شيكاغو","intro":"اكتشف أحدث الفيديوهات عن شيكاغو في الأخبار والطعام والحياة الليلية والثقافة والرياضة والسفر والمزيد.","watch":"مشاهدة الفيديو","back":"العودة إلى الفئة","published":"تاريخ النشر","source":"المصدر","categories":"استكشف 17 فئة في شيكاغو","more":"المزيد من فيديوهات شيكاغو","archive":"أرشيف الفيديو"},
-}
-
-CATEGORY_TRANSLATIONS = {
-    "de": ["News","Restaurants & Essen","Bars & Nachtleben","Events","Museen","Kunst & Street Art","Sport","Reisen & Tourismus","Hotels","Immobilien","Shopping","Jobs & Wirtschaft","Musik & Konzerte","Lifestyle","Aktivitäten","Verkehr & Mobilität","Natur & Outdoor"],
-    "fr": ["Actualités","Restaurants & Gastronomie","Bars & Vie nocturne","Événements","Musées","Art & Street Art","Sports","Voyage & Tourisme","Hôtels","Immobilier","Shopping","Emploi & Business","Musique & Concerts","Lifestyle","Que faire","Transport & Mobilité","Nature & Plein air"],
-    "it": ["Notizie","Ristoranti & Food","Bar & Vita notturna","Eventi","Musei","Arte & Street Art","Sport","Viaggi & Turismo","Hotel","Immobiliare","Shopping","Lavoro & Business","Musica & Concerti","Lifestyle","Cose da fare","Trasporti & Mobilità","Natura & Outdoor"],
-    "es": ["Noticias","Restaurantes & Gastronomía","Bares & Vida nocturna","Eventos","Museos","Arte & Street Art","Deportes","Viajes & Turismo","Hoteles","Inmobiliaria","Compras","Empleo & Negocios","Música & Conciertos","Lifestyle","Qué hacer","Transporte & Movilidad","Naturaleza & Aire libre"],
-    "pt": ["Notícias","Restaurantes & Gastronomia","Bares & Vida noturna","Eventos","Museus","Arte & Street Art","Esportes","Viagens & Turismo","Hotéis","Imóveis","Compras","Empregos & Negócios","Música & Concertos","Lifestyle","O que fazer","Transporte & Mobilidade","Natureza & Ar livre"],
-    "ja": ["ニュース","レストラン・グルメ","バー・ナイトライフ","イベント","博物館","アート・ストリートアート","スポーツ","旅行・観光","ホテル","不動産","ショッピング","仕事・ビジネス","音楽・コンサート","ライフスタイル","観光・アクティビティ","交通・モビリティ","自然・アウトドア"],
-    "ar": ["الأخبار","المطاعم والطعام","الحانات والحياة الليلية","الفعاليات","المتاحف","الفن وفن الشارع","الرياضة","السفر والسياحة","الفنادق","العقارات","التسوق","الوظائف والأعمال","الموسيقى والحفلات","أسلوب الحياة","أشياء للقيام بها","النقل والتنقل","الطبيعة والهواء الطلق"],
-}
+GDELT_ENDPOINT = "https://api.gdeltproject.org/api/v2/doc/doc"
 
 
-def esc(value: str) -> str:
-    return html.escape(value or "", quote=True)
+def esc(value: object) -> str:
+    return html.escape(str(value or ""), quote=True)
 
 
-def slugify(value: str) -> str:
-    value = value.lower().strip()
-    value = re.sub(r"[^\w\s-]", "", value, flags=re.UNICODE)
-    value = re.sub(r"[\s_]+", "-", value)
-    value = re.sub(r"-+", "-", value)
-    return value.strip("-")[:80] or "video"
+def utc_now() -> dt.datetime:
+    return dt.datetime.now(dt.timezone.utc)
 
 
-def api_json(url: str, data: dict | None = None) -> dict:
-    headers = {"User-Agent": "VideoVediVinci/1.0"}
-    body = None
-    if data is not None:
-        body = json.dumps(data).encode("utf-8")
-        headers["Content-Type"] = "application/json; charset=utf-8"
-    req = urllib.request.Request(url, data=body, headers=headers)
-    with urllib.request.urlopen(req, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
+def gdelt_datetime(value: dt.datetime) -> str:
+    return value.strftime("%Y%m%d%H%M%S")
 
 
-def youtube_search(query: str) -> list[dict]:
-    if not YOUTUBE_API_KEY:
-        raise RuntimeError("Missing YOUTUBE_API_KEY")
-    published_after = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=SEARCH_DAYS_BACK)).replace(microsecond=0).isoformat().replace("+00:00", "Z")
-    params = {
-        "part": "snippet", "q": query, "type": "video", "order": "date",
-        "maxResults": str(VIDEOS_PER_CATEGORY), "publishedAfter": published_after,
-        "regionCode": "US", "relevanceLanguage": "en", "videoEmbeddable": "true",
-        "key": YOUTUBE_API_KEY,
-    }
-    url = "https://www.googleapis.com/youtube/v3/search?" + urllib.parse.urlencode(params)
-    payload = api_json(url)
-    videos = []
-    for item in payload.get("items", []):
-        video_id = item.get("id", {}).get("videoId")
-        snippet = item.get("snippet", {})
-        if not video_id:
-            continue
-        thumbs = snippet.get("thumbnails", {})
-        thumbnail = thumbs.get("high", {}).get("url") or thumbs.get("medium", {}).get("url") or f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg"
-        videos.append({
-            "id": video_id,
-            "title": snippet.get("title", "").strip(),
-            "description": snippet.get("description", "").strip(),
-            "publishedAt": snippet.get("publishedAt", ""),
-            "channelTitle": snippet.get("channelTitle", "").strip(),
-            "thumbnail": thumbnail,
-            "youtubeUrl": f"https://www.youtube.com/watch?v={video_id}",
-        })
-    return videos
+def fetch_json(url: str, retries: int = 4, timeout: int = 40) -> dict:
+    last_error = None
 
-
-def translate_batch(texts: list[str], target: str) -> list[str]:
-    if target == "en" or not texts:
-        return texts
-    if not GOOGLE_TRANSLATE_API_KEY:
-        print(f"WARNING: Missing GOOGLE_TRANSLATE_API_KEY; using English for {target}")
-        return texts
-    endpoint = "https://translation.googleapis.com/language/translate/v2?key=" + urllib.parse.quote(GOOGLE_TRANSLATE_API_KEY)
-    results = []
-    for start in range(0, len(texts), 50):
-        chunk = texts[start:start + 50]
+    for attempt in range(1, retries + 1):
         try:
-            data = api_json(endpoint, {"q": chunk, "target": target, "format": "text"})
-            rows = data.get("data", {}).get("translations", [])
-            if len(rows) != len(chunk):
-                raise RuntimeError("Translation response mismatch")
-            results.extend(row.get("translatedText", "") for row in rows)
+            req = urllib.request.Request(
+                url,
+                headers={
+                    "User-Agent": "RatedMapsNews/1.0 (+https://ratedmaps.com/)",
+                    "Accept": "application/json,text/plain,*/*",
+                },
+            )
+            with urllib.request.urlopen(req, timeout=timeout) as response:
+                raw = response.read().decode("utf-8", errors="replace")
+                return json.loads(raw)
+
         except Exception as exc:
-            print(f"WARNING: translation failed for {target}: {exc}")
-            results.extend(chunk)
-    return results
+            last_error = exc
+            print(f"Fetch attempt {attempt}/{retries} failed: {exc}")
+            if attempt < retries:
+                time.sleep(min(3 * attempt, 10))
+
+    raise RuntimeError(f"Could not fetch news data: {last_error}")
 
 
-def page_path(lang: str, relative: str = "") -> str:
-    relative = relative.strip("/")
-    if lang == "en":
-        return f"/{relative}/" if relative else "/"
-    return f"/{lang}/{relative}/" if relative else f"/{lang}/"
+def build_gdelt_url() -> str:
+    end = utc_now()
+    start = end - dt.timedelta(hours=LOOKBACK_HOURS)
+
+    params = {
+        "query": '"Barcelona" sourcelang:english',
+        "mode": "ArtList",
+        "maxrecords": str(MAX_ARTICLES),
+        "format": "json",
+        "sort": "HybridRel",
+        "startdatetime": gdelt_datetime(start),
+        "enddatetime": gdelt_datetime(end),
+    }
+
+    return GDELT_ENDPOINT + "?" + urllib.parse.urlencode(params)
 
 
-def city_path(lang: str) -> str:
-    return page_path(lang, CITY_SLUG)
+def normalize_article(item: dict) -> dict | None:
+    title = (item.get("title") or "").strip()
+    url = (item.get("url") or "").strip()
+
+    if not title or not url:
+        return None
+
+    image = (
+        item.get("socialimage")
+        or item.get("image")
+        or ""
+    )
+
+    source_country = (
+        item.get("sourcecountry")
+        or item.get("sourceCountry")
+        or ""
+    )
+
+    language = (
+        item.get("language")
+        or item.get("sourcelang")
+        or "English"
+    )
+
+    seen_date = (
+        item.get("seendate")
+        or item.get("date")
+        or ""
+    )
+
+    domain = (
+        item.get("domain")
+        or urllib.parse.urlparse(url).netloc.replace("www.", "")
+    )
+
+    return {
+        "title": title,
+        "url": url,
+        "image": image,
+        "domain": domain,
+        "source_country": source_country,
+        "language": language,
+        "date": seen_date,
+    }
 
 
-def category_path(lang: str, cat_slug: str) -> str:
-    return page_path(lang, f"{CITY_SLUG}/{cat_slug}")
+def unique_articles(items: list[dict]) -> list[dict]:
+    seen_urls = set()
+    seen_titles = set()
+    result = []
+
+    for item in items:
+        article = normalize_article(item)
+        if not article:
+            continue
+
+        url_key = article["url"].lower()
+        title_key = " ".join(article["title"].lower().split())
+
+        if url_key in seen_urls or title_key in seen_titles:
+            continue
+
+        seen_urls.add(url_key)
+        seen_titles.add(title_key)
+        result.append(article)
+
+        if len(result) >= MAX_ARTICLES:
+            break
+
+    return result
 
 
-def video_path(lang: str, cat_slug: str, video: dict) -> str:
-    return page_path(lang, f"{CITY_SLUG}/{cat_slug}/{slugify(video['title'])}-{video['id']}")
+def fetch_articles() -> list[dict]:
+    url = build_gdelt_url()
+    print("Fetching recent Barcelona news...")
+    payload = fetch_json(url)
+
+    candidates = (
+        payload.get("articles")
+        or payload.get("items")
+        or payload.get("results")
+        or []
+    )
+
+    if not isinstance(candidates, list):
+        candidates = []
+
+    articles = unique_articles(candidates)
+
+    if not articles:
+        raise RuntimeError("News API returned no usable articles.")
+
+    return articles
 
 
-def absolute(path: str) -> str:
-    return DOMAIN + path
+def save_cache(articles: list[dict]) -> None:
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+    payload = {
+        "city": CITY,
+        "country": COUNTRY,
+        "updated_at": utc_now().isoformat(),
+        "articles": articles,
+    }
+
+    CACHE_FILE.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
 
 
-def localized_category_name(lang: str, index: int) -> str:
-    return CATEGORIES[index]["name"] if lang == "en" else CATEGORY_TRANSLATIONS[lang][index]
+def load_cache() -> list[dict]:
+    if not CACHE_FILE.exists():
+        return []
+
+    try:
+        payload = json.loads(CACHE_FILE.read_text(encoding="utf-8"))
+        articles = payload.get("articles", [])
+
+        if not isinstance(articles, list):
+            return []
+
+        return unique_articles(articles)
+
+    except Exception as exc:
+        print(f"Could not read cache: {exc}")
+        return []
 
 
-def hreflang_links(relative: str) -> str:
-    links = [f'<link rel="alternate" hreflang="{lang}" href="{esc(absolute(page_path(lang, relative)))}">' for lang in LANGUAGES]
-    links.append(f'<link rel="alternate" hreflang="x-default" href="{esc(absolute(page_path("en", relative)))}">')
-    return "\n".join(links)
+def display_date(raw: str) -> str:
+    raw = (raw or "").strip()
+
+    if not raw:
+        return "Recent"
+
+    formats = [
+        "%Y%m%dT%H%M%SZ",
+        "%Y%m%d%H%M%S",
+        "%Y-%m-%dT%H:%M:%SZ",
+        "%Y-%m-%d",
+    ]
+
+    for fmt in formats:
+        try:
+            parsed = dt.datetime.strptime(raw[:len(dt.datetime.now().strftime(fmt))], fmt)
+            return parsed.strftime("%d %B %Y")
+        except Exception:
+            pass
+
+    if len(raw) >= 8 and raw[:8].isdigit():
+        try:
+            parsed = dt.datetime.strptime(raw[:8], "%Y%m%d")
+            return parsed.strftime("%d %B %Y")
+        except Exception:
+            pass
+
+    return "Recent"
 
 
-def css() -> str:
-    return """
-:root{--fg:#161616;--muted:#666;--line:#e7e7e7;--bg:#f7f7f7;--card:#fff;--accent:#d71920}*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--fg);line-height:1.55}a{color:inherit}header{background:#111;color:#fff}.wrap{max-width:1180px;margin:0 auto;padding:0 20px}.top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 0}.brand{font-weight:900;letter-spacing:.8px;text-decoration:none;font-size:22px}.brand span{color:#ff2b31}.hero{padding:54px 0 44px;background:linear-gradient(135deg,#111,#333);color:#fff}.hero h1{font-size:clamp(34px,6vw,68px);line-height:1;margin:0 0 16px}.hero p{max-width:780px;font-size:18px;color:#eee;margin:0}.langs{display:flex;gap:8px;flex-wrap:wrap}.langs a{font-size:12px;text-decoration:none;border:1px solid #555;border-radius:999px;padding:5px 9px}main{padding:36px 0 60px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.card,.cat{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;box-shadow:0 3px 12px rgba(0,0,0,.04)}.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#ddd}.card-body{padding:16px}.card h3{font-size:19px;line-height:1.3;margin:0 0 8px}.meta{font-size:13px;color:var(--muted)}.desc{color:#444;font-size:14px}.cat{padding:18px}.cat b{display:block;margin-bottom:4px}.cat small{color:var(--muted)}.section-title{font-size:28px;margin:38px 0 18px}.video-wrap{max-width:960px}.embed{position:relative;padding-top:56.25%;background:#000;border-radius:14px;overflow:hidden}.embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.prose{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;margin-top:22px}.button{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;border-radius:9px;padding:11px 16px}footer{border-top:1px solid var(--line);background:#fff;padding:28px 0;color:#666;font-size:13px}@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.cat-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.grid,.cat-grid{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}.hero{padding:38px 0}.wrap{padding:0 15px}}
+def article_card(article: dict) -> str:
+    title = esc(article["title"])
+    url = esc(article["url"])
+    domain = esc(article.get("domain") or "News source")
+    date = esc(display_date(article.get("date", "")))
+    image = (article.get("image") or "").strip()
+
+    if image:
+        media = (
+            f'<a class="thumb-link" href="{url}" target="_blank" '
+            f'rel="noopener noreferrer nofollow">'
+            f'<img class="thumb" src="{esc(image)}" alt="{title}" loading="lazy" '
+            f'onerror="this.parentElement.style.display=\'none\'">'
+            f'</a>'
+        )
+    else:
+        media = ""
+
+    return f"""
+    <article class="news-card">
+      {media}
+      <div class="news-body">
+        <div class="meta">{date} · {domain}</div>
+        <h2><a href="{url}" target="_blank" rel="noopener noreferrer nofollow">{title}</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="{url}" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    """
+
+
+def schema_json(articles: list[dict]) -> str:
+    items = []
+
+    for pos, article in enumerate(articles, 1):
+        items.append(
+            {
+                "@type": "ListItem",
+                "position": pos,
+                "name": article["title"],
+                "url": article["url"],
+            }
+        )
+
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Barcelona News from RatedMaps.com",
+        "description": "Latest news, stories and updates from Barcelona, Spain.",
+        "numberOfItems": len(items),
+        "itemListElement": items,
+    }
+
+    return json.dumps(schema, ensure_ascii=False)
+
+
+def build_html(articles: list[dict]) -> str:
+    updated = utc_now().strftime("%d %B %Y, %H:%M UTC")
+    cards = "\n".join(article_card(a) for a in articles)
+
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Barcelona News from RatedMaps.com</title>
+<meta name="description" content="Latest news, stories and updates from Barcelona, Spain. Discover current Barcelona headlines and original news sources on RatedMaps.">
+<link rel="canonical" href="{esc(SITE_URL)}">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Barcelona News from RatedMaps.com">
+<meta property="og:description" content="Latest news, stories and updates from Barcelona, Spain.">
+<meta property="og:url" content="{esc(SITE_URL)}">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Barcelona News from RatedMaps.com">
+<meta name="twitter:description" content="Latest news, stories and updates from Barcelona, Spain.">
+
+<link rel="preconnect" href="https://unpkg.com">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<style>
+:root {{
+  --bg:#f5f7f8;
+  --card:#ffffff;
+  --text:#17191c;
+  --muted:#6a7077;
+  --line:#e2e6e9;
+  --accent:#d71920;
+  --dark:#101214;
+}}
+
+* {{ box-sizing:border-box; }}
+
+body {{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.55;
+}}
+
+a {{ color:inherit; }}
+
+.site-header {{
+  background:var(--dark);
+  color:#fff;
+  border-bottom:3px solid var(--accent);
+}}
+
+.header-inner {{
+  max-width:1180px;
+  margin:0 auto;
+  padding:18px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}}
+
+.brand {{
+  color:#fff;
+  text-decoration:none;
+  font-size:24px;
+  font-weight:900;
+  letter-spacing:.3px;
+}}
+
+.brand span {{ color:#ff3a40; }}
+
+.home-link {{
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  border:1px solid #555;
+  padding:7px 11px;
+  border-radius:999px;
+}}
+
+.hero {{
+  background:linear-gradient(135deg,#151719,#33383d);
+  color:#fff;
+  padding:56px 20px 48px;
+}}
+
+.hero-inner {{
+  max-width:1180px;
+  margin:0 auto;
+}}
+
+.hero h1 {{
+  margin:0 0 14px;
+  font-size:clamp(36px,6vw,66px);
+  line-height:1.02;
+}}
+
+.hero p {{
+  margin:0;
+  max-width:760px;
+  font-size:19px;
+  color:#eceff1;
+}}
+
+.wrap {{
+  max-width:1180px;
+  margin:0 auto;
+  padding:34px 20px 60px;
+}}
+
+.status {{
+  margin:0 0 18px;
+  color:var(--muted);
+  font-size:13px;
+}}
+
+.map-box {{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:14px;
+  margin:0 0 34px;
+  box-shadow:0 4px 18px rgba(0,0,0,.05);
+}}
+
+.map-title {{
+  margin:2px 4px 12px;
+  font-size:22px;
+}}
+
+#map {{
+  width:100%;
+  height:420px;
+  border-radius:12px;
+  overflow:hidden;
+}}
+
+.section-title {{
+  font-size:30px;
+  margin:0 0 18px;
+}}
+
+.news-grid {{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+}}
+
+.news-card {{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 4px 16px rgba(0,0,0,.04);
+}}
+
+.thumb-link {{
+  display:block;
+  background:#e8ebed;
+}}
+
+.thumb {{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  display:block;
+}}
+
+.news-body {{
+  padding:17px;
+}}
+
+.meta {{
+  color:var(--muted);
+  font-size:12px;
+  margin-bottom:8px;
+}}
+
+.news-card h2 {{
+  font-size:19px;
+  line-height:1.3;
+  margin:0 0 10px;
+}}
+
+.news-card h2 a {{
+  text-decoration:none;
+}}
+
+.news-card h2 a:hover {{
+  text-decoration:underline;
+}}
+
+.news-card p {{
+  margin:0 0 14px;
+  color:#4b5157;
+  font-size:14px;
+}}
+
+.read-more {{
+  display:inline-block;
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:700;
+  font-size:14px;
+}}
+
+footer {{
+  background:#fff;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+}}
+
+.footer-inner {{
+  max-width:1180px;
+  margin:0 auto;
+  padding:28px 20px;
+  font-size:13px;
+}}
+
+.footer-inner a {{
+  color:inherit;
+}}
+
+@media (max-width:900px) {{
+  .news-grid {{ grid-template-columns:repeat(2,minmax(0,1fr)); }}
+}}
+
+@media (max-width:620px) {{
+  .header-inner {{
+    align-items:flex-start;
+    flex-direction:column;
+  }}
+
+  .hero {{
+    padding-top:40px;
+    padding-bottom:38px;
+  }}
+
+  .news-grid {{
+    grid-template-columns:1fr;
+  }}
+
+  #map {{
+    height:340px;
+  }}
+}}
+</style>
+
+<script type="application/ld+json">
+{schema_json(articles)}
+</script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="{esc(BRAND_URL)}">Rated<span>Maps</span>.com</a>
+    <a class="home-link" href="{esc(BRAND_URL)}">Visit RatedMaps.com ↗</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Barcelona News from RatedMaps.com</h1>
+    <p>Latest news, stories and updates from Barcelona, Spain.</p>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <p class="status">Updated {esc(updated)} · {len(articles)} current stories</p>
+
+  <section class="map-box" aria-label="Barcelona map">
+    <h2 class="map-title">Barcelona News Map</h2>
+    <div id="map"></div>
+  </section>
+
+  <h2 class="section-title">Latest Barcelona News</h2>
+
+  <section class="news-grid">
+    {cards}
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    © {utc_now().year} RatedMaps.com · Barcelona, Spain · News links lead to the original publishers.
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const map = L.map('map').setView([41.3874, 2.1686], 12);
+
+L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
+  maxZoom: 19,
+  attribution: '&copy; OpenStreetMap contributors'
+}}).addTo(map);
+
+L.marker([41.3874, 2.1686])
+  .addTo(map)
+  .bindPopup('<strong>Barcelona</strong><br>Latest news, stories and updates.')
+  .openPopup();
+</script>
+
+</body>
+</html>
 """
 
 
-def header(lang: str) -> str:
-    langs = "".join(f'<a href="{esc(city_path(code))}">{code.upper()}</a>' for code in LANGUAGES)
-    return f'<header><div class="wrap top"><a class="brand" href="{esc(page_path(lang))}">VIDEO <span>VEDI</span> VINCI</a><nav class="langs">{langs}</nav></div></header>'
-
-
-def footer() -> str:
-    return f'<footer><div class="wrap">© {dt.datetime.now().year} VideoVediVinci · {esc(CITY)}, {esc(COUNTRY)} · Videos remain hosted by YouTube.</div></footer>'
-
-
-def html_doc(lang: str, title: str, description: str, canonical: str, relative: str, body: str, schema=None) -> str:
-    jsonld = f'<script type="application/ld+json">{json.dumps(schema, ensure_ascii=False)}</script>' if schema else ""
-    return f'''<!doctype html><html lang="{lang}" dir="{LANGUAGES[lang]['dir']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(title)}</title><meta name="description" content="{esc(description[:160])}"><link rel="canonical" href="{esc(canonical)}">{hreflang_links(relative)}<meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(description[:200])}"><meta property="og:url" content="{esc(canonical)}"><meta name="twitter:card" content="summary_large_image"><style>{css()}</style>{jsonld}</head><body>{header(lang)}{body}{footer()}</body></html>'''
-
-
-def write_url(path: str, content: str) -> None:
-    clean = path.strip("/")
-    target = OUT / clean / "index.html" if clean else OUT / "index.html"
-    target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(content, encoding="utf-8")
-
-
-
-def utc_now() -> str:
-    return dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
-
-
-def load_archive() -> dict:
-    if not ARCHIVE_FILE.exists():
-        return {"version": 1, "city": CITY, "videos": {}}
-    try:
-        data = json.loads(ARCHIVE_FILE.read_text(encoding="utf-8"))
-        if not isinstance(data, dict):
-            raise ValueError("archive root must be an object")
-        data.setdefault("version", 1)
-        data.setdefault("city", CITY)
-        data.setdefault("videos", {})
-        return data
-    except Exception as exc:
-        print(f"WARNING: archive could not be read: {exc}")
-        return {"version": 1, "city": CITY, "videos": {}}
-
-
-def save_archive(archive: dict) -> None:
-    archive["updatedAt"] = utc_now()
-    ARCHIVE_FILE.write_text(json.dumps(archive, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8")
-
-
-def merge_archive(category_videos: dict[str, list[dict]], archive: dict) -> None:
-    now = utc_now()
-    store = archive.setdefault("videos", {})
-    current_ids = set()
-    for cat_slug, videos in category_videos.items():
-        for video in videos:
-            vid = video["id"]
-            current_ids.add(vid)
-            row = store.get(vid)
-            if row is None:
-                row = dict(video)
-                row.update({
-                    "categories": [cat_slug],
-                    "firstDiscoveredAt": now,
-                    "lastSeenAt": now,
-                    "archivedAt": None,
-                    "lastCheckedAt": now,
-                    "lastAvailableAt": now,
-                    "availabilityStatus": "active",
-                    "consecutiveFailures": 0,
-                })
-                store[vid] = row
-            else:
-                for key in ("title","description","publishedAt","channelTitle","thumbnail","youtubeUrl"):
-                    if video.get(key):
-                        row[key] = video[key]
-                cats = set(row.get("categories", []))
-                cats.add(cat_slug)
-                row["categories"] = sorted(cats)
-                row["lastSeenAt"] = now
-                row["lastCheckedAt"] = now
-                row["lastAvailableAt"] = now
-                row["availabilityStatus"] = "active"
-                row["consecutiveFailures"] = 0
-
-    # A video becomes archived when it is no longer in the current top-five search results.
-    for vid, row in store.items():
-        if vid not in current_ids and not row.get("archivedAt"):
-            row["archivedAt"] = now
-
-
-def load_seo_library() -> dict:
-    if not SEO_LIBRARY_FILE.exists():
-        print(f"WARNING: {SEO_LIBRARY_FILE} not found; source titles will be used.")
-        return {}
-    try:
-        return json.loads(SEO_LIBRARY_FILE.read_text(encoding="utf-8"))
-    except Exception as exc:
-        print(f"WARNING: SEO library could not be read: {exc}")
-        return {}
-
-
-def pick(items: list[str], seed: str, salt: str) -> str:
-    if not items:
-        return ""
-    raw = hashlib.sha256(f"{seed}:{salt}".encode("utf-8")).digest()
-    return items[int.from_bytes(raw[:4], "big") % len(items)]
-
-
-def seo_for_video(video: dict, cat_slug: str, library: dict) -> dict:
-    """Conservative English SEO metadata; original YouTube data remains untouched."""
-    original = (video.get("title") or "").strip()
-    cat = library.get("categories", {}).get(cat_slug, {})
-    terms = cat.get("terms", [])
-    keyword = pick(terms, video["id"], "keyword") or cat_slug.replace("-", " ")
-    # Keep the real source title as the concrete topic. This prevents invented claims.
-    if original:
-        seo_title = f"{original} | {CITY}"
-    else:
-        seo_title = f"{keyword.title()} in {CITY} | VideoVediVinci"
-    if len(seo_title) > 72:
-        seo_title = f"{original[:52].rstrip()} | {CITY}" if original else seo_title[:72].rstrip()
-
-    descriptions = library.get("_meta", {}).get("description_patterns", [])
-    template = pick(descriptions, video["id"], "description")
-    if template:
-        seo_description = template.format(city=CITY, keyword=keyword, topic=original or keyword)
-    else:
-        seo_description = f"Watch this selected video about {original or keyword} in {CITY}, part of the VideoVediVinci archive."
-    return {
-        "originalTitle": original,
-        "seoTitle": seo_title,
-        "seoDescription": seo_description[:160].rstrip(),
-        "keyword": keyword,
-    }
-
-
-def archived_by_category(archive: dict, cat_slug: str) -> list[dict]:
-    rows = []
-    for video in archive.get("videos", {}).values():
-        if cat_slug in video.get("categories", []) and video.get("availabilityStatus", "active") == "active":
-            rows.append(video)
-    rows.sort(key=lambda v: (v.get("publishedAt",""), v.get("firstDiscoveredAt","")), reverse=True)
-    return rows
-
-
-def archive_path(lang: str, cat_slug: str = "") -> str:
-    rel = f"{CITY_SLUG}/archive"
-    if cat_slug:
-        rel += f"/{cat_slug}"
-    return page_path(lang, rel)
-
-
-def generate_archive_page(lang: str, archive: dict, localized: dict) -> None:
-    ui = UI[lang]
-    sections = []
-    for idx, cat in enumerate(CATEGORIES):
-        videos = archived_by_category(archive, cat["slug"])
-        if not videos:
-            continue
-        cards = []
-        for v in videos:
-            loc = localized.get(v["id"], {}).get(lang)
-            if not loc:
-                loc = {"title": v.get("title",""), "description": v.get("description","") or v.get("title","")}
-            cards.append(video_card(lang, cat, v, loc))
-        name = localized_category_name(lang, idx)
-        sections.append(
-            f'<h2 class="section-title"><a href="{esc(archive_path(lang, cat["slug"]))}">{esc(name)}</a> · {len(videos)}</h2>'
-            f'<div class="grid">{"".join(cards[:12])}</div>'
-        )
-    body = f'<section class="hero"><div class="wrap"><h1>{esc(ui["archive"])} · {CITY}</h1><p>{esc(ui["intro"])}</p></div></section><main class="wrap">{"".join(sections)}</main>'
-    rel = f"{CITY_SLUG}/archive"
-    write_url(archive_path(lang), html_doc(lang, f'{ui["archive"]} – {CITY} | VideoVediVinci', ui["intro"], absolute(archive_path(lang)), rel, body))
-
-
-def generate_archive_category_page(lang: str, idx: int, cat: dict, archive: dict, localized: dict) -> None:
-    videos = archived_by_category(archive, cat["slug"])
-    name = localized_category_name(lang, idx)
-    cards = []
-    for v in videos:
-        loc = localized.get(v["id"], {}).get(lang)
-        if not loc:
-            loc = {"title": v.get("title",""), "description": v.get("description","") or v.get("title","")}
-        cards.append(video_card(lang, cat, v, loc))
-    description = f'{name} video archive for {CITY}.'
-    body = f'<section class="hero"><div class="wrap"><h1>{esc(name)} · {esc(UI[lang]["archive"])}</h1><p>{esc(description)}</p></div></section><main class="wrap"><div class="grid">{"".join(cards)}</div></main>'
-    rel = f'{CITY_SLUG}/archive/{cat["slug"]}'
-    write_url(archive_path(lang, cat["slug"]), html_doc(lang, f'{name} – {CITY} {UI[lang]["archive"]} | VideoVediVinci', description, absolute(archive_path(lang, cat["slug"])), rel, body))
-
-
-def prepare_localizations(category_videos: dict[str, list[dict]], archive: dict | None = None) -> dict:
-    unique = {}
-    for videos in category_videos.values():
-        for video in videos:
-            unique[video["id"]] = video
-    if archive:
-        for vid, video in archive.get("videos", {}).items():
-            if video.get("availabilityStatus", "active") == "active":
-                unique[vid] = video
-    localized = {vid: {"en": {"title": v["title"], "description": v.get("description") or v["title"]}} for vid, v in unique.items()}
-    ids = list(unique)
-    titles = [unique[vid]["title"] for vid in ids]
-    descriptions = [(unique[vid].get("description") or unique[vid]["title"])[:900] for vid in ids]
-    for lang, cfg in LANGUAGES.items():
-        if lang == "en":
-            continue
-        tt = translate_batch(titles, cfg["target"])
-        td = translate_batch(descriptions, cfg["target"])
-        for i, vid in enumerate(ids):
-            localized[vid][lang] = {"title": tt[i], "description": td[i]}
-    return localized
-
-def video_card(lang: str, cat: dict, video: dict, local: dict) -> str:
-    desc = (local["description"] or "")[:180]
-    return f'<a class="card" href="{esc(video_path(lang, cat["slug"], video))}"><img src="{esc(video["thumbnail"])}" alt="{esc(local["title"])}" loading="lazy"><div class="card-body"><h3>{esc(local["title"])}</h3><div class="meta">{esc(video["publishedAt"][:10])} · {esc(video["channelTitle"])}</div><p class="desc">{esc(desc)}</p></div></a>'
-
-
-def generate_home(lang: str) -> None:
-    ui = UI[lang]
-    body = f'<section class="hero"><div class="wrap"><h1>VideoVediVinci</h1><p>{esc(ui["intro"])}</p></div></section><main class="wrap"><h2 class="section-title">{esc(ui["latest"])}</h2><a class="button" href="{esc(city_path(lang))}">{CITY} →</a></main>'
-    schema = {"@context":"https://schema.org","@type":"WebSite","name":"VideoVediVinci","url":absolute(page_path(lang)),"inLanguage":lang}
-    write_url(page_path(lang), html_doc(lang, f"VideoVediVinci – {CITY} Video Discovery", ui["intro"], absolute(page_path(lang)), "", body, schema))
-
-
-def generate_city_page(lang: str, category_videos: dict[str, list[dict]], localized: dict) -> None:
-    ui = UI[lang]
-    cats = []
-    for i, cat in enumerate(CATEGORIES):
-        count = len(category_videos.get(cat["slug"], []))
-        cats.append(f'<a class="cat" href="{esc(category_path(lang, cat["slug"]))}"><b>{esc(localized_category_name(lang, i))}</b><small>{cat["id"]} · {count} videos</small></a>')
-    seen, recent = set(), []
-    for cat in CATEGORIES:
-        for video in category_videos.get(cat["slug"], []):
-            if video["id"] not in seen:
-                seen.add(video["id"])
-                recent.append((cat, video))
-    recent.sort(key=lambda pair: pair[1].get("publishedAt", ""), reverse=True)
-    cards = "".join(video_card(lang, cat, video, localized[video["id"]][lang]) for cat, video in recent[:12])
-    body = f'<section class="hero"><div class="wrap"><h1>{esc(ui["latest"])}</h1><p>{esc(ui["intro"])}</p></div></section><main class="wrap"><h2 class="section-title">{esc(ui["categories"])}</h2><div class="cat-grid">{"".join(cats)}</div><p style="margin-top:24px"><a class="button" href="{esc(archive_path(lang))}">{esc(ui["archive"])} →</a></p><h2 class="section-title">{esc(ui["more"])}</h2><div class="grid">{cards}</div></main>'
-    schema = {"@context":"https://schema.org","@type":"CollectionPage","name":ui["latest"],"description":ui["intro"],"url":absolute(city_path(lang)),"inLanguage":lang,"about":{"@type":"City","name":CITY}}
-    write_url(city_path(lang), html_doc(lang, f'{ui["latest"]} | VideoVediVinci', ui["intro"], absolute(city_path(lang)), CITY_SLUG, body, schema))
-
-
-def generate_category_page(lang: str, idx: int, cat: dict, videos: list[dict], localized: dict) -> None:
-    name = localized_category_name(lang, idx)
-    ui = UI[lang]
-    description = f'{name}: {ui["intro"]}'
-    cards = "".join(video_card(lang, cat, v, localized[v["id"]][lang]) for v in videos) or '<p>No recent videos found.</p>'
-    body = f'<section class="hero"><div class="wrap"><h1>{esc(name)} · {CITY}</h1><p>{esc(description)}</p></div></section><main class="wrap"><div class="grid">{cards}</div></main>'
-    items = [{"@type":"ListItem","position":pos,"url":absolute(video_path(lang, cat["slug"], v)),"name":localized[v["id"]][lang]["title"]} for pos, v in enumerate(videos, 1)]
-    schema = {"@context":"https://schema.org","@type":"ItemList","name":f'{name} – {CITY} Videos',"numberOfItems":len(items),"itemListElement":items}
-    rel = f'{CITY_SLUG}/{cat["slug"]}'
-    write_url(category_path(lang, cat["slug"]), html_doc(lang, f'{name} – {CITY} Videos | VideoVediVinci', description, absolute(category_path(lang, cat["slug"])), rel, body, schema))
-
-
-def generate_video_page(lang: str, idx: int, cat: dict, video: dict, local: dict) -> None:
-    ui = UI[lang]
-    name = localized_category_name(lang, idx)
-    path = video_path(lang, cat["slug"], video)
-    canonical = absolute(path)
-    description = (local["description"] or f'{local["title"]} – {CITY}')[:450]
-    embed = f'https://www.youtube.com/embed/{urllib.parse.quote(video["id"])}'
-    body = f'<main class="wrap"><div class="video-wrap"><p><a href="{esc(category_path(lang, cat["slug"]))}">← {esc(ui["back"])}</a></p><h1>{esc(local["title"])}</h1><p class="meta">{esc(ui["published"])}: {esc(video["publishedAt"][:10])} · {esc(ui["source"])}: {esc(video["channelTitle"])}</p><div class="embed"><iframe src="{esc(embed)}" title="{esc(local["title"])}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div><section class="prose"><h2>{esc(local["title"])}</h2><p>{esc(description)}</p><p><b>{esc(name)} · {CITY}</b></p><p><a class="button" href="{esc(video["youtubeUrl"])}" target="_blank" rel="noopener">{esc(ui["watch"])} ↗</a></p></section></div></main>'
-    schema = {"@context":"https://schema.org","@type":"VideoObject","name":local["title"],"description":description,"thumbnailUrl":[video["thumbnail"]],"uploadDate":video["publishedAt"],"embedUrl":embed,"contentUrl":video["youtubeUrl"],"url":canonical,"inLanguage":lang,"publisher":{"@type":"Organization","name":video["channelTitle"] or "YouTube"},"about":[{"@type":"City","name":CITY},{"@type":"Thing","name":name}]}
-    rel = f'{CITY_SLUG}/{cat["slug"]}/{slugify(video["title"])}-{video["id"]}'
-    write_url(path, html_doc(lang, f'{local["title"]} | {CITY} Video', description, canonical, rel, body, schema))
-
-
-def generate_sitemap(urls: list[str]) -> None:
-    today = dt.date.today().isoformat()
-    rows = "\n".join(f'<url><loc>{esc(url)}</loc><lastmod>{today}</lastmod></url>' for url in sorted(set(urls)))
-    (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + rows + '\n</urlset>\n', encoding="utf-8")
-
-
 def main() -> None:
-    # IMPORTANT: archive.json lives outside dist/ and therefore survives dist regeneration
-    # when the workflow commits archive.json back to the private repository.
-    archive = load_archive()
-    seo_library = load_seo_library()
+    articles = []
 
-    if OUT.exists():
-        shutil.rmtree(OUT)
-    OUT.mkdir(parents=True)
+    try:
+        articles = fetch_articles()
+        save_cache(articles)
+        print(f"Fetched and cached {len(articles)} articles.")
 
-    print("Fetching Chicago videos from YouTube...")
-    category_videos = {}
-    for cat in CATEGORIES:
-        print(f'  {cat["id"]} {cat["name"]}: {cat["query"]}')
-        try:
-            category_videos[cat["slug"]] = youtube_search(cat["query"])
-        except Exception as exc:
-            print(f'ERROR fetching {cat["name"]}: {exc}')
-            category_videos[cat["slug"]] = []
+    except Exception as exc:
+        print(f"Live fetch failed: {exc}")
+        articles = load_cache()
 
-    merge_archive(category_videos, archive)
-    for video in archive.get("videos", {}).values():
-        first_cat = (video.get("categories") or ["news"])[0]
-        video["seo"] = seo_for_video(video, first_cat, seo_library)
-    save_archive(archive)
-    print(f'Archive: {len(archive.get("videos", {}))} unique videos.')
+        if articles:
+            print(f"Using {len(articles)} cached articles.")
+        else:
+            print("No live data and no usable cache available.")
+            print("Existing index.html will NOT be overwritten.")
+            return
 
-    print("Preparing translations...")
-    localized = prepare_localizations(category_videos, archive)
-    urls = []
+    html_output = build_html(articles)
+    INDEX_FILE.write_text(html_output, encoding="utf-8")
 
-    for lang in LANGUAGES:
-        generate_home(lang)
-        urls.append(absolute(page_path(lang)))
-        generate_city_page(lang, category_videos, localized)
-        urls.append(absolute(city_path(lang)))
-
-        generate_archive_page(lang, archive, localized)
-        urls.append(absolute(archive_path(lang)))
-
-        for idx, cat in enumerate(CATEGORIES):
-            current = category_videos[cat["slug"]]
-            generate_category_page(lang, idx, cat, current, localized)
-            urls.append(absolute(category_path(lang, cat["slug"])))
-
-            generate_archive_category_page(lang, idx, cat, archive, localized)
-            urls.append(absolute(archive_path(lang, cat["slug"])))
-
-            # Generate stable video pages for ALL active archived videos, not only current top five.
-            for video in archived_by_category(archive, cat["slug"]):
-                local = localized[video["id"]][lang]
-                generate_video_page(lang, idx, cat, video, local)
-                urls.append(absolute(video_path(lang, cat["slug"], video)))
-
-    generate_sitemap(urls)
-    (OUT / "robots.txt").write_text(f'User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n', encoding="utf-8")
-    (OUT / "CNAME").write_text("videovedivinci.com\n", encoding="utf-8")
-    print(f'Done. Generated {len(set(urls))} URLs in {OUT}/')
+    print(f"Done. Wrote {INDEX_FILE} with {len(articles)} articles.")
 
 
 if __name__ == "__main__":
     main()
+'''
+
+path = Path("/mnt/data/generate.py")
+path.write_text(code, encoding="utf-8")
+py_compile.compile(str(path), doraise=True)
+print("Created and syntax-checked:", path)
