@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-29T22:55:10.631875+00:00",
+  "updated_at": "2026-08-29T23:14:41.827707+00:00",
   "articles": [
     {
       "title": "Barcelona tipped to wait until January to sign a striker after Atletico refuse to sell Julian Alvarez",
@@ -56,15 +56,6 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260828T183000Z"
-    },
-    {
-      "title": "Atlético Madrid chief insists Júlian Alvarez will  never , ever  be sold to Barcelona",
-      "url": "https://www.aol.co.uk/articles/atl-tico-madrid-chief-insists-221623000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/08/27/8eb796c2-d2b0-342a-8a35-8c24da5b0f25/37c61410-e63d-4994-a888-d321cf0409e7.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260827T230000Z"
     },
     {
       "title": "Barcelona confirm signing of Croatia goalkeeper Livakovic",
@@ -218,6 +209,15 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260829T071500Z"
+    },
+    {
+      "title": "Barcelona 2 - 0 Athletic Club : Raphinha and Fermín López on target as Barça dominate La Liga home opener",
+      "url": "https://www.barcablaugranes.com/barcelona-la-liga/130652/barcelona-athletic-club-la-liga-final-score-match-report-recap-reactions",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291743595.jpg?quality=90&strip=all&crop=0%2C10.720898415783%2C100%2C78.558203168434",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260827T231500Z"
     }
   ]
 }
