@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-29T23:14:41.827707+00:00",
+  "updated_at": "2026-08-29T23:35:05.648143+00:00",
   "articles": [
     {
       "title": "Barcelona tipped to wait until January to sign a striker after Atletico refuse to sell Julian Alvarez",
@@ -11,15 +11,6 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260828T174500Z"
-    },
-    {
-      "title": "Hansi Flick talks Raphinha as Barcelona No . 9 and admits he  surprised  by Xavi Espart",
-      "url": "https://www.barcablaugranes.com/barcelona-la-liga/130696/hansi-flick-raphinha-no-9-surprised-xavi-espart",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291745655.jpg?quality=90&strip=all&crop=0%2C10.737568883469%2C100%2C78.524862233062",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260827T231500Z"
     },
     {
       "title": "Hector Fort leaves Barcelona and signs for Real Sociedad",
@@ -211,13 +202,22 @@
       "date": "20260829T071500Z"
     },
     {
-      "title": "Barcelona 2 - 0 Athletic Club : Raphinha and Fermín López on target as Barça dominate La Liga home opener",
-      "url": "https://www.barcablaugranes.com/barcelona-la-liga/130652/barcelona-athletic-club-la-liga-final-score-match-report-recap-reactions",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291743595.jpg?quality=90&strip=all&crop=0%2C10.720898415783%2C100%2C78.558203168434",
+      "title": "🔵🔴ISNT THIS SO ANNOYING | Barca Blaugranes",
+      "url": "https://www.barcablaugranes.com/post/0aNxmCk7GWWY",
+      "image": "",
       "domain": "barcablaugranes.com",
       "source_country": "Spain",
       "language": "English",
-      "date": "20260827T231500Z"
+      "date": "20260828T174500Z"
+    },
+    {
+      "title": "Marcus Rashford : Fabrizio Romano reveals Man Utd winger decision on joining Fenerbahce after  contact",
+      "url": "https://www.teamtalk.com/manchester-united/fenerbahce-marcus-rashford-man-utd-fabrizio-romano-transfer-update",
+      "image": "https://images.teamtalk.com/content/uploads/2026/07/17094125/marcus-rashford-man-utd-badge.jpg",
+      "domain": "teamtalk.com",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260828T193000Z"
     }
   ]
 }
