@@ -100,7 +100,7 @@ def fetch_url(url):
 def gdelt_url():
 
     params = {
-        "query": '"Barcelona"',
+        "query": '"Barcelona" sourcelang:english',
         "mode": "artlist",
         "maxrecords": str(MAX_ARTICLES),
         "timespan": TIMESPAN,
