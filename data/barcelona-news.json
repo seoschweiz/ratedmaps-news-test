@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-29T20:34:35.467491+00:00",
+  "updated_at": "2026-08-29T20:56:30.388665+00:00",
   "articles": [
     {
       "title": "Barcelona tipped to wait until January to sign a striker after Atletico refuse to sell Julian Alvarez",
@@ -193,15 +193,6 @@
       "date": "20260827T214500Z"
     },
     {
-      "title": "American Airlines announces new one - stop options from Nashville to Europe , Asia in 2027 . Here the list of locations",
-      "url": "https://www.wsmv.com/2026/08/27/american-airlines-announces-new-one-stop-options-nashville-europe-asia-2027-heres-list-locations/",
-      "image": "https://gray-wsmv-prod.gtv-cdn.com/resizer/v2/FINJTRSEFJCVLNKZLB6CQ4W7XA.jpg?auth=54a8e2783ba4d02ad9331d1f71d695b328bb0db5b633f164a4360282df1addfc&smart=true",
-      "domain": "wsmv.com",
-      "source_country": "United States",
-      "language": "English",
-      "date": "20260827T204500Z"
-    },
-    {
       "title": "Marcus Rashford to reject transfer offer as Arsenal consider late Man Utd option",
       "url": "https://www.aol.co.uk/articles/marcus-rashford-reject-transfer-offer-064437000.html",
       "image": "https://hermes.media.static.aol.com/media/2026/08/29/b52fdf7d-d77c-3282-8e51-7690f9f75e6a/cdbbd7a0-5252-4a94-9581-96f97e7c2e3c.jpg",
@@ -218,6 +209,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260827T231500Z"
+    },
+    {
+      "title": "🔵🔴ISNT THIS SO ANNOYING | Barca Blaugranes",
+      "url": "https://www.barcablaugranes.com/post/0aNxmCk7GWWY",
+      "image": "",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260828T174500Z"
     }
   ]
 }
