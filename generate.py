@@ -1,6 +1,10 @@
 from pathlib import Path
+import textwrap, py_compile
 
-content = r'''import json
+code = r'''#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import json
 import os
 import html
 import time
@@ -29,18 +33,14 @@ REQUEST_TIMEOUT = 75
 MAX_RETRIES = 3
 RETRY_WAIT = 15
 
-USER_AGENT = (
-    "Mozilla/5.0 (compatible; RatedMapsNewsTest/1.2; "
-    "+https://seoschweiz.github.io/ratedmaps-news-test/)"
-)
-
 BARCELONA_LAT = 41.3874
 BARCELONA_LON = 2.1686
 
+USER_AGENT = (
+    "Mozilla/5.0 (compatible; RatedMapsNewsTest/1.3; "
+    "+https://seoschweiz.github.io/ratedmaps-news-test/)"
+)
 
-# =========================================================
-# HELPERS
-# =========================================================
 
 def fetch_url(url):
     request = urllib.request.Request(
@@ -65,7 +65,6 @@ def fetch_url(url):
                     "utf-8",
                     errors="replace"
                 )
-
                 print("GDELT connection successful.")
                 return content
 
@@ -132,15 +131,11 @@ def save_cache(articles):
 def clean_text(value):
     if not value:
         return ""
-
     return " ".join(str(value).split())
 
 
 def safe(value):
-    return html.escape(
-        clean_text(value),
-        quote=True
-    )
+    return html.escape(clean_text(value), quote=True)
 
 
 def normalize_date(value):
@@ -149,13 +144,11 @@ def normalize_date(value):
 
     value = str(value).strip()
 
-    formats = [
+    for fmt in (
         "%Y%m%dT%H%M%SZ",
         "%Y%m%d%H%M%S",
         "%Y-%m-%dT%H:%M:%SZ",
-    ]
-
-    for fmt in formats:
+    ):
         try:
             dt = datetime.strptime(value, fmt)
             return dt.strftime("%d %B %Y · %H:%M UTC")
@@ -167,8 +160,7 @@ def normalize_date(value):
 
 def domain_from_url(url):
     try:
-        domain = urllib.parse.urlparse(url).netloc
-        return domain.replace("www.", "")
+        return urllib.parse.urlparse(url).netloc.replace("www.", "")
     except Exception:
         return ""
 
@@ -177,13 +169,10 @@ def usable_article(article):
     title = clean_text(article.get("title"))
     url = clean_text(article.get("url"))
 
-    if not title:
-        return False
-
-    if not url.startswith(("http://", "https://")):
-        return False
-
-    return True
+    return bool(
+        title
+        and url.startswith(("http://", "https://"))
+    )
 
 
 def prepare_articles(raw_articles):
@@ -201,25 +190,21 @@ def prepare_articles(raw_articles):
 
         seen_urls.add(url)
 
-        article = {
+        articles.append({
             "title": clean_text(item.get("title")),
             "url": url,
             "image": clean_text(item.get("socialimage")),
             "date": clean_text(item.get("seendate")),
-            "domain": clean_text(item.get("domain"))
-            or domain_from_url(url),
+            "domain": (
+                clean_text(item.get("domain"))
+                or domain_from_url(url)
+            ),
             "language": clean_text(item.get("language")),
             "country": clean_text(item.get("sourcecountry")),
-        }
-
-        articles.append(article)
+        })
 
     return articles[:MAX_ARTICLES]
 
-
-# =========================================================
-# GDELT
-# =========================================================
 
 def get_articles():
     url = gdelt_url()
@@ -232,14 +217,10 @@ def get_articles():
     try:
         text = fetch_url(url)
         data = json.loads(text)
-
-        raw_articles = data.get("articles", [])
-        articles = prepare_articles(raw_articles)
+        articles = prepare_articles(data.get("articles", []))
 
         if articles:
-            print(
-                f"Received {len(articles)} articles from GDELT."
-            )
+            print(f"Received {len(articles)} articles from GDELT.")
             save_cache(articles)
             return articles
 
@@ -257,15 +238,9 @@ def get_articles():
         print(f"Using {len(cached)} cached articles.")
         return cached
 
-    print(
-        "No cache available. Existing page will be kept."
-    )
+    print("No cache available. Existing page will be kept.")
     return None
 
-
-# =========================================================
-# HTML
-# =========================================================
 
 def article_card(article):
     title = safe(article.get("title"))
@@ -276,17 +251,7 @@ def article_card(article):
     date = safe(normalize_date(article.get("date")))
     image = safe(article.get("image"))
 
-    meta_parts = []
-
-    if domain:
-        meta_parts.append(domain)
-
-    if country:
-        meta_parts.append(country)
-
-    if language:
-        meta_parts.append(language)
-
+    meta_parts = [x for x in (domain, country, language) if x]
     meta = " · ".join(meta_parts)
 
     if image:
@@ -315,24 +280,17 @@ def article_card(article):
       {image_html}
 
       <div class="news-content">
-
-        <div class="news-meta">
-          {meta}
-        </div>
+        <div class="news-meta">{meta}</div>
 
         <h2>
           <a
             href="{url}"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            {title}
-          </a>
+          >{title}</a>
         </h2>
 
-        <div class="news-date">
-          {date}
-        </div>
+        <div class="news-date">{date}</div>
 
         <p class="news-description">
           Latest English-language coverage mentioning Barcelona
@@ -344,48 +302,35 @@ def article_card(article):
           href="{url}"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          Read original article →
-        </a>
-
+        >Read original article →</a>
       </div>
     </article>
     """
 
 
 def schema_data(articles):
-    items = []
-
-    for position, article in enumerate(
-        articles[:20],
-        start=1
-    ):
-        items.append({
-            "@type": "ListItem",
-            "position": position,
-            "url": article.get("url", ""),
-            "name": article.get("title", ""),
-        })
-
     return {
         "@context": "https://schema.org",
         "@type": "ItemList",
         "name": "Latest Barcelona News",
-        "itemListElement": items,
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": position,
+                "url": article.get("url", ""),
+                "name": article.get("title", ""),
+            }
+            for position, article in enumerate(articles[:20], start=1)
+        ],
     }
 
 
 def build_html(articles):
-    generated = (
-        datetime
-        .now(timezone.utc)
-        .strftime("%d %B %Y · %H:%M UTC")
+    generated = datetime.now(timezone.utc).strftime(
+        "%d %B %Y · %H:%M UTC"
     )
 
-    cards = "\n".join(
-        article_card(article)
-        for article in articles
-    )
+    cards = "\n".join(article_card(a) for a in articles)
 
     schema = json.dumps(
         schema_data(articles),
@@ -396,19 +341,11 @@ def build_html(articles):
 
     return f"""<!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta
-  name="viewport"
-  content="width=device-width, initial-scale=1.0"
->
-
-<title>
-Barcelona News Map | Latest Barcelona News & Updates
-</title>
+<title>Barcelona News Map | Latest Barcelona News & Updates</title>
 
 <meta
   name="description"
@@ -420,10 +357,7 @@ Barcelona News Map | Latest Barcelona News & Updates
   content="index,follow,max-image-preview:large"
 >
 
-<meta
-  name="theme-color"
-  content="#d71920"
->
+<meta name="theme-color" content="#d71920">
 
 <link
   rel="stylesheet"
@@ -437,7 +371,6 @@ Barcelona News Map | Latest Barcelona News & Updates
 </script>
 
 <style>
-
 * {{
   box-sizing: border-box;
 }}
@@ -571,8 +504,7 @@ h1 {{
 
 .news-grid {{
   display: grid;
-  grid-template-columns:
-    repeat(auto-fit,minmax(290px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
   gap: 20px;
 }}
 
@@ -693,7 +625,6 @@ footer {{
 }}
 
 @media(max-width:650px) {{
-
   .header-inner {{
     padding: 15px 18px;
   }}
@@ -729,39 +660,28 @@ footer {{
   .news-grid {{
     grid-template-columns: 1fr;
   }}
-
 }}
-
 </style>
-
 </head>
 
 <body>
 
 <header>
   <div class="header-inner">
-
-    <a
-      class="logo"
-      href="./"
-    >
+    <a class="logo" href="./">
       Rated<span>Maps</span> News
     </a>
 
     <div class="city-label">
       Barcelona · Spain
     </div>
-
   </div>
 </header>
 
 <main>
 
 <section class="hero">
-
-  <h1>
-    Barcelona News Map
-  </h1>
+  <h1>Barcelona News Map</h1>
 
   <p class="intro">
     Discover the latest English-language news mentioning
@@ -769,21 +689,10 @@ footer {{
   </p>
 
   <div class="status">
-
-    <span class="badge badge-live">
-      ● LIVE
-    </span>
-
-    <span class="badge">
-      {article_count} articles
-    </span>
-
-    <span class="badge">
-      Last 48 hours
-    </span>
-
+    <span class="badge badge-live">● LIVE</span>
+    <span class="badge">{article_count} articles</span>
+    <span class="badge">Last 48 hours</span>
   </div>
-
 </section>
 
 <div
@@ -799,15 +708,11 @@ footer {{
 <section>
 
   <div class="section-head">
-
-    <h2>
-      Latest Barcelona News
-    </h2>
+    <h2>Latest Barcelona News</h2>
 
     <div class="updated">
       Updated {generated}
     </div>
-
   </div>
 
   <div class="news-grid">
@@ -818,9 +723,7 @@ footer {{
 
 <section class="seo-text">
 
-  <h2>
-    Latest news about Barcelona
-  </h2>
+  <h2>Latest news about Barcelona</h2>
 
   <p>
     Barcelona is continuously covered by newspapers,
@@ -833,8 +736,7 @@ footer {{
     Coverage may include Barcelona politics, tourism,
     culture, business, transport, sport, events,
     restaurants, neighborhoods and other current
-    developments. Every story links to the original
-    publisher.
+    developments. Every story links to the original publisher.
   </p>
 
 </section>
@@ -842,16 +744,13 @@ footer {{
 </main>
 
 <footer>
-
 RatedMaps News · Barcelona
 
 <br><br>
 
 News discovery powered by GDELT.
 Map powered by Leaflet and OpenStreetMap.
-Original articles remain on their respective
-publishers' websites.
-
+Original articles remain on their respective publishers' websites.
 </footer>
 
 <script
@@ -861,7 +760,6 @@ publishers' websites.
 ></script>
 
 <script>
-
 const map = L.map(
   "news-map",
   {{
@@ -888,17 +786,12 @@ const barcelonaMarker = L.marker(
 barcelonaMarker.bindPopup(
   "<strong>Barcelona News</strong><br>{article_count} current articles"
 );
-
 </script>
 
 </body>
 </html>
 """
 
-
-# =========================================================
-# MAIN
-# =========================================================
 
 def main():
     print("=" * 60)
@@ -916,11 +809,7 @@ def main():
 
     page = build_html(articles)
 
-    with open(
-        OUTPUT_FILE,
-        "w",
-        encoding="utf-8"
-    ) as file:
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
         file.write(page)
 
     print()
@@ -933,6 +822,8 @@ if __name__ == "__main__":
     main()
 '''
 
-path = Path("/mnt/data/generate.py")
-path.write_text(content, encoding="utf-8")
-print(f"Created {path}")
+out = Path("/mnt/data/generate.py")
+out.write_text(code, encoding="utf-8")
+py_compile.compile(str(out), doraise=True)
+print("Fertig: /mnt/data/generate.py")
+print("Syntaxprüfung: OK")
