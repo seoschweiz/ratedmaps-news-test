@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-29T21:36:03.479704+00:00",
+  "updated_at": "2026-08-29T21:54:50.040026+00:00",
   "articles": [
     {
       "title": "Barcelona tipped to wait until January to sign a striker after Atletico refuse to sell Julian Alvarez",
@@ -184,15 +184,6 @@
       "date": "20260828T211500Z"
     },
     {
-      "title": "Barcelona Beat Athletic 2 - 0 , Maintain Perfect Start",
-      "url": "https://punchng.com/la-liga-raphinha-lopez-score-again-as-barca-beat-athletic-2-0/",
-      "image": "",
-      "domain": "punchng.com",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260827T214500Z"
-    },
-    {
       "title": "Marcus Rashford to reject transfer offer as Arsenal consider late Man Utd option",
       "url": "https://www.aol.co.uk/articles/marcus-rashford-reject-transfer-offer-064437000.html",
       "image": "https://hermes.media.static.aol.com/media/2026/08/29/b52fdf7d-d77c-3282-8e51-7690f9f75e6a/cdbbd7a0-5252-4a94-9581-96f97e7c2e3c.jpg",
@@ -218,6 +209,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260828T174500Z"
+    },
+    {
+      "title": "Marcus Rashford : Fabrizio Romano reveals Man Utd winger decision on joining Fenerbahce after  contact",
+      "url": "https://www.teamtalk.com/manchester-united/fenerbahce-marcus-rashford-man-utd-fabrizio-romano-transfer-update",
+      "image": "https://images.teamtalk.com/content/uploads/2026/07/17094125/marcus-rashford-man-utd-badge.jpg",
+      "domain": "teamtalk.com",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260828T193000Z"
     }
   ]
 }
