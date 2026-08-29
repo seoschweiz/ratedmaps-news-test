@@ -1,1141 +1,311 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Barcelona News Map | Latest Barcelona News & Updates</title>
-
-<meta
-  name="description"
-  content="Latest Barcelona news from local and international media on an interactive Barcelona map. Discover current stories and worldwide coverage mentioning Barcelona."
->
-
-<meta name="robots" content="index,follow,max-image-preview:large">
-<meta name="theme-color" content="#d71920">
-
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIINfQ3ynqMS7c5R5QFZxkIajPPbM4B4N0g="
-  crossorigin=""
->
-
-<script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "ItemList", "name": "Latest Barcelona News", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://thehardtackle.com/round-up/2026/08/29/barcelona-vs-rayo-vallecano-preview-and-prediction-4/", "name": "Barcelona vs Rayo Vallecano : Preview and Prediction"}, {"@type": "ListItem", "position": 2, "url": "http://www.greekherald.com/news/279273567/shouldnt-be-given-just-because-someone-won-champions-league-or-world-cup-mourinho-criticises-politicisation-of-ballon-dor", "name": "Shouldnt be given just because someone won Champions League or World Cup : Mourinho criticises politicisation of Ballon dOr"}, {"@type": "ListItem", "position": 3, "url": "https://thepeoplesperson.com/2026/08/29/joshua-zirkzee-la-liga-giants-eyeing-late-swoop-for-man-united-striker-314702/", "name": "Joshua Zirkzee : La Liga giants eyeing late swoop for Man United striker - Man United News And Transfer News"}, {"@type": "ListItem", "position": 4, "url": "https://www.surinenglish.com/malaga/malaga-city/united-airlines-will-20260827102654-nt.html", "name": "United Airlines will operate the direct flight from Malaga to New York only during the summer of 2027"}, {"@type": "ListItem", "position": 5, "url": "https://thepeoplesperson.com/2026/08/29/manchester-united-sanction-jayce-fitzgeralds-loan-exit-to-league-two-club-314708/", "name": "Manchester United sanction Jayce Fitzgerald loan exit to League Two club - Man United News And Transfer News"}, {"@type": "ListItem", "position": 6, "url": "https://www.westernpeople.ie/bodies-of-irishwoman-and-husband-left-undiscovered-for-12-hours-in-spanish-resort_arid-109867.html", "name": "Bodies of Irishwoman and husband left undiscovered for 12 hours in Spanish resort - Homepage"}, {"@type": "ListItem", "position": 7, "url": "https://link.springer.com/book/10.1007/978-3-032-24189-4", "name": "The Socioeconomic Impact of Pandemics"}, {"@type": "ListItem", "position": 8, "url": "http://www.theuknews.com/news/279273153/norwegian-cruise-line-gives-travelers-10-cant-miss-reasons-to-plan-summer-2028-now", "name": "Norwegian Cruise Line gives travelers 10 cant - miss reasons to plan Summer 2028 now"}, {"@type": "ListItem", "position": 9, "url": "http://www.parisguardian.com/news/279273567/shouldnt-be-given-just-because-someone-won-champions-league-or-world-cup-mourinho-criticises-politicisation-of-ballon-dor", "name": "Shouldnt be given just because someone won Champions League or World Cup : Mourinho criticises politicisation of Ballon dOr"}, {"@type": "ListItem", "position": 10, "url": "http://www.cambodiantimes.com/news/279273567/shouldnt-be-given-just-because-someone-won-champions-league-or-world-cup-mourinho-criticises-politicisation-of-ballon-dor", "name": "Shouldnt be given just because someone won Champions League or World Cup : Mourinho criticises politicisation of Ballon dOr"}, {"@type": "ListItem", "position": 11, "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130818/mikel-arteta-julian-alvarez-no-arsenal", "name": "He spoken to Mikel Arteta - Julian Alvarez says no to Arsenal & still has heart set on Barcelona"}, {"@type": "ListItem", "position": 12, "url": "https://www.laois-nationalist.ie/bodies-of-irishwoman-and-husband-left-undiscovered-for-12-hours-in-spanish-resort_arid-109867.html", "name": "Bodies of Irishwoman and husband left undiscovered for 12 hours in Spanish resort - Homepage"}, {"@type": "ListItem", "position": 13, "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130855/jesse-bisiwu-reveals-star-impressed-most", "name": "Jesse Bisiwu reveals the Barcelona star who has surprised him most"}, {"@type": "ListItem", "position": 14, "url": "https://www.carlow-nationalist.ie/news/national-news/bodies-of-irishwoman-and-husband-left-undiscovered-for-12-hours-in-spanish-resort_arid-109867.html", "name": "Bodies of Irishwoman and husband left undiscovered for 12 hours in Spanish resort - National News"}, {"@type": "ListItem", "position": 15, "url": "https://www.barcablaugranes.com/cant-del-blog-barcelona-opinion/130829/xavi-espart-joao-cancelo-alejandro-balde-who-should-be-barcelona-starting-left-back-and-why", "name": "Xavi Espart , João Cancelo , Alejandro Balde : Who should be Barcelona starting left - back and why ?"}, {"@type": "ListItem", "position": 16, "url": "http://www.hawaiitelegraph.com/news/279273153/norwegian-cruise-line-gives-travelers-10-cant-miss-reasons-to-plan-summer-2028-now", "name": "Norwegian Cruise Line gives travelers 10 cant - miss reasons to plan Summer 2028 now"}, {"@type": "ListItem", "position": 17, "url": "http://www.venezuelastar.com/news/279273153/norwegian-cruise-line-gives-travelers-10-cant-miss-reasons-to-plan-summer-2028-now", "name": "Norwegian Cruise Line gives travelers 10 cant - miss reasons to plan Summer 2028 now"}, {"@type": "ListItem", "position": 18, "url": "https://www.roscommonherald.ie/bodies-of-irishwoman-and-husband-left-undiscovered-for-12-hours-in-spanish-resort_arid-109867.html", "name": "Bodies of Irishwoman and husband left undiscovered for 12 hours in Spanish resort - Homepage"}, {"@type": "ListItem", "position": 19, "url": "http://www.bostonstar.com/news/279273153/norwegian-cruise-line-gives-travelers-10-cant-miss-reasons-to-plan-summer-2028-now", "name": "Norwegian Cruise Line gives travelers 10 cant - miss reasons to plan Summer 2028 now"}, {"@type": "ListItem", "position": 20, "url": "http://www.indiagazette.com/news/279273153/norwegian-cruise-line-gives-travelers-10-cant-miss-reasons-to-plan-summer-2028-now", "name": "Norwegian Cruise Line gives travelers 10 cant - miss reasons to plan Summer 2028 now"}]}
-</script>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barcelona News from RatedMaps.com</title>
+<meta name="description" content="Latest news, stories and updates from Barcelona, Spain. Discover current Barcelona headlines and original news sources on RatedMaps.">
+<link rel="canonical" href="https://seoschweiz.github.io/ratedmaps-news-test/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Barcelona News from RatedMaps.com">
+<meta property="og:description" content="Latest news, stories and updates from Barcelona, Spain.">
+<meta property="og:url" content="https://seoschweiz.github.io/ratedmaps-news-test/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  background: #f4f6f8;
-  color: #17212b;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-a { color: inherit; }
-
-header {
-  background: #ffffff;
-  border-bottom: 1px solid #e1e5e8;
-}
-
-.header-inner {
-  max-width: 1180px;
-  margin: auto;
-  padding: 18px 22px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.logo {
-  font-size: 25px;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.logo span { color: #d71920; }
-
-.city-label {
-  font-size: 14px;
-  color: #65717b;
-}
-
-main {
-  max-width: 1180px;
-  margin: auto;
-  padding: 34px 20px 60px;
-}
-
-.hero {
-  background: #ffffff;
-  padding: 34px;
-  border-radius: 18px;
-  box-shadow: 0 2px 14px rgba(0,0,0,.055);
-  margin-bottom: 24px;
-}
-
-h1 {
-  font-size: clamp(32px,5vw,48px);
-  line-height: 1.05;
-  margin: 0 0 14px;
-}
-
-.intro {
-  max-width: 780px;
-  font-size: 18px;
-  line-height: 1.65;
-  color: #596571;
-  margin: 0;
-}
-
-.status {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.badge {
-  display: inline-block;
-  padding: 7px 11px;
-  border-radius: 999px;
-  background: #f1f3f5;
-  font-size: 13px;
-  color: #505b65;
-}
-
-.badge-live {
-  background: #fff0f0;
-  color: #b4141a;
-  font-weight: 700;
-}
-
-#news-map {
-  width: 100%;
-  height: 420px;
-  border-radius: 18px;
-  overflow: hidden;
-  margin-bottom: 38px;
-  border: 1px solid #dfe5e8;
-  box-shadow: 0 2px 14px rgba(0,0,0,.05);
-  background: #dfe5e8;
-}
-
-.map-caption {
-  font-size: 13px;
-  color: #71808c;
-  margin-top: -25px;
-  margin-bottom: 35px;
-}
-
-.section-head {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 20px;
-}
-
-.section-head h2 {
-  margin: 0;
-  font-size: 30px;
-}
-
-.updated {
-  color: #71808c;
-  font-size: 13px;
-}
-
-.news-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
-  gap: 20px;
-}
-
-.news-card {
-  background: #ffffff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 2px 13px rgba(0,0,0,.06);
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-}
-
-.news-image-wrap {
-  width: 100%;
-  height: 160px;
-  background: #e5eaed;
-  overflow: hidden;
-  position: relative;
-}
-
-.news-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.image-fallback {
-  position: absolute;
-  inset: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  background: #e8edef;
-  color: #7a858e;
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.image-error .image-fallback {
-  display: flex;
-}
-
-.news-content {
-  padding: 19px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.news-meta {
-  color: #d71920;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .03em;
-  min-height: 15px;
-}
-
-.news-card h2 {
-  font-size: 20px;
-  line-height: 1.35;
-  margin: 9px 0;
-}
-
-.news-card h2 a {
-  text-decoration: none;
-}
-
-.news-card h2 a:hover {
-  text-decoration: underline;
-}
-
-.news-date {
-  color: #89939b;
-  font-size: 12px;
-  margin-bottom: 13px;
-}
-
-.news-description {
-  color: #596571;
-  font-size: 14px;
-  line-height: 1.55;
-  margin: 0 0 18px;
-}
-
-.read-more {
-  display: inline-block;
-  margin-top: auto;
-  font-size: 14px;
-  font-weight: 700;
-  color: #d71920;
-  text-decoration: none;
-}
-
-.seo-text {
-  margin-top: 45px;
-  background: white;
-  padding: 30px;
-  border-radius: 16px;
-  line-height: 1.7;
-  color: #56626c;
-}
-
-.seo-text h2 {
-  color: #17212b;
-  margin-top: 0;
-}
-
-footer {
-  background: white;
-  border-top: 1px solid #e1e5e8;
-  color: #78838c;
-  text-align: center;
-  padding: 28px 20px;
-  font-size: 13px;
-}
-
-@media(max-width:650px) {
-  .header-inner { padding: 15px 18px; }
-  .logo { font-size: 21px; }
-  main { padding: 22px 14px 45px; }
-  .hero { padding: 25px 21px; }
-  .intro { font-size: 16px; }
-  #news-map { height: 320px; }
-  .section-head { display: block; }
-  .updated { margin-top: 8px; }
-  .news-grid { grid-template-columns: 1fr; }
-}
+:root{--bg:#f5f7f8;--card:#fff;--text:#17191c;--muted:#6a7077;--line:#e2e6e9;--accent:#d71920;--dark:#101214}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}a{color:inherit}
+.site-header{background:var(--dark);color:#fff;border-bottom:3px solid var(--accent)}.header-inner{max-width:1180px;margin:0 auto;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{color:#fff;text-decoration:none;font-size:24px;font-weight:900}.brand span{color:#ff3a40}.home-link{color:#fff;text-decoration:none;font-size:14px;border:1px solid #555;padding:7px 11px;border-radius:999px}
+.hero{background:linear-gradient(135deg,#151719,#33383d);color:#fff;padding:56px 20px 48px}.hero-inner{max-width:1180px;margin:0 auto}.hero h1{margin:0 0 14px;font-size:clamp(36px,6vw,66px);line-height:1.02}.hero p{margin:0;max-width:760px;font-size:19px;color:#eceff1}
+.wrap{max-width:1180px;margin:0 auto;padding:34px 20px 60px}.status{margin:0 0 18px;color:var(--muted);font-size:13px}
+.map-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;margin:0 0 34px;box-shadow:0 4px 18px rgba(0,0,0,.05)}.map-title{margin:2px 4px 12px;font-size:22px}#map{width:100%;height:420px;border-radius:12px;overflow:hidden}
+.section-title{font-size:30px;margin:0 0 18px}.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.news-card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.04)}.thumb-link{display:block;background:#e8ebed}.thumb{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.news-body{padding:17px}.meta{color:var(--muted);font-size:12px;margin-bottom:8px}.news-card h2{font-size:19px;line-height:1.3;margin:0 0 10px}.news-card h2 a{text-decoration:none}.news-card p{margin:0 0 14px;color:#4b5157;font-size:14px}.read-more{display:inline-block;color:var(--accent);text-decoration:none;font-weight:700;font-size:14px}
+footer{background:#fff;border-top:1px solid var(--line);color:var(--muted)}.footer-inner{max-width:1180px;margin:0 auto;padding:28px 20px;font-size:13px}
+@media(max-width:900px){.news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.header-inner{align-items:flex-start;flex-direction:column}.hero{padding-top:40px;padding-bottom:38px}.news-grid{grid-template-columns:1fr}#map{height:340px}}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "Barcelona News from RatedMaps.com", "description": "Latest news, stories and updates from Barcelona, Spain.", "numberOfItems": 24, "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Barcelona tipped to wait until January to sign a striker after Atletico refuse to sell Julian Alvarez", "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130768/striker-january-atletico-refuse-sell-julian-alvarez"}, {"@type": "ListItem", "position": 2, "name": "Hansi Flick talks Raphinha as Barcelona No . 9 and admits he  surprised  by Xavi Espart", "url": "https://www.barcablaugranes.com/barcelona-la-liga/130696/hansi-flick-raphinha-no-9-surprised-xavi-espart"}, {"@type": "ListItem", "position": 3, "name": "Jesse Bisiwu reveals the Barcelona star who has surprised him most", "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130855/jesse-bisiwu-reveals-star-impressed-most"}, {"@type": "ListItem", "position": 4, "name": "UCL Blockbusters : Top Champions League Matches to Watch", "url": "https://punchng.com/from-arsenal-vs-real-madrid-to-psg-vs-barcelona-ucl-blockbusters-to-watch/"}, {"@type": "ListItem", "position": 5, "name": "Atlético Madrid chief insists Júlian Alvarez will  never , ever  be sold to Barcelona", "url": "https://www.aol.co.uk/articles/atl-tico-madrid-chief-insists-221623000.html"}, {"@type": "ListItem", "position": 6, "name": "Barcelona confirm signing of Croatia goalkeeper Livakovic", "url": "http://www.china.org.cn/2026-08/28/content_118668119.shtml"}, {"@type": "ListItem", "position": 7, "name": "Arsenal stunned as Man City attempt late Julian Alvarez transfer hijack", "url": "https://www.aol.co.uk/articles/arsenal-stunned-man-city-attempt-205802000.html"}, {"@type": "ListItem", "position": 8, "name": "Xavi Espart , João Cancelo , Alejandro Balde : Who should be Barcelona starting left - back and why ?", "url": "https://www.barcablaugranes.com/cant-del-blog-barcelona-opinion/130829/xavi-espart-joao-cancelo-alejandro-balde-who-should-be-barcelona-starting-left-back-and-why"}, {"@type": "ListItem", "position": 9, "name": "Barcelona dining guide : Explore the city best tapas bars , market - driven tavernas and Michelin - starred temples", "url": "https://www.watoday.com.au/traveller/inspiration/to-find-the-best-food-in-barcelona-go-beyond-the-obvious-20260824-p60qwo.html"}, {"@type": "ListItem", "position": 10, "name": "Julian Alvarez gives Mikel Arteta his answer amid Arsenal transfer interest", "url": "https://www.thenews.com.pk/latest/1414113-julain-alvarez-gives-mikel-arteta-his-answer-amid-arsenal-transfer-interest"}, {"@type": "ListItem", "position": 11, "name": "Opportunistic Arsenal take risk over major attacker deal", "url": "https://www.caughtoffside.com/2026/08/29/arsenal-take-risk-over-major-attacker-deal/"}, {"@type": "ListItem", "position": 12, "name": "Arsenal given hours to convince Julian Alvarez as Atletico Madrid issue final transfer ultimatum", "url": "https://www.aol.co.uk/articles/arsenal-given-hours-convince-julian-103641000.html"}, {"@type": "ListItem", "position": 13, "name": "Manuel Ferrari Shifts Into Top Gear to Take Pole Position in EPT Barcelona Main Event", "url": "https://www.pokernews.com/tours/ept/2026-pokerstars-ept-barcelona/5300-ept-main-event/chips.858800.htm"}, {"@type": "ListItem", "position": 14, "name": "MCD looks to Tokyo , New York , Barcelona to tackle Delhi waste woes", "url": "https://www.business-standard.com/india-news/mcd-looks-to-tokyo-new-york-barcelona-to-tackle-delhi-s-waste-woes-126082900672_1.html"}, {"@type": "ListItem", "position": 15, "name": "In divided Cyprus , FC Barcelona youth camp sparks new dispute : What to know", "url": "https://www.al-monitor.com/originals/2026/08/divided-cyprus-fc-barcelona-youth-camp-sparks-new-dispute-what-know"}, {"@type": "ListItem", "position": 16, "name": "Julian Alvarez to Arsenal transfer hint from Fabrizio Romano", "url": "https://www.caughtoffside.com/2026/08/28/julian-alvarez-arsenal-transfer-fabrizio-romano/"}, {"@type": "ListItem", "position": 17, "name": "He spoken to Mikel Arteta  - Julian Alvarez says no to Arsenal & still has heart set on Barcelona", "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130818/mikel-arteta-julian-alvarez-no-arsenal"}, {"@type": "ListItem", "position": 18, "name": "WSOP Champion Jamie Dwan Now Chasing  Top Dwan  Status", "url": "https://www.pokernews.com/news/2026/08/rising-star-eyes-top-dwan-status-after-incredible-summer-52253.htm"}, {"@type": "ListItem", "position": 19, "name": "Julian Alvarez transfer decision deadline today", "url": "https://www.caughtoffside.com/2026/08/28/julian-alvarez-transfer-decision-deadline-today/"}, {"@type": "ListItem", "position": 20, "name": "Manuel Ferrari Goes Wire to Wire as Jose Criado Looks to Keep EPT Barcelona Main Event Trophy on Home Soil", "url": "https://www.pokernews.com/tours/ept/2026-pokerstars-ept-barcelona/5300-ept-main-event/chips.858926.htm"}, {"@type": "ListItem", "position": 21, "name": "Barcelona Beat Athletic 2 - 0 , Maintain Perfect Start", "url": "https://punchng.com/la-liga-raphinha-lopez-score-again-as-barca-beat-athletic-2-0/"}, {"@type": "ListItem", "position": 22, "name": "American Airlines announces new one - stop options from Nashville to Europe , Asia in 2027 . Here the list of locations", "url": "https://www.wsmv.com/2026/08/27/american-airlines-announces-new-one-stop-options-nashville-europe-asia-2027-heres-list-locations/"}, {"@type": "ListItem", "position": 23, "name": "Marcus Rashford to reject transfer offer as Arsenal consider late Man Utd option", "url": "https://www.aol.co.uk/articles/marcus-rashford-reject-transfer-offer-064437000.html"}, {"@type": "ListItem", "position": 24, "name": "Barcelona 2 - 0 Athletic Club : Raphinha and Fermín López on target as Barça dominate La Liga home opener", "url": "https://www.barcablaugranes.com/barcelona-la-liga/130652/barcelona-athletic-club-la-liga-final-score-match-report-recap-reactions"}]}</script>
 </head>
-
 <body>
-
-<header>
-  <div class="header-inner">
-    <a class="logo" href="./">Rated<span>Maps</span> News</a>
-    <div class="city-label">Barcelona · Spain</div>
-  </div>
-</header>
-
-<main>
-
-<section class="hero">
-  <h1>Barcelona News Map</h1>
-
-  <p class="intro">
-    Discover the latest English-language news mentioning
-    Barcelona from local and international media.
-  </p>
-
-  <div class="status">
-    <span class="badge badge-live">● LIVE</span>
-    <span class="badge">24 articles</span>
-    <span class="badge">Last 48 hours</span>
-  </div>
-</section>
-
-<div id="news-map" aria-label="Interactive Barcelona news map"></div>
-
-<div class="map-caption">
-  Interactive map powered by Leaflet and OpenStreetMap.
-  Individual news locations will be added in the next step.
-</div>
-
-<section>
-  <div class="section-head">
-    <h2>Latest Barcelona News</h2>
-    <div class="updated">Updated 29 August 2026 · 19:17 UTC</div>
-  </div>
-
-  <div class="news-grid">
-    
+<header class="site-header"><div class="header-inner"><a class="brand" href="https://ratedmaps.com/">Rated<span>Maps</span>.com</a><a class="home-link" href="https://ratedmaps.com/">Visit RatedMaps.com ↗</a></div></header>
+<section class="hero"><div class="hero-inner"><h1>Barcelona News from RatedMaps.com</h1><p>Latest news, stories and updates from Barcelona, Spain.</p></div></section>
+<main class="wrap">
+<p class="status">Updated 29 August 2026, 20:34 UTC · 24 current stories</p>
+<section class="map-box" aria-label="Barcelona map"><h2 class="map-title">Barcelona News Map</h2><div id="map"></div></section>
+<h2 class="section-title">Latest Barcelona News</h2>
+<section class="news-grid">
     <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://media.thehardtackle.com/uploads/2026/08/imago1074494011-scaled.jpg"
-            alt="Barcelona vs Rayo Vallecano : Preview and Prediction"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">thehardtackle.com · Spain · English</div>
-        <h2>
-          <a href="https://thehardtackle.com/round-up/2026/08/29/barcelona-vs-rayo-vallecano-preview-and-prediction-4/" target="_blank" rel="noopener noreferrer">Barcelona vs Rayo Vallecano : Preview and Prediction</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 18:45 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://thehardtackle.com/round-up/2026/08/29/barcelona-vs-rayo-vallecano-preview-and-prediction-4/" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
+      <a class="thumb-link" href="https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130768/striker-january-atletico-refuse-sell-julian-alvarez" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2025/10/gettyimages-2153697089.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613" alt="Barcelona tipped to wait until January to sign a striker after Atletico refuse to sell Julian Alvarez" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">28 August 2026 · barcablaugranes.com</div>
+        <h2><a href="https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130768/striker-january-atletico-refuse-sell-julian-alvarez" target="_blank" rel="noopener noreferrer nofollow">Barcelona tipped to wait until January to sign a striker after Atletico refuse to sell Julian Alvarez</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130768/striker-january-atletico-refuse-sell-julian-alvarez" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.barcablaugranes.com/barcelona-la-liga/130696/hansi-flick-raphinha-no-9-surprised-xavi-espart" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291745655.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.737568883469%2C100%2C78.524862233062" alt="Hansi Flick talks Raphinha as Barcelona No . 9 and admits he  surprised  by Xavi Espart" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">27 August 2026 · barcablaugranes.com</div>
+        <h2><a href="https://www.barcablaugranes.com/barcelona-la-liga/130696/hansi-flick-raphinha-no-9-surprised-xavi-espart" target="_blank" rel="noopener noreferrer nofollow">Hansi Flick talks Raphinha as Barcelona No . 9 and admits he  surprised  by Xavi Espart</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.barcablaugranes.com/barcelona-la-liga/130696/hansi-flick-raphinha-no-9-surprised-xavi-espart" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130855/jesse-bisiwu-reveals-star-impressed-most" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291206830.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.729057198914%2C100%2C78.541885602173" alt="Jesse Bisiwu reveals the Barcelona star who has surprised him most" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">29 August 2026 · barcablaugranes.com</div>
+        <h2><a href="https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130855/jesse-bisiwu-reveals-star-impressed-most" target="_blank" rel="noopener noreferrer nofollow">Jesse Bisiwu reveals the Barcelona star who has surprised him most</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130855/jesse-bisiwu-reveals-star-impressed-most" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://punchng.com/from-arsenal-vs-real-madrid-to-psg-vs-barcelona-ucl-blockbusters-to-watch/" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://cdn.punchng.com/wp-content/uploads/2026/05/30203917/AFP__20260530__B4HP2D7__v2__MidRes__TopshotFblEurC1PsgArsenalFinal-1200x630.webp" alt="UCL Blockbusters : Top Champions League Matches to Watch" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">28 August 2026 · punchng.com</div>
+        <h2><a href="https://punchng.com/from-arsenal-vs-real-madrid-to-psg-vs-barcelona-ucl-blockbusters-to-watch/" target="_blank" rel="noopener noreferrer nofollow">UCL Blockbusters : Top Champions League Matches to Watch</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://punchng.com/from-arsenal-vs-real-madrid-to-psg-vs-barcelona-ucl-blockbusters-to-watch/" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.aol.co.uk/articles/atl-tico-madrid-chief-insists-221623000.html" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://hermes.media.static.aol.com/media/2026/08/27/8eb796c2-d2b0-342a-8a35-8c24da5b0f25/37c61410-e63d-4994-a888-d321cf0409e7.jpg" alt="Atlético Madrid chief insists Júlian Alvarez will  never , ever  be sold to Barcelona" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">27 August 2026 · aol.co.uk</div>
+        <h2><a href="https://www.aol.co.uk/articles/atl-tico-madrid-chief-insists-221623000.html" target="_blank" rel="noopener noreferrer nofollow">Atlético Madrid chief insists Júlian Alvarez will  never , ever  be sold to Barcelona</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.aol.co.uk/articles/atl-tico-madrid-chief-insists-221623000.html" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
       </div>
     </article>
     
 
     <article class="news-card">
       
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://image.chitra.live/api/v1/wps/b6adb38/9c82b248-0ea4-4c0f-bb4d-97bacc8750ed/0/ANI-20260829143253-600x315.jpg"
-            alt="Shouldnt be given just because someone won Champions League or World Cup : Mourinho criticises politicisation of Ballon dOr"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">greekherald.com · Greece · English</div>
-        <h2>
-          <a href="http://www.greekherald.com/news/279273567/shouldnt-be-given-just-because-someone-won-champions-league-or-world-cup-mourinho-criticises-politicisation-of-ballon-dor" target="_blank" rel="noopener noreferrer">Shouldnt be given just because someone won Champions League or World Cup : Mourinho criticises politicisation of Ballon dOr</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 18:45 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="http://www.greekherald.com/news/279273567/shouldnt-be-given-just-because-someone-won-champions-league-or-world-cup-mourinho-criticises-politicisation-of-ballon-dor" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
+      <div class="news-body">
+        <div class="meta">28 August 2026 · china.org.cn</div>
+        <h2><a href="http://www.china.org.cn/2026-08/28/content_118668119.shtml" target="_blank" rel="noopener noreferrer nofollow">Barcelona confirm signing of Croatia goalkeeper Livakovic</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="http://www.china.org.cn/2026-08/28/content_118668119.shtml" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.aol.co.uk/articles/arsenal-stunned-man-city-attempt-205802000.html" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://hermes.media.static.aol.com/media/2026/08/28/3b81f1ae-daac-31e2-84d2-96b49c2c3b71/491f5997-992a-46e4-8519-d865fa7e8a5f.jpg" alt="Arsenal stunned as Man City attempt late Julian Alvarez transfer hijack" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">28 August 2026 · aol.co.uk</div>
+        <h2><a href="https://www.aol.co.uk/articles/arsenal-stunned-man-city-attempt-205802000.html" target="_blank" rel="noopener noreferrer nofollow">Arsenal stunned as Man City attempt late Julian Alvarez transfer hijack</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.aol.co.uk/articles/arsenal-stunned-man-city-attempt-205802000.html" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.barcablaugranes.com/cant-del-blog-barcelona-opinion/130829/xavi-espart-joao-cancelo-alejandro-balde-who-should-be-barcelona-starting-left-back-and-why" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2292507966.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.727320509016%2C100%2C78.545358981969" alt="Xavi Espart , João Cancelo , Alejandro Balde : Who should be Barcelona starting left - back and why ?" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">29 August 2026 · barcablaugranes.com</div>
+        <h2><a href="https://www.barcablaugranes.com/cant-del-blog-barcelona-opinion/130829/xavi-espart-joao-cancelo-alejandro-balde-who-should-be-barcelona-starting-left-back-and-why" target="_blank" rel="noopener noreferrer nofollow">Xavi Espart , João Cancelo , Alejandro Balde : Who should be Barcelona starting left - back and why ?</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.barcablaugranes.com/cant-del-blog-barcelona-opinion/130829/xavi-espart-joao-cancelo-alejandro-balde-who-should-be-barcelona-starting-left-back-and-why" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.watoday.com.au/traveller/inspiration/to-find-the-best-food-in-barcelona-go-beyond-the-obvious-20260824-p60qwo.html" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://static.ffx.io/images/$zoom_0.1853%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_88%2C$y_119/t_crop_custom/q_86%2Cf_auto/t_metro_traveller_no_label_no_age_social_wm/16a78483fc073f713a6c97e97384e5e95f64fdf6" alt="Barcelona dining guide : Explore the city best tapas bars , market - driven tavernas and Michelin - starred temples" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">29 August 2026 · watoday.com.au</div>
+        <h2><a href="https://www.watoday.com.au/traveller/inspiration/to-find-the-best-food-in-barcelona-go-beyond-the-obvious-20260824-p60qwo.html" target="_blank" rel="noopener noreferrer nofollow">Barcelona dining guide : Explore the city best tapas bars , market - driven tavernas and Michelin - starred temples</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.watoday.com.au/traveller/inspiration/to-find-the-best-food-in-barcelona-go-beyond-the-obvious-20260824-p60qwo.html" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.thenews.com.pk/latest/1414113-julain-alvarez-gives-mikel-arteta-his-answer-amid-arsenal-transfer-interest" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://www.thenews.com.pk/assets/uploads/2026-08-29/1414113_054141_updates.jpg" alt="Julian Alvarez gives Mikel Arteta his answer amid Arsenal transfer interest" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">29 August 2026 · thenews.com.pk</div>
+        <h2><a href="https://www.thenews.com.pk/latest/1414113-julain-alvarez-gives-mikel-arteta-his-answer-amid-arsenal-transfer-interest" target="_blank" rel="noopener noreferrer nofollow">Julian Alvarez gives Mikel Arteta his answer amid Arsenal transfer interest</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.thenews.com.pk/latest/1414113-julain-alvarez-gives-mikel-arteta-his-answer-amid-arsenal-transfer-interest" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.caughtoffside.com/2026/08/29/arsenal-take-risk-over-major-attacker-deal/" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://icdn.caughtoffside.com/wp-content/uploads/2026/08/atletico-de-madrid-v-villarreal-cf-laliga-ea-sports-2026-27.jpg" alt="Opportunistic Arsenal take risk over major attacker deal" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">29 August 2026 · caughtoffside.com</div>
+        <h2><a href="https://www.caughtoffside.com/2026/08/29/arsenal-take-risk-over-major-attacker-deal/" target="_blank" rel="noopener noreferrer nofollow">Opportunistic Arsenal take risk over major attacker deal</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.caughtoffside.com/2026/08/29/arsenal-take-risk-over-major-attacker-deal/" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.aol.co.uk/articles/arsenal-given-hours-convince-julian-103641000.html" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://hermes.media.static.aol.com/media/2026/08/29/688ac01a-6a8d-35e7-b9dc-3c1e40a3d117/4770e95f-6b79-48d5-a85b-687d3f6e72f5.jpg" alt="Arsenal given hours to convince Julian Alvarez as Atletico Madrid issue final transfer ultimatum" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">29 August 2026 · aol.co.uk</div>
+        <h2><a href="https://www.aol.co.uk/articles/arsenal-given-hours-convince-julian-103641000.html" target="_blank" rel="noopener noreferrer nofollow">Arsenal given hours to convince Julian Alvarez as Atletico Madrid issue final transfer ultimatum</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.aol.co.uk/articles/arsenal-given-hours-convince-julian-103641000.html" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.pokernews.com/tours/ept/2026-pokerstars-ept-barcelona/5300-ept-main-event/chips.858800.htm" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://pnimg.net/lrep/2227/77/m8e0a2da365.jpg" alt="Manuel Ferrari Shifts Into Top Gear to Take Pole Position in EPT Barcelona Main Event" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">28 August 2026 · pokernews.com</div>
+        <h2><a href="https://www.pokernews.com/tours/ept/2026-pokerstars-ept-barcelona/5300-ept-main-event/chips.858800.htm" target="_blank" rel="noopener noreferrer nofollow">Manuel Ferrari Shifts Into Top Gear to Take Pole Position in EPT Barcelona Main Event</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.pokernews.com/tours/ept/2026-pokerstars-ept-barcelona/5300-ept-main-event/chips.858800.htm" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.business-standard.com/india-news/mcd-looks-to-tokyo-new-york-barcelona-to-tackle-delhi-s-waste-woes-126082900672_1.html" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://bsmedia.business-standard.com/_media/bs/img/article/2025-12/03/thumb/fitandfill/1200X628/1764740813-6059.jpg" alt="MCD looks to Tokyo , New York , Barcelona to tackle Delhi waste woes" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">29 August 2026 · business-standard.com</div>
+        <h2><a href="https://www.business-standard.com/india-news/mcd-looks-to-tokyo-new-york-barcelona-to-tackle-delhi-s-waste-woes-126082900672_1.html" target="_blank" rel="noopener noreferrer nofollow">MCD looks to Tokyo , New York , Barcelona to tackle Delhi waste woes</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.business-standard.com/india-news/mcd-looks-to-tokyo-new-york-barcelona-to-tackle-delhi-s-waste-woes-126082900672_1.html" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
       </div>
     </article>
     
 
     <article class="news-card">
       
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://thepeoplesperson.com/wp-content/uploads/2026/08/joshua-zirkzee-leeds-united-v-manchester-united-pre-season-friendly.jpg"
-            alt="Joshua Zirkzee : La Liga giants eyeing late swoop for Man United striker - Man United News And Transfer News"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">thepeoplesperson.com · Spain · English</div>
-        <h2>
-          <a href="https://thepeoplesperson.com/2026/08/29/joshua-zirkzee-la-liga-giants-eyeing-late-swoop-for-man-united-striker-314702/" target="_blank" rel="noopener noreferrer">Joshua Zirkzee : La Liga giants eyeing late swoop for Man United striker - Man United News And Transfer News</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 18:15 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://thepeoplesperson.com/2026/08/29/joshua-zirkzee-la-liga-giants-eyeing-late-swoop-for-man-united-striker-314702/" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
+      <div class="news-body">
+        <div class="meta">29 August 2026 · al-monitor.com</div>
+        <h2><a href="https://www.al-monitor.com/originals/2026/08/divided-cyprus-fc-barcelona-youth-camp-sparks-new-dispute-what-know" target="_blank" rel="noopener noreferrer nofollow">In divided Cyprus , FC Barcelona youth camp sparks new dispute : What to know</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.al-monitor.com/originals/2026/08/divided-cyprus-fc-barcelona-youth-camp-sparks-new-dispute-what-know" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.caughtoffside.com/2026/08/28/julian-alvarez-arsenal-transfer-fabrizio-romano/" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://icdn.caughtoffside.com/wp-content/uploads/2026/08/COS-FeaturedHero-Image-Templates-4-6.jpg" alt="Julian Alvarez to Arsenal transfer hint from Fabrizio Romano" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">28 August 2026 · caughtoffside.com</div>
+        <h2><a href="https://www.caughtoffside.com/2026/08/28/julian-alvarez-arsenal-transfer-fabrizio-romano/" target="_blank" rel="noopener noreferrer nofollow">Julian Alvarez to Arsenal transfer hint from Fabrizio Romano</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.caughtoffside.com/2026/08/28/julian-alvarez-arsenal-transfer-fabrizio-romano/" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130818/mikel-arteta-julian-alvarez-no-arsenal" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291272907.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.729057198914%2C100%2C78.541885602173" alt="He spoken to Mikel Arteta  - Julian Alvarez says no to Arsenal &amp; still has heart set on Barcelona" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">29 August 2026 · barcablaugranes.com</div>
+        <h2><a href="https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130818/mikel-arteta-julian-alvarez-no-arsenal" target="_blank" rel="noopener noreferrer nofollow">He spoken to Mikel Arteta  - Julian Alvarez says no to Arsenal &amp; still has heart set on Barcelona</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130818/mikel-arteta-julian-alvarez-no-arsenal" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.pokernews.com/news/2026/08/rising-star-eyes-top-dwan-status-after-incredible-summer-52253.htm" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://pnimg.net/w/articles/0/6a9/19217c2a73.jpg" alt="WSOP Champion Jamie Dwan Now Chasing  Top Dwan  Status" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">28 August 2026 · pokernews.com</div>
+        <h2><a href="https://www.pokernews.com/news/2026/08/rising-star-eyes-top-dwan-status-after-incredible-summer-52253.htm" target="_blank" rel="noopener noreferrer nofollow">WSOP Champion Jamie Dwan Now Chasing  Top Dwan  Status</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.pokernews.com/news/2026/08/rising-star-eyes-top-dwan-status-after-incredible-summer-52253.htm" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.caughtoffside.com/2026/08/28/julian-alvarez-transfer-decision-deadline-today/" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://icdn.caughtoffside.com/wp-content/uploads/2026/08/COS-FeaturedHero-Image-Templates-9-3.jpg" alt="Julian Alvarez transfer decision deadline today" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">28 August 2026 · caughtoffside.com</div>
+        <h2><a href="https://www.caughtoffside.com/2026/08/28/julian-alvarez-transfer-decision-deadline-today/" target="_blank" rel="noopener noreferrer nofollow">Julian Alvarez transfer decision deadline today</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.caughtoffside.com/2026/08/28/julian-alvarez-transfer-decision-deadline-today/" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
+      </div>
+    </article>
+    
+
+    <article class="news-card">
+      <a class="thumb-link" href="https://www.pokernews.com/tours/ept/2026-pokerstars-ept-barcelona/5300-ept-main-event/chips.858926.htm" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://pnimg.net/lrep/2227/77/mb51a6de6fd.jpg" alt="Manuel Ferrari Goes Wire to Wire as Jose Criado Looks to Keep EPT Barcelona Main Event Trophy on Home Soil" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">28 August 2026 · pokernews.com</div>
+        <h2><a href="https://www.pokernews.com/tours/ept/2026-pokerstars-ept-barcelona/5300-ept-main-event/chips.858926.htm" target="_blank" rel="noopener noreferrer nofollow">Manuel Ferrari Goes Wire to Wire as Jose Criado Looks to Keep EPT Barcelona Main Event Trophy on Home Soil</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.pokernews.com/tours/ept/2026-pokerstars-ept-barcelona/5300-ept-main-event/chips.858926.htm" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
       </div>
     </article>
     
 
     <article class="news-card">
       
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://s1.ppllstatics.com/surinenglish/www/multimedia/local/2026/08/26/United-Airlines-U75740175826dJH-1200x840@Diario%20Sur.jpg"
-            alt="United Airlines will operate the direct flight from Malaga to New York only during the summer of 2027"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">surinenglish.com · Spain · English</div>
-        <h2>
-          <a href="https://www.surinenglish.com/malaga/malaga-city/united-airlines-will-20260827102654-nt.html" target="_blank" rel="noopener noreferrer">United Airlines will operate the direct flight from Malaga to New York only during the summer of 2027</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 18:15 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://www.surinenglish.com/malaga/malaga-city/united-airlines-will-20260827102654-nt.html" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
+      <div class="news-body">
+        <div class="meta">27 August 2026 · punchng.com</div>
+        <h2><a href="https://punchng.com/la-liga-raphinha-lopez-score-again-as-barca-beat-athletic-2-0/" target="_blank" rel="noopener noreferrer nofollow">Barcelona Beat Athletic 2 - 0 , Maintain Perfect Start</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://punchng.com/la-liga-raphinha-lopez-score-again-as-barca-beat-athletic-2-0/" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
       </div>
     </article>
     
 
     <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://thepeoplesperson.com/wp-content/uploads/2026/03/Jayce-Fitzgerald.jpg"
-            alt="Manchester United sanction Jayce Fitzgerald loan exit to League Two club - Man United News And Transfer News"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">thepeoplesperson.com · Spain · English</div>
-        <h2>
-          <a href="https://thepeoplesperson.com/2026/08/29/manchester-united-sanction-jayce-fitzgeralds-loan-exit-to-league-two-club-314708/" target="_blank" rel="noopener noreferrer">Manchester United sanction Jayce Fitzgerald loan exit to League Two club - Man United News And Transfer News</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 18:15 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://thepeoplesperson.com/2026/08/29/manchester-united-sanction-jayce-fitzgeralds-loan-exit-to-league-two-club-314708/" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
+      <a class="thumb-link" href="https://www.wsmv.com/2026/08/27/american-airlines-announces-new-one-stop-options-nashville-europe-asia-2027-heres-list-locations/" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://gray-wsmv-prod.gtv-cdn.com/resizer/v2/FINJTRSEFJCVLNKZLB6CQ4W7XA.jpg?auth=54a8e2783ba4d02ad9331d1f71d695b328bb0db5b633f164a4360282df1addfc&amp;smart=true" alt="American Airlines announces new one - stop options from Nashville to Europe , Asia in 2027 . Here the list of locations" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">27 August 2026 · wsmv.com</div>
+        <h2><a href="https://www.wsmv.com/2026/08/27/american-airlines-announces-new-one-stop-options-nashville-europe-asia-2027-heres-list-locations/" target="_blank" rel="noopener noreferrer nofollow">American Airlines announces new one - stop options from Nashville to Europe , Asia in 2027 . Here the list of locations</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.wsmv.com/2026/08/27/american-airlines-announces-new-one-stop-options-nashville-europe-asia-2027-heres-list-locations/" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
       </div>
     </article>
     
 
     <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://www.westernpeople.ie/cms_media/module_img/7732/3866450_1_articledetail_gettyimages-1229028227-e1787734381761.jpg"
-            alt="Bodies of Irishwoman and husband left undiscovered for 12 hours in Spanish resort - Homepage"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">westernpeople.ie · Ireland · English</div>
-        <h2>
-          <a href="https://www.westernpeople.ie/bodies-of-irishwoman-and-husband-left-undiscovered-for-12-hours-in-spanish-resort_arid-109867.html" target="_blank" rel="noopener noreferrer">Bodies of Irishwoman and husband left undiscovered for 12 hours in Spanish resort - Homepage</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 18:15 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://www.westernpeople.ie/bodies-of-irishwoman-and-husband-left-undiscovered-for-12-hours-in-spanish-resort_arid-109867.html" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
+      <a class="thumb-link" href="https://www.aol.co.uk/articles/marcus-rashford-reject-transfer-offer-064437000.html" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://hermes.media.static.aol.com/media/2026/08/29/b52fdf7d-d77c-3282-8e51-7690f9f75e6a/cdbbd7a0-5252-4a94-9581-96f97e7c2e3c.jpg" alt="Marcus Rashford to reject transfer offer as Arsenal consider late Man Utd option" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">29 August 2026 · aol.co.uk</div>
+        <h2><a href="https://www.aol.co.uk/articles/marcus-rashford-reject-transfer-offer-064437000.html" target="_blank" rel="noopener noreferrer nofollow">Marcus Rashford to reject transfer offer as Arsenal consider late Man Utd option</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.aol.co.uk/articles/marcus-rashford-reject-transfer-offer-064437000.html" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
       </div>
     </article>
     
 
     <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://media.springernature.com/w153/springer-static/cover/book/978-3-032-24189-4.jpg"
-            alt="The Socioeconomic Impact of Pandemics"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">link.springer.com · Netherlands · English</div>
-        <h2>
-          <a href="https://link.springer.com/book/10.1007/978-3-032-24189-4" target="_blank" rel="noopener noreferrer">The Socioeconomic Impact of Pandemics</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 17:45 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://link.springer.com/book/10.1007/978-3-032-24189-4" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
+      <a class="thumb-link" href="https://www.barcablaugranes.com/barcelona-la-liga/130652/barcelona-athletic-club-la-liga-final-score-match-report-recap-reactions" target="_blank" rel="noopener noreferrer nofollow"><img class="thumb" src="https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291743595.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.720898415783%2C100%2C78.558203168434" alt="Barcelona 2 - 0 Athletic Club : Raphinha and Fermín López on target as Barça dominate La Liga home opener" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+      <div class="news-body">
+        <div class="meta">27 August 2026 · barcablaugranes.com</div>
+        <h2><a href="https://www.barcablaugranes.com/barcelona-la-liga/130652/barcelona-athletic-club-la-liga-final-score-match-report-recap-reactions" target="_blank" rel="noopener noreferrer nofollow">Barcelona 2 - 0 Athletic Club : Raphinha and Fermín López on target as Barça dominate La Liga home opener</a></h2>
+        <p>Latest news, stories and updates from Barcelona, Spain.</p>
+        <a class="read-more" href="https://www.barcablaugranes.com/barcelona-la-liga/130652/barcelona-athletic-club-la-liga-final-score-match-report-recap-reactions" target="_blank" rel="noopener noreferrer nofollow">Read original article ↗</a>
       </div>
     </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://image.chitra.live/api/v1/wps/162378f/9262cb49-a72a-43d0-a051-5ed1137a596f/0/ANI-20260829092326-600x315.jpg"
-            alt="Norwegian Cruise Line gives travelers 10 cant - miss reasons to plan Summer 2028 now"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">theuknews.com · United Kingdom · English</div>
-        <h2>
-          <a href="http://www.theuknews.com/news/279273153/norwegian-cruise-line-gives-travelers-10-cant-miss-reasons-to-plan-summer-2028-now" target="_blank" rel="noopener noreferrer">Norwegian Cruise Line gives travelers 10 cant - miss reasons to plan Summer 2028 now</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 17:45 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="http://www.theuknews.com/news/279273153/norwegian-cruise-line-gives-travelers-10-cant-miss-reasons-to-plan-summer-2028-now" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://image.chitra.live/api/v1/wps/b6adb38/9c82b248-0ea4-4c0f-bb4d-97bacc8750ed/0/ANI-20260829143253-600x315.jpg"
-            alt="Shouldnt be given just because someone won Champions League or World Cup : Mourinho criticises politicisation of Ballon dOr"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">parisguardian.com · France · English</div>
-        <h2>
-          <a href="http://www.parisguardian.com/news/279273567/shouldnt-be-given-just-because-someone-won-champions-league-or-world-cup-mourinho-criticises-politicisation-of-ballon-dor" target="_blank" rel="noopener noreferrer">Shouldnt be given just because someone won Champions League or World Cup : Mourinho criticises politicisation of Ballon dOr</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 17:45 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="http://www.parisguardian.com/news/279273567/shouldnt-be-given-just-because-someone-won-champions-league-or-world-cup-mourinho-criticises-politicisation-of-ballon-dor" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://image.chitra.live/api/v1/wps/b6adb38/9c82b248-0ea4-4c0f-bb4d-97bacc8750ed/0/ANI-20260829143253-600x315.jpg"
-            alt="Shouldnt be given just because someone won Champions League or World Cup : Mourinho criticises politicisation of Ballon dOr"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">cambodiantimes.com · Cambodia · English</div>
-        <h2>
-          <a href="http://www.cambodiantimes.com/news/279273567/shouldnt-be-given-just-because-someone-won-champions-league-or-world-cup-mourinho-criticises-politicisation-of-ballon-dor" target="_blank" rel="noopener noreferrer">Shouldnt be given just because someone won Champions League or World Cup : Mourinho criticises politicisation of Ballon dOr</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 17:45 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="http://www.cambodiantimes.com/news/279273567/shouldnt-be-given-just-because-someone-won-champions-league-or-world-cup-mourinho-criticises-politicisation-of-ballon-dor" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291272907.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.729057198914%2C100%2C78.541885602173"
-            alt="He spoken to Mikel Arteta - Julian Alvarez says no to Arsenal &amp; still has heart set on Barcelona"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">barcablaugranes.com · Spain · English</div>
-        <h2>
-          <a href="https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130818/mikel-arteta-julian-alvarez-no-arsenal" target="_blank" rel="noopener noreferrer">He spoken to Mikel Arteta - Julian Alvarez says no to Arsenal &amp; still has heart set on Barcelona</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 17:15 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130818/mikel-arteta-julian-alvarez-no-arsenal" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://www.laois-nationalist.ie/cms_media/module_img/7732/3866450_1_articledetail_gettyimages-1229028227-e1787734381761.jpg"
-            alt="Bodies of Irishwoman and husband left undiscovered for 12 hours in Spanish resort - Homepage"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">laois-nationalist.ie · Ireland · English</div>
-        <h2>
-          <a href="https://www.laois-nationalist.ie/bodies-of-irishwoman-and-husband-left-undiscovered-for-12-hours-in-spanish-resort_arid-109867.html" target="_blank" rel="noopener noreferrer">Bodies of Irishwoman and husband left undiscovered for 12 hours in Spanish resort - Homepage</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 17:15 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://www.laois-nationalist.ie/bodies-of-irishwoman-and-husband-left-undiscovered-for-12-hours-in-spanish-resort_arid-109867.html" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291206830.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.729057198914%2C100%2C78.541885602173"
-            alt="Jesse Bisiwu reveals the Barcelona star who has surprised him most"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">barcablaugranes.com · Spain · English</div>
-        <h2>
-          <a href="https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130855/jesse-bisiwu-reveals-star-impressed-most" target="_blank" rel="noopener noreferrer">Jesse Bisiwu reveals the Barcelona star who has surprised him most</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 17:15 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130855/jesse-bisiwu-reveals-star-impressed-most" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://www.carlow-nationalist.ie/cms_media/module_img/7732/3866450_1_articledetail_gettyimages-1229028227-e1787734381761.jpg"
-            alt="Bodies of Irishwoman and husband left undiscovered for 12 hours in Spanish resort - National News"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">carlow-nationalist.ie · Ireland · English</div>
-        <h2>
-          <a href="https://www.carlow-nationalist.ie/news/national-news/bodies-of-irishwoman-and-husband-left-undiscovered-for-12-hours-in-spanish-resort_arid-109867.html" target="_blank" rel="noopener noreferrer">Bodies of Irishwoman and husband left undiscovered for 12 hours in Spanish resort - National News</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 17:15 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://www.carlow-nationalist.ie/news/national-news/bodies-of-irishwoman-and-husband-left-undiscovered-for-12-hours-in-spanish-resort_arid-109867.html" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2292507966.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.727320509016%2C100%2C78.545358981969"
-            alt="Xavi Espart , João Cancelo , Alejandro Balde : Who should be Barcelona starting left - back and why ?"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">barcablaugranes.com · Spain · English</div>
-        <h2>
-          <a href="https://www.barcablaugranes.com/cant-del-blog-barcelona-opinion/130829/xavi-espart-joao-cancelo-alejandro-balde-who-should-be-barcelona-starting-left-back-and-why" target="_blank" rel="noopener noreferrer">Xavi Espart , João Cancelo , Alejandro Balde : Who should be Barcelona starting left - back and why ?</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 17:15 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://www.barcablaugranes.com/cant-del-blog-barcelona-opinion/130829/xavi-espart-joao-cancelo-alejandro-balde-who-should-be-barcelona-starting-left-back-and-why" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://image.chitra.live/api/v1/wps/162378f/9262cb49-a72a-43d0-a051-5ed1137a596f/0/ANI-20260829092326-600x315.jpg"
-            alt="Norwegian Cruise Line gives travelers 10 cant - miss reasons to plan Summer 2028 now"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">hawaiitelegraph.com · United States · English</div>
-        <h2>
-          <a href="http://www.hawaiitelegraph.com/news/279273153/norwegian-cruise-line-gives-travelers-10-cant-miss-reasons-to-plan-summer-2028-now" target="_blank" rel="noopener noreferrer">Norwegian Cruise Line gives travelers 10 cant - miss reasons to plan Summer 2028 now</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 17:15 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="http://www.hawaiitelegraph.com/news/279273153/norwegian-cruise-line-gives-travelers-10-cant-miss-reasons-to-plan-summer-2028-now" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://image.chitra.live/api/v1/wps/162378f/9262cb49-a72a-43d0-a051-5ed1137a596f/0/ANI-20260829092326-600x315.jpg"
-            alt="Norwegian Cruise Line gives travelers 10 cant - miss reasons to plan Summer 2028 now"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">venezuelastar.com · Venezuela · English</div>
-        <h2>
-          <a href="http://www.venezuelastar.com/news/279273153/norwegian-cruise-line-gives-travelers-10-cant-miss-reasons-to-plan-summer-2028-now" target="_blank" rel="noopener noreferrer">Norwegian Cruise Line gives travelers 10 cant - miss reasons to plan Summer 2028 now</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 17:15 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="http://www.venezuelastar.com/news/279273153/norwegian-cruise-line-gives-travelers-10-cant-miss-reasons-to-plan-summer-2028-now" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://www.roscommonherald.ie/cms_media/module_img/7732/3866450_1_articledetail_gettyimages-1229028227-e1787734381761.jpg"
-            alt="Bodies of Irishwoman and husband left undiscovered for 12 hours in Spanish resort - Homepage"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">roscommonherald.ie · Ireland · English</div>
-        <h2>
-          <a href="https://www.roscommonherald.ie/bodies-of-irishwoman-and-husband-left-undiscovered-for-12-hours-in-spanish-resort_arid-109867.html" target="_blank" rel="noopener noreferrer">Bodies of Irishwoman and husband left undiscovered for 12 hours in Spanish resort - Homepage</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 16:30 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://www.roscommonherald.ie/bodies-of-irishwoman-and-husband-left-undiscovered-for-12-hours-in-spanish-resort_arid-109867.html" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://image.chitra.live/api/v1/wps/162378f/9262cb49-a72a-43d0-a051-5ed1137a596f/0/ANI-20260829092326-600x315.jpg"
-            alt="Norwegian Cruise Line gives travelers 10 cant - miss reasons to plan Summer 2028 now"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">bostonstar.com · United States · English</div>
-        <h2>
-          <a href="http://www.bostonstar.com/news/279273153/norwegian-cruise-line-gives-travelers-10-cant-miss-reasons-to-plan-summer-2028-now" target="_blank" rel="noopener noreferrer">Norwegian Cruise Line gives travelers 10 cant - miss reasons to plan Summer 2028 now</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 16:30 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="http://www.bostonstar.com/news/279273153/norwegian-cruise-line-gives-travelers-10-cant-miss-reasons-to-plan-summer-2028-now" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://image.chitra.live/api/v1/wps/162378f/9262cb49-a72a-43d0-a051-5ed1137a596f/0/ANI-20260829092326-600x315.jpg"
-            alt="Norwegian Cruise Line gives travelers 10 cant - miss reasons to plan Summer 2028 now"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">indiagazette.com · India · English</div>
-        <h2>
-          <a href="http://www.indiagazette.com/news/279273153/norwegian-cruise-line-gives-travelers-10-cant-miss-reasons-to-plan-summer-2028-now" target="_blank" rel="noopener noreferrer">Norwegian Cruise Line gives travelers 10 cant - miss reasons to plan Summer 2028 now</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 16:30 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="http://www.indiagazette.com/news/279273153/norwegian-cruise-line-gives-travelers-10-cant-miss-reasons-to-plan-summer-2028-now" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://icdn.caughtoffside.com/wp-content/uploads/2025/10/Marc-Guiu-celebrates-a-goal-for-Chelsea-last-season.jpg"
-            alt="RB Leipzig set to pounce on Chelsea target they think is a bargain"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">caughtoffside.com · Spain · English</div>
-        <h2>
-          <a href="https://www.caughtoffside.com/2026/08/29/rb-leipzig-bargain-e20m-pounce-chelsea/" target="_blank" rel="noopener noreferrer">RB Leipzig set to pounce on Chelsea target they think is a bargain</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 16:00 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://www.caughtoffside.com/2026/08/29/rb-leipzig-bargain-e20m-pounce-chelsea/" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://icdn.caughtoffside.com/wp-content/uploads/2026/08/atletico-de-madrid-v-villarreal-cf-laliga-ea-sports-2026-27.jpg"
-            alt="Opportunistic Arsenal take risk over major attacker deal"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">caughtoffside.com · Spain · English</div>
-        <h2>
-          <a href="https://www.caughtoffside.com/2026/08/29/arsenal-take-risk-over-major-attacker-deal/" target="_blank" rel="noopener noreferrer">Opportunistic Arsenal take risk over major attacker deal</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 16:00 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://www.caughtoffside.com/2026/08/29/arsenal-take-risk-over-major-attacker-deal/" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://storage.ghost.io/c/3b/1b/3b1bf1ed-99b4-491a-8ed0-5ce99bdabf77/content/images/size/w1200/2026/08/player-photo--25-.png"
-            alt="The key dangers Sounders must navigate vs . Chicago Fire"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">sounderatheart.com · United States · English</div>
-        <h2>
-          <a href="https://www.sounderatheart.com/2026/08/the-key-dangers-sounders-must-navigate-vs-chicago-fire/" target="_blank" rel="noopener noreferrer">The key dangers Sounders must navigate vs . Chicago Fire</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 16:00 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://www.sounderatheart.com/2026/08/the-key-dangers-sounders-must-navigate-vs-chicago-fire/" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-
-    <article class="news-card">
-      
-        <div class="news-image-wrap">
-          <img
-            class="news-image"
-            src="https://cyprus-mail.com/wp-content/uploads/2026/08/2026-08-25T193804Z_949143167_UP1EM8P1IJF4Z_RTRMADP_3_TENNIS-USOPEN-copy.jpg"
-            alt="Holder Alcaraz ready to reignite season at US Open after injury layoff"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.parentElement.classList.add('image-error'); this.remove();"
-          >
-          <div class="image-fallback">Barcelona News</div>
-        </div>
-        
-      <div class="news-content">
-        <div class="news-meta">cyprus-mail.com · Cyprus · English</div>
-        <h2>
-          <a href="https://cyprus-mail.com/2026/08/29/holder-alcaraz-ready-to-reignite-season-at-us-open-after-injury-layoff" target="_blank" rel="noopener noreferrer">Holder Alcaraz ready to reignite season at US Open after injury layoff</a>
-        </h2>
-        <div class="news-date">29 August 2026 · 15:45 UTC</div>
-        <p class="news-description">
-          Latest English-language coverage mentioning Barcelona
-          from international and local news sources monitored by GDELT.
-        </p>
-        <a class="read-more" href="https://cyprus-mail.com/2026/08/29/holder-alcaraz-ready-to-reignite-season-at-us-open-after-injury-layoff" target="_blank" rel="noopener noreferrer">
-          Read original article →
-        </a>
-      </div>
-    </article>
-    
-  </div>
-</section>
-
-<section class="seo-text">
-  <h2>Latest news about Barcelona</h2>
-
-  <p>
-    Barcelona is continuously covered by newspapers,
-    broadcasters and online media around the world.
-    This page brings together recent English-language
-    news references mentioning Barcelona.
-  </p>
-
-  <p>
-    Coverage may include Barcelona politics, tourism,
-    culture, business, transport, sport, events,
-    restaurants, neighborhoods and other current
-    developments. Every story links to the original publisher.
-  </p>
-</section>
-
+    </section>
 </main>
-
-<footer>
-RatedMaps News · Barcelona
-<br><br>
-News discovery powered by GDELT.
-Map powered by Leaflet and OpenStreetMap.
-Original articles remain on their respective publishers' websites.
-</footer>
-
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""
-></script>
-
+<footer><div class="footer-inner">© 2026 RatedMaps.com · Barcelona, Spain · News links lead to the original publishers.</div></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-const map = L.map(
-  "news-map",
-  {
-    scrollWheelZoom: false
-  }
-).setView(
-  [41.3874, 2.1686],
-  12
-);
-
-L.tileLayer(
-  "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-  {
-    maxZoom: 19,
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }
-).addTo(map);
-
-const barcelonaMarker = L.marker(
-  [41.3874, 2.1686]
-).addTo(map);
-
-barcelonaMarker.bindPopup(
-  "<strong>Barcelona News</strong><br>24 current articles"
-);
+const map = L.map('map').setView([41.3874, 2.1686], 12);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:19, attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+L.marker([41.3874, 2.1686]).addTo(map).bindPopup('<strong>Barcelona</strong><br>Latest news, stories and updates.').openPopup();
 </script>
-
 </body>
 </html>
