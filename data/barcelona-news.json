@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-30T18:16:06.423044+00:00",
+  "updated_at": "2026-08-30T18:34:43.880218+00:00",
   "articles": [
     {
       "title": "Hector Fort leaves Barcelona and signs for Real Sociedad",
@@ -38,15 +38,6 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260829T214500Z"
-    },
-    {
-      "title": "UCL Blockbusters : Top Champions League Matches to Watch",
-      "url": "https://punchng.com/from-arsenal-vs-real-madrid-to-psg-vs-barcelona-ucl-blockbusters-to-watch/",
-      "image": "https://cdn.punchng.com/wp-content/uploads/2026/05/30203917/AFP__20260530__B4HP2D7__v2__MidRes__TopshotFblEurC1PsgArsenalFinal-1200x630.webp",
-      "domain": "punchng.com",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260828T183000Z"
     },
     {
       "title": "Arsenal stunned as Man City attempt late Julian Alvarez transfer hijack",
@@ -218,6 +209,15 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260828T193000Z"
+    },
+    {
+      "title": "MLS : Messi reaches 927 career goals",
+      "url": "https://dailypost.ng/2026/08/30/mls-messi-reaches-927-career-goals/",
+      "image": "",
+      "domain": "dailypost.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260830T101500Z"
     }
   ]
 }
