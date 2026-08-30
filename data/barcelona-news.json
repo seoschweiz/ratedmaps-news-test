@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-30T21:34:41.563583+00:00",
+  "updated_at": "2026-08-30T22:14:34.495613+00:00",
   "articles": [
     {
       "title": "Hector Fort leaves Barcelona and signs for Real Sociedad",
@@ -38,15 +38,6 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260829T214500Z"
-    },
-    {
-      "title": "Arsenal stunned as Man City attempt late Julian Alvarez transfer hijack",
-      "url": "https://www.aol.co.uk/articles/arsenal-stunned-man-city-attempt-205802000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/08/28/3b81f1ae-daac-31e2-84d2-96b49c2c3b71/491f5997-992a-46e4-8519-d865fa7e8a5f.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260828T214500Z"
     },
     {
       "title": "Xavi Espart , João Cancelo , Alejandro Balde : Who should be Barcelona starting left - back and why ?",
@@ -110,6 +101,15 @@
       "source_country": "India",
       "language": "English",
       "date": "20260829T141500Z"
+    },
+    {
+      "title": "Atletico Madrid submit official bid for Julian Alvarez replacement with Arsenal on red alert",
+      "url": "https://www.aol.co.uk/articles/atletico-submit-official-bid-alvarez-202821000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/08/30/65a7b1cd-d5ee-3a08-89f3-b13f75463080/ff89dd08-67b1-434c-be77-56b3c8dd7a4f.jpg",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260830T211500Z"
     },
     {
       "title": "In divided Cyprus , FC Barcelona youth camp sparks new dispute : What to know",
@@ -211,13 +211,13 @@
       "date": "20260830T101500Z"
     },
     {
-      "title": "Arsenal transfer news : Julian Alvarez  being persuaded  as departing star medical booked",
-      "url": "https://www.aol.co.uk/articles/arsenal-transfer-news-julian-alvarez-030000000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/08/29/83ea37d6-7331-3090-a54f-be848f9a3698/1c9c8295-226f-4ee0-8d0d-b0d7596e3e22.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
+      "title": "Transfer : Two players leave Arsenal on Sunday",
+      "url": "https://dailypost.ng/2026/08/30/transfer-two-players-leave-arsenal-on-sunday/",
+      "image": "https://dailypost.ng/wp-content/uploads/2025/07/Arsenal-crest.jpg",
+      "domain": "dailypost.ng",
+      "source_country": "Nigeria",
       "language": "English",
-      "date": "20260829T034500Z"
+      "date": "20260830T181500Z"
     }
   ]
 }
