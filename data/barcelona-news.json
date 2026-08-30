@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-30T18:34:43.880218+00:00",
+  "updated_at": "2026-08-30T18:54:56.188742+00:00",
   "articles": [
     {
       "title": "Hector Fort leaves Barcelona and signs for Real Sociedad",
@@ -74,6 +74,15 @@
       "source_country": "Pakistan",
       "language": "English",
       "date": "20260829T140000Z"
+    },
+    {
+      "title": "Breaking : Barcelona agree deal to sign Gabriel Jesus from Arsenal",
+      "url": "https://theeagleonline.com.ng/breaking-barcelona-agree-deal-to-sign-gabriel-jesus-from-arsenal/",
+      "image": "https://theeagleonline.com.ng/wp-content/uploads/2026/08/Gabriel-Jesus.jpg",
+      "domain": "theeagleonline.com.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260830T181500Z"
     },
     {
       "title": "Opportunistic Arsenal take risk over major attacker deal",
@@ -209,15 +218,6 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260828T193000Z"
-    },
-    {
-      "title": "MLS : Messi reaches 927 career goals",
-      "url": "https://dailypost.ng/2026/08/30/mls-messi-reaches-927-career-goals/",
-      "image": "",
-      "domain": "dailypost.ng",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260830T101500Z"
     }
   ]
 }
