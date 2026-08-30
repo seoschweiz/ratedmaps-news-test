@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-30T23:14:21.447568+00:00",
+  "updated_at": "2026-08-30T23:35:33.617841+00:00",
   "articles": [
     {
       "title": "Hector Fort leaves Barcelona and signs for Real Sociedad",
@@ -103,15 +103,6 @@
       "date": "20260829T141500Z"
     },
     {
-      "title": "Atletico Madrid submit official bid for Julian Alvarez replacement with Arsenal on red alert",
-      "url": "https://www.aol.co.uk/articles/atletico-submit-official-bid-alvarez-202821000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/08/30/65a7b1cd-d5ee-3a08-89f3-b13f75463080/ff89dd08-67b1-434c-be77-56b3c8dd7a4f.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260830T211500Z"
-    },
-    {
       "title": "In divided Cyprus , FC Barcelona youth camp sparks new dispute : What to know",
       "url": "https://www.al-monitor.com/originals/2026/08/divided-cyprus-fc-barcelona-youth-camp-sparks-new-dispute-what-know",
       "image": "",
@@ -119,6 +110,15 @@
       "source_country": "Israel",
       "language": "English",
       "date": "20260829T071500Z"
+    },
+    {
+      "title": "Atletico Madrid submit official bid for Julian Alvarez replacement with Arsenal on red alert",
+      "url": "https://www.aol.co.uk/articles/atletico-submit-official-bid-alvarez-202821000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/08/30/65a7b1cd-d5ee-3a08-89f3-b13f75463080/ff89dd08-67b1-434c-be77-56b3c8dd7a4f.jpg",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260830T211500Z"
     },
     {
       "title": "Julian Alvarez makes Atletico Madrid decision as clock ticks down on Arsenal deadline",
