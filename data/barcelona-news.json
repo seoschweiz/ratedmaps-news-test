@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-30T15:35:20.504544+00:00",
+  "updated_at": "2026-08-30T15:55:06.243868+00:00",
   "articles": [
     {
       "title": "Barcelona tipped to wait until January to sign a striker after Atletico refuse to sell Julian Alvarez",
@@ -184,6 +184,15 @@
       "date": "20260829T214500Z"
     },
     {
+      "title": "Barcelona agree €10m Gabriel Jesus deal with Arsenal – Nehanda Radio",
+      "url": "https://nehandaradio.com/2026/08/30/barcelona-agree-e10m-deal-to-sign-brazilian-striker-gabriel-jesus-from-arsenal/",
+      "image": "https://nehandaradio.com/wp-content/uploads/2025/11/Gabriel-Jesus.webp",
+      "domain": "nehandaradio.com",
+      "source_country": "Zimbabwe",
+      "language": "English",
+      "date": "20260830T151500Z"
+    },
+    {
       "title": "Arsenal strike Gabriel Jesus transfer agreement with Barcelona as fee revealed",
       "url": "https://www.aol.co.uk/articles/arsenal-strike-gabriel-jesus-transfer-134139000.html",
       "image": "https://hermes.media.static.aol.com/media/2026/08/30/d090a6ef-5c28-33de-8476-6c7f09940eed/cd77a9d8-4e54-4595-baa7-5af3766a70aa.jpg",
@@ -209,15 +218,6 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260829T071500Z"
-    },
-    {
-      "title": "🔵🔴ISNT THIS SO ANNOYING | Barca Blaugranes",
-      "url": "https://www.barcablaugranes.com/post/0aNxmCk7GWWY",
-      "image": "",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260828T174500Z"
     }
   ]
 }
