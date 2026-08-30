@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-30T02:35:24.132426+00:00",
+  "updated_at": "2026-08-30T02:55:23.704585+00:00",
   "articles": [
     {
       "title": "Barcelona tipped to wait until January to sign a striker after Atletico refuse to sell Julian Alvarez",
@@ -47,15 +47,6 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260828T183000Z"
-    },
-    {
-      "title": "Barcelona confirm signing of Croatia goalkeeper Livakovic",
-      "url": "http://www.china.org.cn/2026-08/28/content_118668119.shtml",
-      "image": "",
-      "domain": "china.org.cn",
-      "source_country": "China",
-      "language": "English",
-      "date": "20260828T024500Z"
     },
     {
       "title": "Arsenal stunned as Man City attempt late Julian Alvarez transfer hijack",
@@ -110,15 +101,6 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260829T113000Z"
-    },
-    {
-      "title": "Manuel Ferrari Shifts Into Top Gear to Take Pole Position in EPT Barcelona Main Event",
-      "url": "https://www.pokernews.com/tours/ept/2026-pokerstars-ept-barcelona/5300-ept-main-event/chips.858800.htm",
-      "image": "https://pnimg.net/lrep/2227/77/m8e0a2da365.jpg",
-      "domain": "pokernews.com",
-      "source_country": "United States",
-      "language": "English",
-      "date": "20260828T024500Z"
     },
     {
       "title": "MCD looks to Tokyo , New York , Barcelona to tackle Delhi waste woes",
@@ -218,6 +200,24 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260828T193000Z"
+    },
+    {
+      "title": "New flight routes to link New York with Valencia and Ibiza in Spain",
+      "url": "https://www.thelocal.es/20260828/new-flight-routes-to-link-new-york-with-valencia-and-ibiza-in-spain",
+      "image": "",
+      "domain": "thelocal.es",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260828T093000Z"
+    },
+    {
+      "title": "Arsenal could loan Marcus Rashford to replace Gabriel Martinelli",
+      "url": "https://www.caughtoffside.com/2026/08/28/arsenal-could-loan-marcus-rashford-to-replace-gabriel-martinelli/",
+      "image": "https://icdn.caughtoffside.com/wp-content/uploads/2026/08/COS-FeaturedHero-Image-Templates-3-8.jpg",
+      "domain": "caughtoffside.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260828T093000Z"
     }
   ]
 }
