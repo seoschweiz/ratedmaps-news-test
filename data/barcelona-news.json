@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-30T08:35:20.619983+00:00",
+  "updated_at": "2026-08-30T09:35:18.805193+00:00",
   "articles": [
     {
       "title": "Barcelona tipped to wait until January to sign a striker after Atletico refuse to sell Julian Alvarez",
@@ -202,22 +202,22 @@
       "date": "20260828T193000Z"
     },
     {
-      "title": "New flight routes to link New York with Valencia and Ibiza in Spain",
-      "url": "https://www.thelocal.es/20260828/new-flight-routes-to-link-new-york-with-valencia-and-ibiza-in-spain",
-      "image": "",
-      "domain": "thelocal.es",
-      "source_country": "Spain",
+      "title": "Casemiro makes profound admission after Lionel Messi scores four goals at 39 years old in MLS game",
+      "url": "https://www.hitc.com/casemiro-makes-profound-admission-after-lionel-messi-scores-four-goals-at-39-years-old-in-mls-game/",
+      "image": "https://cdn3.hitc.com/uploads/1/2026/08/GettyImages-2292637871-scaled.jpg",
+      "domain": "hitc.com",
+      "source_country": "United Kingdom",
       "language": "English",
-      "date": "20260828T093000Z"
+      "date": "20260830T080000Z"
     },
     {
-      "title": "Arsenal could loan Marcus Rashford to replace Gabriel Martinelli",
-      "url": "https://www.caughtoffside.com/2026/08/28/arsenal-could-loan-marcus-rashford-to-replace-gabriel-martinelli/",
-      "image": "https://icdn.caughtoffside.com/wp-content/uploads/2026/08/COS-FeaturedHero-Image-Templates-3-8.jpg",
+      "title": "Diego Simeone on Julian Alvarez transfer saga",
+      "url": "https://www.caughtoffside.com/2026/08/28/diego-simeone-on-julian-alvarez-transfer-saga/",
+      "image": "https://icdn.caughtoffside.com/wp-content/uploads/2026/08/COS-FeaturedHero-Image-Templates-7-5.jpg",
       "domain": "caughtoffside.com",
       "source_country": "Spain",
       "language": "English",
-      "date": "20260828T093000Z"
+      "date": "20260828T133000Z"
     }
   ]
 }
