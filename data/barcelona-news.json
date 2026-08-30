@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-30T16:36:18.685854+00:00",
+  "updated_at": "2026-08-30T16:54:20.122095+00:00",
   "articles": [
     {
       "title": "Barcelona tipped to wait until January to sign a striker after Atletico refuse to sell Julian Alvarez",
@@ -139,15 +139,6 @@
       "date": "20260830T121500Z"
     },
     {
-      "title": "He spoken to Mikel Arteta  - Julian Alvarez says no to Arsenal & still has heart set on Barcelona",
-      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130818/mikel-arteta-julian-alvarez-no-arsenal",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291272907.jpg?quality=90&strip=all&crop=0%2C10.729057198914%2C100%2C78.541885602173",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260829T171500Z"
-    },
-    {
       "title": "Gabriel Jesus gets dream Arsenal transfer exit as cut - price fee revealed and medical booked",
       "url": "https://www.aol.co.uk/articles/gabriel-jesus-gets-dream-arsenal-130106000.html",
       "image": "https://hermes.media.static.aol.com/media/2026/08/30/d12127d3-2ed4-35be-9439-e06d3884cbef/d4d59f5e-c27f-40a8-97c4-0f3a5ec6a2ce.jpg",
@@ -155,6 +146,15 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260830T134500Z"
+    },
+    {
+      "title": "He spoken to Mikel Arteta  - Julian Alvarez says no to Arsenal & still has heart set on Barcelona",
+      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130818/mikel-arteta-julian-alvarez-no-arsenal",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291272907.jpg?quality=90&strip=all&crop=0%2C10.729057198914%2C100%2C78.541885602173",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260829T171500Z"
     },
     {
       "title": "Arsenal handed major Julian Alvarez boost as Man City close in on Cody Gakpo",
