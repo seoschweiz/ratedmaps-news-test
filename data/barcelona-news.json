@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-30T21:15:08.275207+00:00",
+  "updated_at": "2026-08-30T21:34:41.563583+00:00",
   "articles": [
     {
       "title": "Hector Fort leaves Barcelona and signs for Real Sociedad",
@@ -76,15 +76,6 @@
       "date": "20260829T140000Z"
     },
     {
-      "title": "Opportunistic Arsenal take risk over major attacker deal",
-      "url": "https://www.caughtoffside.com/2026/08/29/arsenal-take-risk-over-major-attacker-deal/",
-      "image": "https://icdn.caughtoffside.com/wp-content/uploads/2026/08/atletico-de-madrid-v-villarreal-cf-laliga-ea-sports-2026-27.jpg",
-      "domain": "caughtoffside.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260829T160000Z"
-    },
-    {
       "title": "Breaking : Barcelona agree deal to sign Gabriel Jesus from Arsenal",
       "url": "https://theeagleonline.com.ng/breaking-barcelona-agree-deal-to-sign-gabriel-jesus-from-arsenal/",
       "image": "https://theeagleonline.com.ng/wp-content/uploads/2026/08/Gabriel-Jesus.jpg",
@@ -92,6 +83,15 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260830T181500Z"
+    },
+    {
+      "title": "Opportunistic Arsenal take risk over major attacker deal",
+      "url": "https://www.caughtoffside.com/2026/08/29/arsenal-take-risk-over-major-attacker-deal/",
+      "image": "https://icdn.caughtoffside.com/wp-content/uploads/2026/08/atletico-de-madrid-v-villarreal-cf-laliga-ea-sports-2026-27.jpg",
+      "domain": "caughtoffside.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260829T160000Z"
     },
     {
       "title": "Arsenal given hours to convince Julian Alvarez as Atletico Madrid issue final transfer ultimatum",
@@ -184,15 +184,6 @@
       "date": "20260830T151500Z"
     },
     {
-      "title": "Manuel Ferrari Goes Wire to Wire as Jose Criado Looks to Keep EPT Barcelona Main Event Trophy on Home Soil",
-      "url": "https://www.pokernews.com/tours/ept/2026-pokerstars-ept-barcelona/5300-ept-main-event/chips.858926.htm",
-      "image": "https://pnimg.net/lrep/2227/77/mb51a6de6fd.jpg",
-      "domain": "pokernews.com",
-      "source_country": "United States",
-      "language": "English",
-      "date": "20260828T211500Z"
-    },
-    {
       "title": "Arsenal strike Gabriel Jesus transfer agreement with Barcelona as fee revealed",
       "url": "https://www.aol.co.uk/articles/arsenal-strike-gabriel-jesus-transfer-134139000.html",
       "image": "https://hermes.media.static.aol.com/media/2026/08/30/d090a6ef-5c28-33de-8476-6c7f09940eed/cd77a9d8-4e54-4595-baa7-5af3766a70aa.jpg",
@@ -218,6 +209,15 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260830T101500Z"
+    },
+    {
+      "title": "Arsenal transfer news : Julian Alvarez  being persuaded  as departing star medical booked",
+      "url": "https://www.aol.co.uk/articles/arsenal-transfer-news-julian-alvarez-030000000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/08/29/83ea37d6-7331-3090-a54f-be848f9a3698/1c9c8295-226f-4ee0-8d0d-b0d7596e3e22.jpg",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260829T034500Z"
     }
   ]
 }
