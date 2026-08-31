@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T10:36:48.612632+00:00",
+  "updated_at": "2026-08-31T10:54:31.382885+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -13,15 +13,6 @@
       "date": "20260830T174500Z"
     },
     {
-      "title": "Hector Fort leaves Barcelona and signs for Real Sociedad",
-      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130885/hector-fort-signs-for-real-sociedad",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2290737825.jpg?quality=90&strip=all&crop=0%2C10.720898415783%2C100%2C78.558203168434",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260829T214500Z"
-    },
-    {
       "title": "Transfer : Details of Gabriel Jesu move from Arsenal to Barcelona revealed",
       "url": "https://dailypost.ng/2026/08/31/transfer-details-of-gabriel-jesus-move-from-arsenal-to-barcelona-revealed/",
       "image": "",
@@ -29,6 +20,15 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260831T083000Z"
+    },
+    {
+      "title": "Hector Fort leaves Barcelona and signs for Real Sociedad",
+      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130885/hector-fort-signs-for-real-sociedad",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2290737825.jpg?quality=90&strip=all&crop=0%2C10.720898415783%2C100%2C78.558203168434",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260829T214500Z"
     },
     {
       "title": "Jesse Bisiwu reveals the Barcelona star who has surprised him most",
