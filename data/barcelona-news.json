@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T07:35:25.865610+00:00",
+  "updated_at": "2026-08-31T07:55:14.045722+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -58,6 +58,15 @@
       "date": "20260831T050000Z"
     },
     {
+      "title": "Breaking : Barcelona agree deal to sign Gabriel Jesus from Arsenal",
+      "url": "https://theeagleonline.com.ng/breaking-barcelona-agree-deal-to-sign-gabriel-jesus-from-arsenal/",
+      "image": "https://theeagleonline.com.ng/wp-content/uploads/2026/08/Gabriel-Jesus.jpg",
+      "domain": "theeagleonline.com.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260830T181500Z"
+    },
+    {
       "title": "Xavi Espart , João Cancelo , Alejandro Balde : Who should be Barcelona starting left - back and why ?",
       "url": "https://www.barcablaugranes.com/cant-del-blog-barcelona-opinion/130829/xavi-espart-joao-cancelo-alejandro-balde-who-should-be-barcelona-starting-left-back-and-why",
       "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2292507966.jpg?quality=90&strip=all&crop=0%2C10.727320509016%2C100%2C78.545358981969",
@@ -74,15 +83,6 @@
       "source_country": "Pakistan",
       "language": "English",
       "date": "20260829T140000Z"
-    },
-    {
-      "title": "Breaking : Barcelona agree deal to sign Gabriel Jesus from Arsenal",
-      "url": "https://theeagleonline.com.ng/breaking-barcelona-agree-deal-to-sign-gabriel-jesus-from-arsenal/",
-      "image": "https://theeagleonline.com.ng/wp-content/uploads/2026/08/Gabriel-Jesus.jpg",
-      "domain": "theeagleonline.com.ng",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260830T181500Z"
     },
     {
       "title": "Atletico Madrid submit official bid for Julian Alvarez replacement with Arsenal on red alert",
@@ -175,15 +175,6 @@
       "date": "20260830T151500Z"
     },
     {
-      "title": "Way Too Early Predictions for the Champions League 2026 - 27 League Phase Table",
-      "url": "https://www.barcablaugranes.com/barcelona-uefa-champions-league/130828/way-too-early-predictions-2026-27-league-phase",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2292291682.jpg?quality=90&strip=all&crop=0%2C10.730523491307%2C100%2C78.538953017386",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260829T214500Z"
-    },
-    {
       "title": "Arsenal strike Gabriel Jesus transfer agreement with Barcelona as fee revealed",
       "url": "https://www.aol.co.uk/articles/arsenal-strike-gabriel-jesus-transfer-134139000.html",
       "image": "https://hermes.media.static.aol.com/media/2026/08/30/d090a6ef-5c28-33de-8476-6c7f09940eed/cd77a9d8-4e54-4595-baa7-5af3766a70aa.jpg",
@@ -191,6 +182,15 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260830T143000Z"
+    },
+    {
+      "title": "Way Too Early Predictions for the Champions League 2026 - 27 League Phase Table",
+      "url": "https://www.barcablaugranes.com/barcelona-uefa-champions-league/130828/way-too-early-predictions-2026-27-league-phase",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2292291682.jpg?quality=90&strip=all&crop=0%2C10.730523491307%2C100%2C78.538953017386",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260829T214500Z"
     },
     {
       "title": "Decisive Showdown in Barcelona : OMODA 4 Makes Its European Debut as CYBER MECHA Takes Center Stage at VCT EMEA",
