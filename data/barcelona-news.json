@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T19:34:36.092056+00:00",
+  "updated_at": "2026-08-31T19:54:38.505968+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -22,15 +22,6 @@
       "date": "20260829T214500Z"
     },
     {
-      "title": "Transfer : Details of Gabriel Jesu move from Arsenal to Barcelona revealed",
-      "url": "https://dailypost.ng/2026/08/31/transfer-details-of-gabriel-jesus-move-from-arsenal-to-barcelona-revealed/",
-      "image": "",
-      "domain": "dailypost.ng",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260831T083000Z"
-    },
-    {
       "title": "I will always be a culer  - Hector Fort sends touching farewell message to Barcelona fans",
       "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130893/culer-hector-fort-sends-touching-farewell-message",
       "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291209280.jpg?quality=90&strip=all&crop=0%2C10.729057198914%2C100%2C78.541885602173",
@@ -38,6 +29,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260829T214500Z"
+    },
+    {
+      "title": "Transfer : Details of Gabriel Jesu move from Arsenal to Barcelona revealed",
+      "url": "https://dailypost.ng/2026/08/31/transfer-details-of-gabriel-jesus-move-from-arsenal-to-barcelona-revealed/",
+      "image": "",
+      "domain": "dailypost.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260831T083000Z"
     },
     {
       "title": "He surprised me  - Hansi Flick offers first - team hope to Barcelona duo Hamza Abdelkarim and Brian Farinas",
@@ -130,15 +130,6 @@
       "date": "20260830T103000Z"
     },
     {
-      "title": "Barcelona agree €10m Gabriel Jesus deal with Arsenal – Nehanda Radio",
-      "url": "https://nehandaradio.com/2026/08/30/barcelona-agree-e10m-deal-to-sign-brazilian-striker-gabriel-jesus-from-arsenal/",
-      "image": "https://nehandaradio.com/wp-content/uploads/2025/11/Gabriel-Jesus.webp",
-      "domain": "nehandaradio.com",
-      "source_country": "Zimbabwe",
-      "language": "English",
-      "date": "20260830T151500Z"
-    },
-    {
       "title": "Way Too Early Predictions for the Champions League 2026 - 27 League Phase Table",
       "url": "https://www.barcablaugranes.com/barcelona-uefa-champions-league/130828/way-too-early-predictions-2026-27-league-phase",
       "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2292291682.jpg?quality=90&strip=all&crop=0%2C10.730523491307%2C100%2C78.538953017386",
@@ -146,6 +137,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260829T214500Z"
+    },
+    {
+      "title": "Barcelona agree €10m Gabriel Jesus deal with Arsenal – Nehanda Radio",
+      "url": "https://nehandaradio.com/2026/08/30/barcelona-agree-e10m-deal-to-sign-brazilian-striker-gabriel-jesus-from-arsenal/",
+      "image": "https://nehandaradio.com/wp-content/uploads/2025/11/Gabriel-Jesus.webp",
+      "domain": "nehandaradio.com",
+      "source_country": "Zimbabwe",
+      "language": "English",
+      "date": "20260830T151500Z"
     },
     {
       "title": "Arsenal strike Gabriel Jesus transfer agreement with Barcelona as fee revealed",
