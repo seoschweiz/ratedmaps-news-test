@@ -1,12 +1,21 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T20:54:15.900653+00:00",
+  "updated_at": "2026-08-31T21:15:46.755642+00:00",
   "articles": [
     {
       "title": "Hector Fort leaves Barcelona and signs for Real Sociedad",
       "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130885/hector-fort-signs-for-real-sociedad",
       "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2290737825.jpg?quality=90&strip=all&crop=0%2C10.720898415783%2C100%2C78.558203168434",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260829T214500Z"
+    },
+    {
+      "title": "I will always be a culer  - Hector Fort sends touching farewell message to Barcelona fans",
+      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130893/culer-hector-fort-sends-touching-farewell-message",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291209280.jpg?quality=90&strip=all&crop=0%2C10.729057198914%2C100%2C78.541885602173",
       "domain": "barcablaugranes.com",
       "source_country": "Spain",
       "language": "English",
@@ -20,15 +29,6 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260830T174500Z"
-    },
-    {
-      "title": "I will always be a culer  - Hector Fort sends touching farewell message to Barcelona fans",
-      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130893/culer-hector-fort-sends-touching-farewell-message",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291209280.jpg?quality=90&strip=all&crop=0%2C10.729057198914%2C100%2C78.541885602173",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260829T214500Z"
     },
     {
       "title": "Transfer : Details of Gabriel Jesu move from Arsenal to Barcelona revealed",
@@ -103,6 +103,15 @@
       "date": "20260830T130000Z"
     },
     {
+      "title": "MUTEK Festival 2026 Review : A Utopian Week Of Electronic Music In Montreal",
+      "url": "https://stereogum.com/2509880/a-week-at-mutek-made-montreal-feel-too-good-to-be-true/columns/crossing-wires",
+      "image": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/MUTEK27_20260826_Zora-Jones-DJ-set_credit_Frederique-Menard-Aubin-1291.jpg",
+      "domain": "stereogum.com",
+      "source_country": "United States",
+      "language": "English",
+      "date": "20260831T204500Z"
+    },
+    {
       "title": "Julian Alvarez returns to Atletico team training after illness",
       "url": "https://arynews.tv/julian-alvarez-returns-to-atletico-team-training-after-illness",
       "image": "https://static.arynews.tv/zip-archives/wp-content/uploads/2026/08/ARY-1200-x-675-px-2026-08-30T164803.529.jpg",
@@ -166,6 +175,15 @@
       "date": "20260831T121500Z"
     },
     {
+      "title": "Tour de France champion Pogacar has collarbone surgery after Vuelta crash – Winnipeg Free Press",
+      "url": "https://www.winnipegfreepress.com/uncategorized/2026/08/31/tour-de-france-champion-pogacar-has-collarbone-surgery-after-vuelta-crash",
+      "image": "",
+      "domain": "winnipegfreepress.com",
+      "source_country": "Canada",
+      "language": "English",
+      "date": "20260831T204500Z"
+    },
+    {
       "title": "Decisive Showdown in Barcelona : OMODA 4 Makes Its European Debut as CYBER MECHA Takes Center Stage at VCT EMEA",
       "url": "https://thestarphoenix.com/press-releases/globe-newswire/decisive-showdown-in-barcelona-omoda-4-makes-its-european-debut-as-cyber-mecha-takes-center-stage-at-vct-emea/",
       "image": "https://thestarphoenix.com/wp-content/uploads/sites/3/2026/08/image-1.jpeg",
@@ -182,24 +200,6 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260830T101500Z"
-    },
-    {
-      "title": "Transfer : Two players leave Arsenal on Sunday",
-      "url": "https://dailypost.ng/2026/08/30/transfer-two-players-leave-arsenal-on-sunday/",
-      "image": "https://dailypost.ng/wp-content/uploads/2025/07/Arsenal-crest.jpg",
-      "domain": "dailypost.ng",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260830T181500Z"
-    },
-    {
-      "title": "Casemiro makes profound admission after Lionel Messi scores four goals at 39 years old in MLS game",
-      "url": "https://www.hitc.com/casemiro-makes-profound-admission-after-lionel-messi-scores-four-goals-at-39-years-old-in-mls-game/",
-      "image": "https://cdn3.hitc.com/uploads/1/2026/08/GettyImages-2292637871-scaled.jpg",
-      "domain": "hitc.com",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260830T080000Z"
     }
   ]
 }
