@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T13:56:09.036739+00:00",
+  "updated_at": "2026-08-31T14:14:28.208397+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -101,15 +101,6 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260831T121500Z"
-    },
-    {
-      "title": "Julian Alvarez gives Mikel Arteta his answer amid Arsenal transfer interest",
-      "url": "https://www.thenews.com.pk/latest/1414113-julain-alvarez-gives-mikel-arteta-his-answer-amid-arsenal-transfer-interest",
-      "image": "https://www.thenews.com.pk/assets/uploads/2026-08-29/1414113_054141_updates.jpg",
-      "domain": "thenews.com.pk",
-      "source_country": "Pakistan",
-      "language": "English",
-      "date": "20260829T140000Z"
     },
     {
       "title": "Atletico Madrid submit official bid for Julian Alvarez replacement with Arsenal on red alert",
@@ -218,6 +209,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260831T121500Z"
+    },
+    {
+      "title": "Decisive Showdown in Barcelona : OMODA 4 Makes Its European Debut as CYBER MECHA Takes Center Stage at VCT EMEA",
+      "url": "https://thestarphoenix.com/press-releases/globe-newswire/decisive-showdown-in-barcelona-omoda-4-makes-its-european-debut-as-cyber-mecha-takes-center-stage-at-vct-emea/",
+      "image": "https://thestarphoenix.com/wp-content/uploads/sites/3/2026/08/image-1.jpeg",
+      "domain": "thestarphoenix.com",
+      "source_country": "Canada",
+      "language": "English",
+      "date": "20260831T074500Z"
     }
   ]
 }
