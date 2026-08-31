@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T12:34:57.014537+00:00",
+  "updated_at": "2026-08-31T12:54:35.419657+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -58,6 +58,15 @@
       "date": "20260831T030000Z"
     },
     {
+      "title": "Barcelona sign 16 - year - old defender Mikael Baza from HSV Hamburg",
+      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/131027/sign-16-year-old-defender-mikael-baza-hsv-hamburg",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2240460270.jpg?quality=90&strip=all&crop=0%2C10.728434760613%2C100%2C78.543130478775",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260831T121500Z"
+    },
+    {
       "title": "Lamine Yamal is finding his  top level  again , says Barcelona boss Hansi Flick",
       "url": "https://www.thenews.com.pk/latest/1414286-lamine-yamal-is-finding-his-top-level-again-says-barcelona-boss-hansi-flick",
       "image": "https://www.thenews.com.pk/assets/uploads/2026-08-31/1414286_082838_updates.jpg",
@@ -83,6 +92,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260829T171500Z"
+    },
+    {
+      "title": "Man Utd : Decision reached over signing left - back Alejandro Balde from Barcelona",
+      "url": "https://www.teamtalk.com/manchester-united/decision-reached-signing-alejandro-balde-from-barcelona",
+      "image": "https://images.teamtalk.com/content/uploads/2026/02/17133707/alejandro-balde-jason-wilcox-man-utd.jpg",
+      "domain": "teamtalk.com",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260831T121500Z"
     },
     {
       "title": "Julian Alvarez gives Mikel Arteta his answer amid Arsenal transfer interest",
@@ -193,22 +211,13 @@
       "date": "20260829T214500Z"
     },
     {
-      "title": "Decisive Showdown in Barcelona : OMODA 4 Makes Its European Debut as CYBER MECHA Takes Center Stage at VCT EMEA",
-      "url": "https://thestarphoenix.com/press-releases/globe-newswire/decisive-showdown-in-barcelona-omoda-4-makes-its-european-debut-as-cyber-mecha-takes-center-stage-at-vct-emea/",
-      "image": "https://thestarphoenix.com/wp-content/uploads/sites/3/2026/08/image-1.jpeg",
-      "domain": "thestarphoenix.com",
-      "source_country": "Canada",
+      "title": "Barcelona told why Gabriel Jesus is  precisely what Hansi Flick wants",
+      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/131023/why-gabriel-jesus-precisely-what-hansi-flick-wants",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2277981653.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
       "language": "English",
-      "date": "20260831T074500Z"
-    },
-    {
-      "title": "MLS : Messi reaches 927 career goals",
-      "url": "https://dailypost.ng/2026/08/30/mls-messi-reaches-927-career-goals/",
-      "image": "",
-      "domain": "dailypost.ng",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260830T101500Z"
+      "date": "20260831T121500Z"
     }
   ]
 }
