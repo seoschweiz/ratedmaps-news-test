@@ -1,17 +1,8 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T20:16:42.956250+00:00",
+  "updated_at": "2026-08-31T20:35:38.476756+00:00",
   "articles": [
-    {
-      "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
-      "url": "https://www.teamtalk.com/arsenal/gabriel-jesus-joins-barcelona-from-arsenal",
-      "image": "https://images.teamtalk.com/content/uploads/2026/08/30140139/TT-Gabriel-Jesus-with-Arsenal-Barcelona-badges-1-1.jpg",
-      "domain": "teamtalk.com",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260830T174500Z"
-    },
     {
       "title": "Hector Fort leaves Barcelona and signs for Real Sociedad",
       "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130885/hector-fort-signs-for-real-sociedad",
@@ -20,6 +11,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260829T214500Z"
+    },
+    {
+      "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
+      "url": "https://www.teamtalk.com/arsenal/gabriel-jesus-joins-barcelona-from-arsenal",
+      "image": "https://images.teamtalk.com/content/uploads/2026/08/30140139/TT-Gabriel-Jesus-with-Arsenal-Barcelona-badges-1-1.jpg",
+      "domain": "teamtalk.com",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260830T174500Z"
     },
     {
       "title": "I will always be a culer  - Hector Fort sends touching farewell message to Barcelona fans",
