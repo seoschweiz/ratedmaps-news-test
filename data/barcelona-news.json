@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T10:15:25.219548+00:00",
+  "updated_at": "2026-08-31T10:36:48.612632+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -22,15 +22,6 @@
       "date": "20260829T214500Z"
     },
     {
-      "title": "Jesse Bisiwu reveals the Barcelona star who has surprised him most",
-      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130855/jesse-bisiwu-reveals-star-impressed-most",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291206830.jpg?quality=90&strip=all&crop=0%2C10.729057198914%2C100%2C78.541885602173",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260829T171500Z"
-    },
-    {
       "title": "Transfer : Details of Gabriel Jesu move from Arsenal to Barcelona revealed",
       "url": "https://dailypost.ng/2026/08/31/transfer-details-of-gabriel-jesus-move-from-arsenal-to-barcelona-revealed/",
       "image": "",
@@ -38,6 +29,15 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260831T083000Z"
+    },
+    {
+      "title": "Jesse Bisiwu reveals the Barcelona star who has surprised him most",
+      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130855/jesse-bisiwu-reveals-star-impressed-most",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291206830.jpg?quality=90&strip=all&crop=0%2C10.729057198914%2C100%2C78.541885602173",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260829T171500Z"
     },
     {
       "title": "I will always be a culer  - Hector Fort sends touching farewell message to Barcelona fans",
@@ -184,15 +184,6 @@
       "date": "20260830T151500Z"
     },
     {
-      "title": "Way Too Early Predictions for the Champions League 2026 - 27 League Phase Table",
-      "url": "https://www.barcablaugranes.com/barcelona-uefa-champions-league/130828/way-too-early-predictions-2026-27-league-phase",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2292291682.jpg?quality=90&strip=all&crop=0%2C10.730523491307%2C100%2C78.538953017386",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260829T214500Z"
-    },
-    {
       "title": "Arsenal strike Gabriel Jesus transfer agreement with Barcelona as fee revealed",
       "url": "https://www.aol.co.uk/articles/arsenal-strike-gabriel-jesus-transfer-134139000.html",
       "image": "https://hermes.media.static.aol.com/media/2026/08/30/d090a6ef-5c28-33de-8476-6c7f09940eed/cd77a9d8-4e54-4595-baa7-5af3766a70aa.jpg",
@@ -200,6 +191,15 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260830T143000Z"
+    },
+    {
+      "title": "Way Too Early Predictions for the Champions League 2026 - 27 League Phase Table",
+      "url": "https://www.barcablaugranes.com/barcelona-uefa-champions-league/130828/way-too-early-predictions-2026-27-league-phase",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2292291682.jpg?quality=90&strip=all&crop=0%2C10.730523491307%2C100%2C78.538953017386",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260829T214500Z"
     },
     {
       "title": "Decisive Showdown in Barcelona : OMODA 4 Makes Its European Debut as CYBER MECHA Takes Center Stage at VCT EMEA",
