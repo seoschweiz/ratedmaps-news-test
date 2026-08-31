@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T01:15:45.729520+00:00",
+  "updated_at": "2026-08-31T01:34:54.454648+00:00",
   "articles": [
     {
       "title": "Hector Fort leaves Barcelona and signs for Real Sociedad",
@@ -67,15 +67,6 @@
       "date": "20260829T140000Z"
     },
     {
-      "title": "Breaking : Barcelona agree deal to sign Gabriel Jesus from Arsenal",
-      "url": "https://theeagleonline.com.ng/breaking-barcelona-agree-deal-to-sign-gabriel-jesus-from-arsenal/",
-      "image": "https://theeagleonline.com.ng/wp-content/uploads/2026/08/Gabriel-Jesus.jpg",
-      "domain": "theeagleonline.com.ng",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260830T181500Z"
-    },
-    {
       "title": "Opportunistic Arsenal take risk over major attacker deal",
       "url": "https://www.caughtoffside.com/2026/08/29/arsenal-take-risk-over-major-attacker-deal/",
       "image": "https://icdn.caughtoffside.com/wp-content/uploads/2026/08/atletico-de-madrid-v-villarreal-cf-laliga-ea-sports-2026-27.jpg",
@@ -83,6 +74,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260829T160000Z"
+    },
+    {
+      "title": "Breaking : Barcelona agree deal to sign Gabriel Jesus from Arsenal",
+      "url": "https://theeagleonline.com.ng/breaking-barcelona-agree-deal-to-sign-gabriel-jesus-from-arsenal/",
+      "image": "https://theeagleonline.com.ng/wp-content/uploads/2026/08/Gabriel-Jesus.jpg",
+      "domain": "theeagleonline.com.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260830T181500Z"
     },
     {
       "title": "Arsenal given hours to convince Julian Alvarez as Atletico Madrid issue final transfer ultimatum",
