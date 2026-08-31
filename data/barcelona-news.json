@@ -1,26 +1,8 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T21:35:27.223979+00:00",
+  "updated_at": "2026-08-31T21:54:21.714865+00:00",
   "articles": [
-    {
-      "title": "Hector Fort leaves Barcelona and signs for Real Sociedad",
-      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130885/hector-fort-signs-for-real-sociedad",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2290737825.jpg?quality=90&strip=all&crop=0%2C10.720898415783%2C100%2C78.558203168434",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260829T214500Z"
-    },
-    {
-      "title": "I will always be a culer  - Hector Fort sends touching farewell message to Barcelona fans",
-      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130893/culer-hector-fort-sends-touching-farewell-message",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291209280.jpg?quality=90&strip=all&crop=0%2C10.729057198914%2C100%2C78.541885602173",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260829T214500Z"
-    },
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
       "url": "https://www.teamtalk.com/arsenal/gabriel-jesus-joins-barcelona-from-arsenal",
@@ -139,15 +121,6 @@
       "date": "20260830T103000Z"
     },
     {
-      "title": "Way Too Early Predictions for the Champions League 2026 - 27 League Phase Table",
-      "url": "https://www.barcablaugranes.com/barcelona-uefa-champions-league/130828/way-too-early-predictions-2026-27-league-phase",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2292291682.jpg?quality=90&strip=all&crop=0%2C10.730523491307%2C100%2C78.538953017386",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260829T214500Z"
-    },
-    {
       "title": "Barcelona agree €10m Gabriel Jesus deal with Arsenal – Nehanda Radio",
       "url": "https://nehandaradio.com/2026/08/30/barcelona-agree-e10m-deal-to-sign-brazilian-striker-gabriel-jesus-from-arsenal/",
       "image": "https://nehandaradio.com/wp-content/uploads/2025/11/Gabriel-Jesus.webp",
@@ -200,6 +173,33 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260830T101500Z"
+    },
+    {
+      "title": "Transfer : Two players leave Arsenal on Sunday",
+      "url": "https://dailypost.ng/2026/08/30/transfer-two-players-leave-arsenal-on-sunday/",
+      "image": "https://dailypost.ng/wp-content/uploads/2025/07/Arsenal-crest.jpg",
+      "domain": "dailypost.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260830T181500Z"
+    },
+    {
+      "title": "Casemiro makes profound admission after Lionel Messi scores four goals at 39 years old in MLS game",
+      "url": "https://www.hitc.com/casemiro-makes-profound-admission-after-lionel-messi-scores-four-goals-at-39-years-old-in-mls-game/",
+      "image": "https://cdn3.hitc.com/uploads/1/2026/08/GettyImages-2292637871-scaled.jpg",
+      "domain": "hitc.com",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260830T080000Z"
+    },
+    {
+      "title": "Man Utd chief addresses Marcus Rashford situation to make transfer stance clear",
+      "url": "https://www.aol.co.uk/articles/man-utd-chief-addresses-marcus-075244000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/08/31/204d56d1-e57c-3f8d-a166-a78997c605f9/ebc399cc-8bb1-4534-9caa-e62a49ca93f4.jpg",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260831T083000Z"
     }
   ]
 }
