@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T15:55:39.628155+00:00",
+  "updated_at": "2026-08-31T16:14:30.537290+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -121,15 +121,6 @@
       "date": "20260830T130000Z"
     },
     {
-      "title": "Opportunistic Arsenal take risk over major attacker deal",
-      "url": "https://www.caughtoffside.com/2026/08/29/arsenal-take-risk-over-major-attacker-deal/",
-      "image": "https://icdn.caughtoffside.com/wp-content/uploads/2026/08/atletico-de-madrid-v-villarreal-cf-laliga-ea-sports-2026-27.jpg",
-      "domain": "caughtoffside.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260829T160000Z"
-    },
-    {
       "title": "Julian Alvarez returns to Atletico team training after illness",
       "url": "https://arynews.tv/julian-alvarez-returns-to-atletico-team-training-after-illness",
       "image": "https://static.arynews.tv/zip-archives/wp-content/uploads/2026/08/ARY-1200-x-675-px-2026-08-30T164803.529.jpg",
@@ -209,6 +200,15 @@
       "source_country": "Canada",
       "language": "English",
       "date": "20260831T074500Z"
+    },
+    {
+      "title": "MLS : Messi reaches 927 career goals",
+      "url": "https://dailypost.ng/2026/08/30/mls-messi-reaches-927-career-goals/",
+      "image": "",
+      "domain": "dailypost.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260830T101500Z"
     }
   ]
 }
