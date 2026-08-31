@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T08:16:29.122253+00:00",
+  "updated_at": "2026-08-31T08:34:51.493902+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -58,15 +58,6 @@
       "date": "20260831T050000Z"
     },
     {
-      "title": "Xavi Espart , João Cancelo , Alejandro Balde : Who should be Barcelona starting left - back and why ?",
-      "url": "https://www.barcablaugranes.com/cant-del-blog-barcelona-opinion/130829/xavi-espart-joao-cancelo-alejandro-balde-who-should-be-barcelona-starting-left-back-and-why",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2292507966.jpg?quality=90&strip=all&crop=0%2C10.727320509016%2C100%2C78.545358981969",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260829T171500Z"
-    },
-    {
       "title": "Breaking : Barcelona agree deal to sign Gabriel Jesus from Arsenal",
       "url": "https://theeagleonline.com.ng/breaking-barcelona-agree-deal-to-sign-gabriel-jesus-from-arsenal/",
       "image": "https://theeagleonline.com.ng/wp-content/uploads/2026/08/Gabriel-Jesus.jpg",
@@ -74,6 +65,15 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260830T181500Z"
+    },
+    {
+      "title": "Xavi Espart , João Cancelo , Alejandro Balde : Who should be Barcelona starting left - back and why ?",
+      "url": "https://www.barcablaugranes.com/cant-del-blog-barcelona-opinion/130829/xavi-espart-joao-cancelo-alejandro-balde-who-should-be-barcelona-starting-left-back-and-why",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2292507966.jpg?quality=90&strip=all&crop=0%2C10.727320509016%2C100%2C78.545358981969",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260829T171500Z"
     },
     {
       "title": "Julian Alvarez gives Mikel Arteta his answer amid Arsenal transfer interest",
