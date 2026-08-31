@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T08:54:55.772642+00:00",
+  "updated_at": "2026-08-31T09:16:59.269460+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -76,15 +76,6 @@
       "date": "20260829T171500Z"
     },
     {
-      "title": "Breaking : Barcelona agree deal to sign Gabriel Jesus from Arsenal",
-      "url": "https://theeagleonline.com.ng/breaking-barcelona-agree-deal-to-sign-gabriel-jesus-from-arsenal/",
-      "image": "https://theeagleonline.com.ng/wp-content/uploads/2026/08/Gabriel-Jesus.jpg",
-      "domain": "theeagleonline.com.ng",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260830T181500Z"
-    },
-    {
       "title": "Julian Alvarez gives Mikel Arteta his answer amid Arsenal transfer interest",
       "url": "https://www.thenews.com.pk/latest/1414113-julain-alvarez-gives-mikel-arteta-his-answer-amid-arsenal-transfer-interest",
       "image": "https://www.thenews.com.pk/assets/uploads/2026-08-29/1414113_054141_updates.jpg",
@@ -92,6 +83,15 @@
       "source_country": "Pakistan",
       "language": "English",
       "date": "20260829T140000Z"
+    },
+    {
+      "title": "Breaking : Barcelona agree deal to sign Gabriel Jesus from Arsenal",
+      "url": "https://theeagleonline.com.ng/breaking-barcelona-agree-deal-to-sign-gabriel-jesus-from-arsenal/",
+      "image": "https://theeagleonline.com.ng/wp-content/uploads/2026/08/Gabriel-Jesus.jpg",
+      "domain": "theeagleonline.com.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260830T181500Z"
     },
     {
       "title": "Atletico Madrid submit official bid for Julian Alvarez replacement with Arsenal on red alert",
