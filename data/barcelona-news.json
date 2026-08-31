@@ -1,17 +1,8 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T03:15:37.997820+00:00",
+  "updated_at": "2026-08-31T03:34:49.112825+00:00",
   "articles": [
-    {
-      "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
-      "url": "https://www.teamtalk.com/arsenal/gabriel-jesus-joins-barcelona-from-arsenal",
-      "image": "https://images.teamtalk.com/content/uploads/2026/08/30140139/TT-Gabriel-Jesus-with-Arsenal-Barcelona-badges-1-1.jpg",
-      "domain": "teamtalk.com",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260830T174500Z"
-    },
     {
       "title": "Hector Fort leaves Barcelona and signs for Real Sociedad",
       "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130885/hector-fort-signs-for-real-sociedad",
@@ -31,6 +22,15 @@
       "date": "20260829T171500Z"
     },
     {
+      "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
+      "url": "https://www.teamtalk.com/arsenal/gabriel-jesus-joins-barcelona-from-arsenal",
+      "image": "https://images.teamtalk.com/content/uploads/2026/08/30140139/TT-Gabriel-Jesus-with-Arsenal-Barcelona-badges-1-1.jpg",
+      "domain": "teamtalk.com",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260830T174500Z"
+    },
+    {
       "title": "I will always be a culer  - Hector Fort sends touching farewell message to Barcelona fans",
       "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/130893/culer-hector-fort-sends-touching-farewell-message",
       "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291209280.jpg?quality=90&strip=all&crop=0%2C10.729057198914%2C100%2C78.541885602173",
@@ -38,6 +38,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260829T214500Z"
+    },
+    {
+      "title": "He surprised me  - Hansi Flick offers first - team hope to Barcelona duo Hamza Abdelkarim and Brian Farinas",
+      "url": "https://www.barcablaugranes.com/barcelona-la-liga/130964/deserves-play-hansi-flick-hamza-abdelkarim-brian-farinas",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291177566.jpg?quality=90&strip=all&crop=0%2C10.729057198914%2C100%2C78.541885602173",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260831T030000Z"
     },
     {
       "title": "Xavi Espart , João Cancelo , Alejandro Balde : Who should be Barcelona starting left - back and why ?",
@@ -209,15 +218,6 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260830T181500Z"
-    },
-    {
-      "title": "Arsenal transfer news : Julian Alvarez  being persuaded  as departing star medical booked",
-      "url": "https://www.aol.co.uk/articles/arsenal-transfer-news-julian-alvarez-030000000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/08/29/83ea37d6-7331-3090-a54f-be848f9a3698/1c9c8295-226f-4ee0-8d0d-b0d7596e3e22.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260829T034500Z"
     }
   ]
 }
