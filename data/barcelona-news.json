@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T07:16:42.495903+00:00",
+  "updated_at": "2026-08-31T07:35:25.865610+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -130,15 +130,6 @@
       "date": "20260829T141500Z"
     },
     {
-      "title": "In divided Cyprus , FC Barcelona youth camp sparks new dispute : What to know",
-      "url": "https://www.al-monitor.com/originals/2026/08/divided-cyprus-fc-barcelona-youth-camp-sparks-new-dispute-what-know",
-      "image": "",
-      "domain": "al-monitor.com",
-      "source_country": "Israel",
-      "language": "English",
-      "date": "20260829T071500Z"
-    },
-    {
       "title": "Julian Alvarez returns to Atletico team training after illness",
       "url": "https://arynews.tv/julian-alvarez-returns-to-atletico-team-training-after-illness",
       "image": "https://static.arynews.tv/zip-archives/wp-content/uploads/2026/08/ARY-1200-x-675-px-2026-08-30T164803.529.jpg",
@@ -202,15 +193,6 @@
       "date": "20260830T143000Z"
     },
     {
-      "title": "Marcus Rashford to reject transfer offer as Arsenal consider late Man Utd option",
-      "url": "https://www.aol.co.uk/articles/marcus-rashford-reject-transfer-offer-064437000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/08/29/b52fdf7d-d77c-3282-8e51-7690f9f75e6a/cdbbd7a0-5252-4a94-9581-96f97e7c2e3c.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260829T071500Z"
-    },
-    {
       "title": "Decisive Showdown in Barcelona : OMODA 4 Makes Its European Debut as CYBER MECHA Takes Center Stage at VCT EMEA",
       "url": "https://www.manilatimes.net/2026/08/31/tmt-newswire/globenewswire/decisive-showdown-in-barcelona-omoda-4-makes-its-european-debut-as-cyber-mecha-takes-center-stage-at-vct-emea/2414826",
       "image": "https://manilatimes.net/manilatimes/uploads/images/2026/08/31/1195719.jpg",
@@ -218,6 +200,15 @@
       "source_country": "Philippines",
       "language": "English",
       "date": "20260831T041500Z"
+    },
+    {
+      "title": "MLS : Messi reaches 927 career goals",
+      "url": "https://dailypost.ng/2026/08/30/mls-messi-reaches-927-career-goals/",
+      "image": "",
+      "domain": "dailypost.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260830T101500Z"
     }
   ]
 }
