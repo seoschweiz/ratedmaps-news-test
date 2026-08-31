@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-08-31T10:54:31.382885+00:00",
+  "updated_at": "2026-08-31T11:34:29.189468+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -121,15 +121,6 @@
       "date": "20260829T160000Z"
     },
     {
-      "title": "Arsenal given hours to convince Julian Alvarez as Atletico Madrid issue final transfer ultimatum",
-      "url": "https://www.aol.co.uk/articles/arsenal-given-hours-convince-julian-103641000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/08/29/688ac01a-6a8d-35e7-b9dc-3c1e40a3d117/4770e95f-6b79-48d5-a85b-687d3f6e72f5.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260829T113000Z"
-    },
-    {
       "title": "MCD looks to Tokyo , New York , Barcelona to tackle Delhi waste woes",
       "url": "https://www.business-standard.com/india-news/mcd-looks-to-tokyo-new-york-barcelona-to-tackle-delhi-s-waste-woes-126082900672_1.html",
       "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2025-12/03/thumb/fitandfill/1200X628/1764740813-6059.jpg",
@@ -209,6 +200,15 @@
       "source_country": "Canada",
       "language": "English",
       "date": "20260831T074500Z"
+    },
+    {
+      "title": "MLS : Messi reaches 927 career goals",
+      "url": "https://dailypost.ng/2026/08/30/mls-messi-reaches-927-career-goals/",
+      "image": "",
+      "domain": "dailypost.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260830T101500Z"
     }
   ]
 }
