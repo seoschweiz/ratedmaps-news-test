@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-01T20:55:15.137898+00:00",
+  "updated_at": "2026-09-01T21:22:45.592758+00:00",
   "articles": [
     {
       "title": "Transfer : Details of Gabriel Jesu move from Arsenal to Barcelona revealed",
@@ -121,15 +121,6 @@
       "date": "20260831T121500Z"
     },
     {
-      "title": "Atletico Madrid submit official bid for Julian Alvarez replacement with Arsenal on red alert",
-      "url": "https://www.aol.co.uk/articles/atletico-submit-official-bid-alvarez-202821000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/08/30/65a7b1cd-d5ee-3a08-89f3-b13f75463080/ff89dd08-67b1-434c-be77-56b3c8dd7a4f.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260830T211500Z"
-    },
-    {
       "title": "Arsenal : Gunners told to sign elite striker after Alvarez failure",
       "url": "https://www.teamtalk.com/arsenal/gunners-told-sign-victor-osimhen-julian-alvarez-failure",
       "image": "https://images.teamtalk.com/content/uploads/2026/08/20135526/TT-Mikel-Arteta-Andrea-Berta-1-1.jpg",
@@ -218,6 +209,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260831T121500Z"
+    },
+    {
+      "title": "Gabriel Jesus agrees to sudden contract change as Arsenal and Barcelona deal nears",
+      "url": "https://www.aol.co.uk/articles/gabriel-jesus-agrees-sudden-contract-105720000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/09/01/c003fe4d-18c5-3d83-8341-f908ff49c64b/4b803c2e-0847-4801-b7e9-607d6e52570b.jpg",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260901T113000Z"
     }
   ]
 }
