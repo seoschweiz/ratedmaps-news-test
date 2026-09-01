@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-01T12:48:56.864802+00:00",
+  "updated_at": "2026-09-01T13:38:59.543372+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -112,15 +112,6 @@
       "date": "20260830T211500Z"
     },
     {
-      "title": "Julian Alvarez makes Atletico Madrid decision as clock ticks down on Arsenal deadline",
-      "url": "https://www.aol.co.uk/articles/julian-alvarez-makes-atletico-madrid-115740000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/08/30/32438ea0-2127-3f4f-b1a7-f6b04656b061/0a8a73cf-f3a3-4cd6-b929-2e418ed6ae3b.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260830T130000Z"
-    },
-    {
       "title": "MUTEK Festival 2026 Review : A Utopian Week Of Electronic Music In Montreal",
       "url": "https://stereogum.com/2509880/a-week-at-mutek-made-montreal-feel-too-good-to-be-true/columns/crossing-wires",
       "image": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/MUTEK27_20260826_Zora-Jones-DJ-set_credit_Frederique-Menard-Aubin-1291.jpg",
@@ -164,6 +155,15 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260830T143000Z"
+    },
+    {
+      "title": "Julian Alvarez  wants nothing to do with Arsenal  as Spanish media give four reasons why",
+      "url": "https://www.aol.co.uk/articles/julian-alvarez-wants-nothing-arsenal-122353000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/09/01/2be00064-6b1d-36c5-bfca-5fac86f43767/eb41e4e9-efb0-43a8-87c8-dabb2e306f8b.jpg",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260901T130000Z"
     },
     {
       "title": "Man Utd dream starting XI after transfer deadline day as problem area finally solved",
