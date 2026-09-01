@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-01T19:56:15.594279+00:00",
+  "updated_at": "2026-09-01T20:40:17.624830+00:00",
   "articles": [
     {
       "title": "Transfer : Details of Gabriel Jesu move from Arsenal to Barcelona revealed",
@@ -29,6 +29,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260831T030000Z"
+    },
+    {
+      "title": "Transfer deadline : Chelsea , Barcelona confirm deal for Washington , Guille Fernandez",
+      "url": "https://dailypost.ng/2026/09/01/transfer-deadline-chelsea-barcelona-confirm-deal-for-washington-guille-fernandez/",
+      "image": "https://dailypost.ng/wp-content/uploads/2026/09/Chelsea-Barcelona.jpg",
+      "domain": "dailypost.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260901T201500Z"
     },
     {
       "title": "Barcelona boss questions Arsenal transfer decision :  I was surprised",
@@ -209,15 +218,6 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260901T113000Z"
-    },
-    {
-      "title": "Tour de France champion Pogacar has collarbone surgery after Vuelta crash – Winnipeg Free Press",
-      "url": "https://www.winnipegfreepress.com/uncategorized/2026/08/31/tour-de-france-champion-pogacar-has-collarbone-surgery-after-vuelta-crash",
-      "image": "",
-      "domain": "winnipegfreepress.com",
-      "source_country": "Canada",
-      "language": "English",
-      "date": "20260831T204500Z"
     }
   ]
 }
