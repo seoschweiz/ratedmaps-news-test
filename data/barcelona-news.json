@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-01T10:42:51.861953+00:00",
+  "updated_at": "2026-09-01T11:38:22.526889+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -38,6 +38,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260831T030000Z"
+    },
+    {
+      "title": "Barcelona boss questions Arsenal transfer decision :  I was surprised",
+      "url": "https://metro.co.uk/2026/09/01/barcelona-boss-questions-arsenal-transfer-decision-i-surprised-29508293/",
+      "image": "https://metro.co.uk/wp-content/uploads/2026/09/GettyImages-2292683813-ad86_1788257835.jpg?quality=90&strip=all&crop=1",
+      "domain": "metro.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260901T111500Z"
     },
     {
       "title": "Three talking points from Barcelona 5 - 2 Rayo Vallecano",
@@ -209,15 +218,6 @@
       "source_country": "Canada",
       "language": "English",
       "date": "20260831T074500Z"
-    },
-    {
-      "title": "Barcelona 5 - 2 Rayo Vallecano : Raphinha , Lamine Yamal , Anthony Gordon shine as Barça stay perfect",
-      "url": "https://www.barcablaugranes.com/barcelona-la-liga/131071/barcelona-rayo-vallecano-la-liga-final-score-match-report-recap-reactions",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2292411136.jpg?quality=90&strip=all&crop=0%2C10.748554085306%2C100%2C78.502891829388",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260831T220000Z"
     }
   ]
 }
