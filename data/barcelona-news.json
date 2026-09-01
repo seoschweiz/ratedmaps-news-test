@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-01T10:26:02.275620+00:00",
+  "updated_at": "2026-09-01T10:42:51.861953+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -148,15 +148,6 @@
       "date": "20260901T024500Z"
     },
     {
-      "title": "Arsenal handed major Julian Alvarez boost as Man City close in on Cody Gakpo",
-      "url": "https://www.aol.co.uk/articles/arsenal-handed-major-julian-alvarez-093157000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/08/30/c24c5844-4666-3a4c-b068-77dfb5bd560d/31a29288-936f-47d3-b82f-a5d6c94f0b5d.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260830T103000Z"
-    },
-    {
       "title": "Barcelona agree €10m Gabriel Jesus deal with Arsenal – Nehanda Radio",
       "url": "https://nehandaradio.com/2026/08/30/barcelona-agree-e10m-deal-to-sign-brazilian-striker-gabriel-jesus-from-arsenal/",
       "image": "https://nehandaradio.com/wp-content/uploads/2025/11/Gabriel-Jesus.webp",
@@ -218,6 +209,15 @@
       "source_country": "Canada",
       "language": "English",
       "date": "20260831T074500Z"
+    },
+    {
+      "title": "Barcelona 5 - 2 Rayo Vallecano : Raphinha , Lamine Yamal , Anthony Gordon shine as Barça stay perfect",
+      "url": "https://www.barcablaugranes.com/barcelona-la-liga/131071/barcelona-rayo-vallecano-la-liga-final-score-match-report-recap-reactions",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2292411136.jpg?quality=90&strip=all&crop=0%2C10.748554085306%2C100%2C78.502891829388",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260831T220000Z"
     }
   ]
 }
