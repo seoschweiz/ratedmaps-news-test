@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-01T17:54:23.104257+00:00",
+  "updated_at": "2026-09-01T18:41:22.291865+00:00",
   "articles": [
     {
       "title": "Transfer : Details of Gabriel Jesu move from Arsenal to Barcelona revealed",
@@ -94,15 +94,6 @@
       "date": "20260831T220000Z"
     },
     {
-      "title": "Breaking : Barcelona agree deal to sign Gabriel Jesus from Arsenal",
-      "url": "https://theeagleonline.com.ng/breaking-barcelona-agree-deal-to-sign-gabriel-jesus-from-arsenal/",
-      "image": "https://theeagleonline.com.ng/wp-content/uploads/2026/08/Gabriel-Jesus.jpg",
-      "domain": "theeagleonline.com.ng",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260830T181500Z"
-    },
-    {
       "title": "Man Utd : Decision reached over signing left - back Alejandro Balde from Barcelona",
       "url": "https://www.teamtalk.com/manchester-united/decision-reached-signing-alejandro-balde-from-barcelona",
       "image": "https://images.teamtalk.com/content/uploads/2026/02/17133707/alejandro-balde-jason-wilcox-man-utd.jpg",
@@ -119,6 +110,15 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260830T211500Z"
+    },
+    {
+      "title": "Arsenal : Gunners told to sign elite striker after Alvarez failure",
+      "url": "https://www.teamtalk.com/arsenal/gunners-told-sign-victor-osimhen-julian-alvarez-failure",
+      "image": "https://images.teamtalk.com/content/uploads/2026/08/20135526/TT-Mikel-Arteta-Andrea-Berta-1-1.jpg",
+      "domain": "teamtalk.com",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260901T181500Z"
     },
     {
       "title": "MUTEK Festival 2026 Review : A Utopian Week Of Electronic Music In Montreal",
