@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-01T19:35:50.766743+00:00",
+  "updated_at": "2026-09-01T19:56:15.594279+00:00",
   "articles": [
     {
       "title": "Transfer : Details of Gabriel Jesu move from Arsenal to Barcelona revealed",
@@ -157,6 +157,15 @@
       "date": "20260901T024500Z"
     },
     {
+      "title": "Barcelona Complete €10 Signing Of Gabriel Jesus From Arsenal",
+      "url": "https://leadership.ng/barcelona-complete-e10-signing-of-gabriel-jesus-from-arsenal/",
+      "image": "https://leadership.ng/wp-content/uploads/2026/09/Screenshot_20260901_172724_Chrome.jpg",
+      "domain": "leadership.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260901T191500Z"
+    },
+    {
       "title": "Julian Alvarez  wants nothing to do with Arsenal  as Spanish media give four reasons why",
       "url": "https://www.aol.co.uk/articles/julian-alvarez-wants-nothing-arsenal-122353000.html",
       "image": "https://hermes.media.static.aol.com/media/2026/09/01/2be00064-6b1d-36c5-bfca-5fac86f43767/eb41e4e9-efb0-43a8-87c8-dabb2e306f8b.jpg",
@@ -209,15 +218,6 @@
       "source_country": "Canada",
       "language": "English",
       "date": "20260831T204500Z"
-    },
-    {
-      "title": "Decisive Showdown in Barcelona : OMODA 4 Makes Its European Debut as CYBER MECHA Takes Center Stage at VCT EMEA",
-      "url": "https://thestarphoenix.com/press-releases/globe-newswire/decisive-showdown-in-barcelona-omoda-4-makes-its-european-debut-as-cyber-mecha-takes-center-stage-at-vct-emea/",
-      "image": "https://thestarphoenix.com/wp-content/uploads/sites/3/2026/08/image-1.jpeg",
-      "domain": "thestarphoenix.com",
-      "source_country": "Canada",
-      "language": "English",
-      "date": "20260831T074500Z"
     }
   ]
 }
