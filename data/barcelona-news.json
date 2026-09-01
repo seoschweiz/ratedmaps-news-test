@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-01T11:38:22.526889+00:00",
+  "updated_at": "2026-09-01T11:56:16.271077+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -202,6 +202,15 @@
       "date": "20260831T121500Z"
     },
     {
+      "title": "Gabriel Jesus agrees to sudden contract change as Arsenal and Barcelona deal nears",
+      "url": "https://www.aol.co.uk/articles/gabriel-jesus-agrees-sudden-contract-105720000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/09/01/c003fe4d-18c5-3d83-8341-f908ff49c64b/4b803c2e-0847-4801-b7e9-607d6e52570b.jpg",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260901T113000Z"
+    },
+    {
       "title": "Tour de France champion Pogacar has collarbone surgery after Vuelta crash – Winnipeg Free Press",
       "url": "https://www.winnipegfreepress.com/uncategorized/2026/08/31/tour-de-france-champion-pogacar-has-collarbone-surgery-after-vuelta-crash",
       "image": "",
@@ -209,15 +218,6 @@
       "source_country": "Canada",
       "language": "English",
       "date": "20260831T204500Z"
-    },
-    {
-      "title": "Decisive Showdown in Barcelona : OMODA 4 Makes Its European Debut as CYBER MECHA Takes Center Stage at VCT EMEA",
-      "url": "https://thestarphoenix.com/press-releases/globe-newswire/decisive-showdown-in-barcelona-omoda-4-makes-its-european-debut-as-cyber-mecha-takes-center-stage-at-vct-emea/",
-      "image": "https://thestarphoenix.com/wp-content/uploads/sites/3/2026/08/image-1.jpeg",
-      "domain": "thestarphoenix.com",
-      "source_country": "Canada",
-      "language": "English",
-      "date": "20260831T074500Z"
     }
   ]
 }
