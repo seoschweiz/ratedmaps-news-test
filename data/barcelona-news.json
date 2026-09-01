@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-01T02:38:28.158151+00:00",
+  "updated_at": "2026-09-01T02:55:32.134169+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -119,6 +119,15 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260830T134500Z"
+    },
+    {
+      "title": "Yamal , Raphinha bag braces as Barcelona rout Rayo",
+      "url": "https://www.namibian.com.na/yamal-raphinha-bag-braces-as-barcelona-rout-rayo/",
+      "image": "https://d4f7y6nbupj5z.cloudfront.net/wp-content/uploads/2026/09/Barca-v-Vallecano-4-1024x683.jpeg",
+      "domain": "namibian.com.na",
+      "source_country": "Namibia",
+      "language": "English",
+      "date": "20260901T024500Z"
     },
     {
       "title": "Arsenal handed major Julian Alvarez boost as Man City close in on Cody Gakpo",
