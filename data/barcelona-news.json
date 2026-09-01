@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-01T13:57:26.586041+00:00",
+  "updated_at": "2026-09-01T14:23:17.053121+00:00",
   "articles": [
     {
       "title": "Arsenal : Fabrizio Romano says striker is joining Barcelona –  here we go",
@@ -121,6 +121,15 @@
       "date": "20260831T204500Z"
     },
     {
+      "title": "Transfer Deadline : Barcelona confirm Jesus deal , Palace sign Ahanor after Chelsea agreement",
+      "url": "https://dailypost.ng/2026/09/01/transfer-deadline-barcelona-confirm-jesus-deal-palace-sign-ahanor-after-chelsea-agreement/",
+      "image": "",
+      "domain": "dailypost.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260901T140000Z"
+    },
+    {
       "title": "Yamal , Raphinha bag braces as Barcelona rout Rayo",
       "url": "https://www.namibian.com.na/yamal-raphinha-bag-braces-as-barcelona-rout-rayo/",
       "image": "https://d4f7y6nbupj5z.cloudfront.net/wp-content/uploads/2026/09/Barca-v-Vallecano-4-1024x683.jpeg",
@@ -209,15 +218,6 @@
       "source_country": "Canada",
       "language": "English",
       "date": "20260831T074500Z"
-    },
-    {
-      "title": "Barcelona 5 - 2 Rayo Vallecano : Raphinha , Lamine Yamal , Anthony Gordon shine as Barça stay perfect",
-      "url": "https://www.barcablaugranes.com/barcelona-la-liga/131071/barcelona-rayo-vallecano-la-liga-final-score-match-report-recap-reactions",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2292411136.jpg?quality=90&strip=all&crop=0%2C10.748554085306%2C100%2C78.502891829388",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260831T220000Z"
     }
   ]
 }
