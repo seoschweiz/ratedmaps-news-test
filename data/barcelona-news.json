@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-02T20:39:01.297466+00:00",
+  "updated_at": "2026-09-02T20:55:19.274617+00:00",
   "articles": [
     {
       "title": "A top striker  - Hansi Flick talks Gabriel Jesus after Barcelona beat Rayo",
@@ -112,15 +112,6 @@
       "date": "20260902T030000Z"
     },
     {
-      "title": "MUTEK Festival 2026 Review : A Utopian Week Of Electronic Music In Montreal",
-      "url": "https://stereogum.com/2509880/a-week-at-mutek-made-montreal-feel-too-good-to-be-true/columns/crossing-wires",
-      "image": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/MUTEK27_20260826_Zora-Jones-DJ-set_credit_Frederique-Menard-Aubin-1291.jpg",
-      "domain": "stereogum.com",
-      "source_country": "United States",
-      "language": "English",
-      "date": "20260831T204500Z"
-    },
-    {
       "title": "Transfer Deadline : Barcelona confirm Jesus deal , Palace sign Ahanor after Chelsea agreement",
       "url": "https://dailypost.ng/2026/09/01/transfer-deadline-barcelona-confirm-jesus-deal-palace-sign-ahanor-after-chelsea-agreement/",
       "image": "",
@@ -218,6 +209,15 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260901T113000Z"
+    },
+    {
+      "title": "F1 news : Herta among three rookies set for Monza FP1",
+      "url": "https://speedcafe.com/f1-news-2026-italian-grand-prix-monza-colton-herta-luke-browning-paul-aaron-rookie-drivers-practice-who-replace/",
+      "image": "https://speedcafe.com/wp-content/uploads/2026/09/XPB_1428632_HiRes.jpg",
+      "domain": "speedcafe.com",
+      "source_country": "Australia",
+      "language": "English",
+      "date": "20260902T030000Z"
     }
   ]
 }
