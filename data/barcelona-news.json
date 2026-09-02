@@ -1,17 +1,8 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-02T08:23:57.497398+00:00",
+  "updated_at": "2026-09-02T08:40:50.195230+00:00",
   "articles": [
-    {
-      "title": "Transfer : Details of Gabriel Jesu move from Arsenal to Barcelona revealed",
-      "url": "https://dailypost.ng/2026/08/31/transfer-details-of-gabriel-jesus-move-from-arsenal-to-barcelona-revealed/",
-      "image": "",
-      "domain": "dailypost.ng",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260831T083000Z"
-    },
     {
       "title": "A top striker  - Hansi Flick talks Gabriel Jesus after Barcelona beat Rayo",
       "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/131131/top-striker-hansi-flick-gabriel-jesus",
@@ -218,6 +209,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260831T220000Z"
+    },
+    {
+      "title": "Barcelona told why Gabriel Jesus is  precisely what Hansi Flick wants",
+      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/131023/why-gabriel-jesus-precisely-what-hansi-flick-wants",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2277981653.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260831T121500Z"
     }
   ]
 }
