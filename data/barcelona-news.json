@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-02T08:40:50.195230+00:00",
+  "updated_at": "2026-09-02T08:56:47.970607+00:00",
   "articles": [
     {
       "title": "A top striker  - Hansi Flick talks Gabriel Jesus after Barcelona beat Rayo",
@@ -166,6 +166,15 @@
       "date": "20260902T044500Z"
     },
     {
+      "title": "Sergio Perez replaced as Cadillac makes Colton Herta FP1 announcement",
+      "url": "https://www.planetf1.com/news/sergio-perez-colton-herta-italian-grand-prix-2026-fp1",
+      "image": "https://d3cm515ijfiu6w.cloudfront.net/wp-content/uploads/2026/09/02070305/sergio-perez-colton-herta-cadillac-f1-2026.jpg",
+      "domain": "planetf1.com",
+      "source_country": "Australia",
+      "language": "English",
+      "date": "20260902T083000Z"
+    },
+    {
       "title": "Barcelona Complete €10 Signing Of Gabriel Jesus From Arsenal",
       "url": "https://leadership.ng/barcelona-complete-e10-signing-of-gabriel-jesus-from-arsenal/",
       "image": "https://leadership.ng/wp-content/uploads/2026/09/Screenshot_20260901_172724_Chrome.jpg",
@@ -209,15 +218,6 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260831T220000Z"
-    },
-    {
-      "title": "Barcelona told why Gabriel Jesus is  precisely what Hansi Flick wants",
-      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/131023/why-gabriel-jesus-precisely-what-hansi-flick-wants",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2277981653.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260831T121500Z"
     }
   ]
 }
