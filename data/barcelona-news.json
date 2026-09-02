@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-01T23:54:15.449967+00:00",
+  "updated_at": "2026-09-02T01:19:08.604251+00:00",
   "articles": [
     {
       "title": "Transfer : Details of Gabriel Jesu move from Arsenal to Barcelona revealed",
@@ -130,6 +130,15 @@
       "date": "20260901T181500Z"
     },
     {
+      "title": "Premier League stars may struggle with La Liga tactical demands Gordon",
+      "url": "https://theeagleonline.com.ng/premier-league-stars-may-struggle-with-la-ligas-tactical-demands-gordon/",
+      "image": "https://theeagleonline.com.ng/wp-content/uploads/2026/09/Anthony-Gordon.jpg",
+      "domain": "theeagleonline.com.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260901T234500Z"
+    },
+    {
       "title": "MUTEK Festival 2026 Review : A Utopian Week Of Electronic Music In Montreal",
       "url": "https://stereogum.com/2509880/a-week-at-mutek-made-montreal-feel-too-good-to-be-true/columns/crossing-wires",
       "image": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/MUTEK27_20260826_Zora-Jones-DJ-set_credit_Frederique-Menard-Aubin-1291.jpg",
@@ -209,15 +218,6 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260831T121500Z"
-    },
-    {
-      "title": "Gabriel Jesus agrees to sudden contract change as Arsenal and Barcelona deal nears",
-      "url": "https://www.aol.co.uk/articles/gabriel-jesus-agrees-sudden-contract-105720000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/09/01/c003fe4d-18c5-3d83-8341-f908ff49c64b/4b803c2e-0847-4801-b7e9-607d6e52570b.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260901T113000Z"
     }
   ]
 }
