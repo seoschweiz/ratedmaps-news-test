@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-02T10:22:52.499710+00:00",
+  "updated_at": "2026-09-02T10:39:19.057850+00:00",
   "articles": [
     {
       "title": "A top striker  - Hansi Flick talks Gabriel Jesus after Barcelona beat Rayo",
@@ -65,6 +65,15 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260901T163000Z"
+    },
+    {
+      "title": "Transfer deadline : Midfielders leave Real Madrid , Barcelona for new clubs",
+      "url": "https://dailypost.ng/2026/09/02/transfer-deadline-midfielders-leave-real-madrid-barcelona-for-new-clubs/",
+      "image": "https://dailypost.ng/wp-content/uploads/2026/09/01kek1bvwmv9gz6z3zyg-1.jpg",
+      "domain": "dailypost.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260902T101500Z"
     },
     {
       "title": "Gabriel Jesus talks Raphinha , Julian Alvarez & Hansi Flick after joining Barcelona from Arsenal",
@@ -209,15 +218,6 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260902T064500Z"
-    },
-    {
-      "title": "Barcelona 5 - 2 Rayo Vallecano : Man of the Match",
-      "url": "https://www.barcablaugranes.com/post/70EFy0h4lI1H",
-      "image": "",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260831T220000Z"
     }
   ]
 }
