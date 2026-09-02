@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-02T21:54:31.956146+00:00",
+  "updated_at": "2026-09-02T22:22:39.696384+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -83,15 +83,6 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260901T163000Z"
-    },
-    {
-      "title": "Truly sad  - Barcelona boss Hansi Flick reacts as Lionel Messi retires from Argentina duty",
-      "url": "https://www.barcablaugranes.com/barcelona-la-liga/131080/sad-hansi-flick-reacts-lionel-messi-retires-argentina",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/07/gettyimages-2286227935.jpg?quality=90&strip=all&crop=0%2C10.727648375853%2C100%2C78.544703248293",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260831T220000Z"
     },
     {
       "title": "Arsenal : Gunners told to sign elite striker after Alvarez failure",
@@ -202,15 +193,6 @@
       "date": "20260902T064500Z"
     },
     {
-      "title": "Barcelona 5 - 2 Rayo Vallecano : Man of the Match",
-      "url": "https://www.barcablaugranes.com/post/70EFy0h4lI1H",
-      "image": "",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260831T220000Z"
-    },
-    {
       "title": "Gabriel Jesus agrees to sudden contract change as Arsenal and Barcelona deal nears",
       "url": "https://www.aol.co.uk/articles/gabriel-jesus-agrees-sudden-contract-105720000.html",
       "image": "https://hermes.media.static.aol.com/media/2026/09/01/c003fe4d-18c5-3d83-8341-f908ff49c64b/4b803c2e-0847-4801-b7e9-607d6e52570b.jpg",
@@ -218,6 +200,24 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260901T113000Z"
+    },
+    {
+      "title": "F1 news : Herta among three rookies set for Monza FP1",
+      "url": "https://speedcafe.com/f1-news-2026-italian-grand-prix-monza-colton-herta-luke-browning-paul-aaron-rookie-drivers-practice-who-replace/",
+      "image": "https://speedcafe.com/wp-content/uploads/2026/09/XPB_1428632_HiRes.jpg",
+      "domain": "speedcafe.com",
+      "source_country": "Australia",
+      "language": "English",
+      "date": "20260902T030000Z"
+    },
+    {
+      "title": "The three deadline day signings Man Utd decided to walk away from",
+      "url": "https://metro.co.uk/2026/09/02/three-deadline-day-signings-man-utd-decided-walk-away-29516555/",
+      "image": "https://metro.co.uk/wp-content/uploads/2026/08/GettyImages-2289760520-b9ec_1788339809.jpg?quality=90&strip=all&crop=1",
+      "domain": "metro.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260902T101500Z"
     }
   ]
 }
