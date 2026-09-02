@@ -1,8 +1,17 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-02T20:55:19.274617+00:00",
+  "updated_at": "2026-09-02T21:22:24.104772+00:00",
   "articles": [
+    {
+      "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
+      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/131308/dani-olmo-atletico-julian-alvarez-transfer-saga",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/06/gettyimages-2260880970.jpg?quality=90&strip=all&crop=0%2C10.737647280453%2C100%2C78.524705439095",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260902T210000Z"
+    },
     {
       "title": "A top striker  - Hansi Flick talks Gabriel Jesus after Barcelona beat Rayo",
       "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/131131/top-striker-hansi-flick-gabriel-jesus",
@@ -209,15 +218,6 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260901T113000Z"
-    },
-    {
-      "title": "F1 news : Herta among three rookies set for Monza FP1",
-      "url": "https://speedcafe.com/f1-news-2026-italian-grand-prix-monza-colton-herta-luke-browning-paul-aaron-rookie-drivers-practice-who-replace/",
-      "image": "https://speedcafe.com/wp-content/uploads/2026/09/XPB_1428632_HiRes.jpg",
-      "domain": "speedcafe.com",
-      "source_country": "Australia",
-      "language": "English",
-      "date": "20260902T030000Z"
     }
   ]
 }
