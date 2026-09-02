@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-02T02:57:36.181896+00:00",
+  "updated_at": "2026-09-02T03:21:38.321423+00:00",
   "articles": [
     {
       "title": "Transfer : Details of Gabriel Jesu move from Arsenal to Barcelona revealed",
@@ -20,15 +20,6 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260901T030000Z"
-    },
-    {
-      "title": "He surprised me  - Hansi Flick offers first - team hope to Barcelona duo Hamza Abdelkarim and Brian Farinas",
-      "url": "https://www.barcablaugranes.com/barcelona-la-liga/130964/deserves-play-hansi-flick-hamza-abdelkarim-brian-farinas",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291177566.jpg?quality=90&strip=all&crop=0%2C10.729057198914%2C100%2C78.541885602173",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260831T030000Z"
     },
     {
       "title": "Transfer deadline : Chelsea , Barcelona confirm deal for Washington , Guille Fernandez",
@@ -137,6 +128,15 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260901T234500Z"
+    },
+    {
+      "title": "Barcelona complete signing of Arsenal striker Gabriel Jesus",
+      "url": "http://www.china.org.cn/2026-09/02/content_118676351.shtml",
+      "image": "",
+      "domain": "china.org.cn",
+      "source_country": "China",
+      "language": "English",
+      "date": "20260902T030000Z"
     },
     {
       "title": "MUTEK Festival 2026 Review : A Utopian Week Of Electronic Music In Montreal",
