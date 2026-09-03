@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-03T06:59:12.042412+00:00",
+  "updated_at": "2026-09-03T07:22:23.139136+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -148,15 +148,6 @@
       "date": "20260901T130000Z"
     },
     {
-      "title": "Man Utd dream starting XI after transfer deadline day as problem area finally solved",
-      "url": "https://www.aol.co.uk/articles/man-utds-dream-starting-xi-063000000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/09/01/3c07abfa-3c3a-399a-8cfa-40277d3c8074/72ecf9bb-599e-44c2-824b-6118cfbeda6e.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260901T070000Z"
-    },
-    {
       "title": "He can easily score 10 - 15 goal - Sergio Aguero tips Gabriel Jesus to thrive at Barcelona",
       "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/131258/easily-score-10-15-goals-sergio-aguero-gabriel-jesus",
       "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/09/gettyimages-1141725020.jpg?quality=90&strip=all&crop=0%2C10.669135487166%2C100%2C78.661729025667",
@@ -209,6 +200,15 @@
       "source_country": "India",
       "language": "English",
       "date": "20260902T134500Z"
+    },
+    {
+      "title": "Arsenal  approached  £73m forward days before deadline in desperate late scramble",
+      "url": "https://www.aol.co.uk/articles/arsenal-approached-73m-forward-days-063321000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/09/03/bb7c4276-0216-31b4-a40f-4cebc6c09aef/c38dc343-a102-4bf6-b6ec-2a1bb37118ab.jpg",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260903T070000Z"
     },
     {
       "title": "Stan Kroenke handed massive £300m Arsenal boost after Liverpool and Man Utd left behind",
