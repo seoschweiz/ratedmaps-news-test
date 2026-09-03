@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-03T21:20:39.377525+00:00",
+  "updated_at": "2026-09-03T22:55:27.056707+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -103,6 +103,15 @@
       "date": "20260902T134500Z"
     },
     {
+      "title": "FC Barcelona announcement",
+      "url": "https://www.fcbarcelona.com/en/club/news/4571765/fc-barcelona-announcement",
+      "image": "https://www.fcbarcelona.com/fcbarcelona/photo/2026/09/03/b315d053-2352-4617-8abe-d732d1a8b8c0/Foto-Junta-Directiva-3.9.2026.jpeg",
+      "domain": "fcbarcelona.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260903T221500Z"
+    },
+    {
       "title": "Arsenal  approached  £73m forward days before deadline in desperate late scramble",
       "url": "https://www.aol.co.uk/articles/arsenal-approached-73m-forward-days-063321000.html",
       "image": "https://hermes.media.static.aol.com/media/2026/09/03/bb7c4276-0216-31b4-a40f-4cebc6c09aef/c38dc343-a102-4bf6-b6ec-2a1bb37118ab.jpg",
@@ -184,6 +193,15 @@
       "date": "20260902T091500Z"
     },
     {
+      "title": "American Airlines to connect Savannah travelers to Europe , Asia with new summer 2027 routes",
+      "url": "https://www.wtoc.com/2026/09/03/american-airlines-connect-savannah-travelers-europe-asia-with-new-summer-2027-routes/",
+      "image": "https://gray-wtoc-prod.gtv-cdn.com/resizer/v2/4MLLSI7S3BHOJGSZM3MFWC65AM.jpg?auth=dc3b4771e6c463fd64b60a81a406431920a7dc9dbdec4bdc68b90e5cf55480e5&smart=true",
+      "domain": "wtoc.com",
+      "source_country": "United States",
+      "language": "English",
+      "date": "20260903T221500Z"
+    },
+    {
       "title": "America Cup : Luna Rossa now level pegging with Kiwis",
       "url": "https://www.yachtsandyachting.com/news/299361/AC-Recon-Aug-31-Italians-catch-Kiwis",
       "image": "https://www.yachtsandyachting.com/photos/ac75/yysw584491.jpg",
@@ -200,24 +218,6 @@
       "source_country": "Egypt",
       "language": "English",
       "date": "20260903T003000Z"
-    },
-    {
-      "title": "Deltamarin , Offshoretronic To Design Monopile",
-      "url": "https://www.marinelink.com/news/deltamarin-offshoretronic-design-monopile-542618",
-      "image": "https://images.marinelink.com/images/maritime/w800/credit-offshoretronic-173394.jpeg",
-      "domain": "marinelink.com",
-      "source_country": "United States",
-      "language": "English",
-      "date": "20260901T224500Z"
-    },
-    {
-      "title": "Quickfire Quiz 193 : Can you answer 10 questions in 90 seconds ?",
-      "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-193",
-      "image": "https://cdn.mos.cms.futurecdn.net/42fzFTCFsVimcL77bChy9V-2000-80.png",
-      "domain": "fourfourtwo.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260902T073000Z"
     }
   ]
 }
