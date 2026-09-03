@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-03T20:20:56.557018+00:00",
+  "updated_at": "2026-09-03T20:38:22.480971+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -38,15 +38,6 @@
       "source_country": "China",
       "language": "English",
       "date": "20260902T030000Z"
-    },
-    {
-      "title": "Im happy to be plan - B to Julian Alvarez : Gabriel Jesus | The Peninsula Qatar",
-      "url": "http://thepeninsulaqatar.com/article/01/09/2026/im-happy-to-be-plan-b-to-julian-alvarez-gabriel-jesus",
-      "image": "http://thepeninsulaqatar.com/get/maximage/20260901_1788280738-189.jpg",
-      "domain": "thepeninsulaqatar.com",
-      "source_country": "Qatar",
-      "language": "English",
-      "date": "20260901T203000Z"
     },
     {
       "title": "Jesus Joins Barcelona – THISDAYLIVE",
@@ -218,6 +209,15 @@
       "source_country": "United States",
       "language": "English",
       "date": "20260901T224500Z"
+    },
+    {
+      "title": "Quickfire Quiz 193 : Can you answer 10 questions in 90 seconds ?",
+      "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-193",
+      "image": "https://cdn.mos.cms.futurecdn.net/42fzFTCFsVimcL77bChy9V-2000-80.png",
+      "domain": "fourfourtwo.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260902T073000Z"
     }
   ]
 }
