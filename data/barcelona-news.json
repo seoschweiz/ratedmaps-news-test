@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-03T13:56:13.490590+00:00",
+  "updated_at": "2026-09-03T14:24:18.414416+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -83,15 +83,6 @@
       "source_country": "China",
       "language": "English",
       "date": "20260902T030000Z"
-    },
-    {
-      "title": "Transfer Deadline : Barcelona confirm Jesus deal , Palace sign Ahanor after Chelsea agreement",
-      "url": "https://dailypost.ng/2026/09/01/transfer-deadline-barcelona-confirm-jesus-deal-palace-sign-ahanor-after-chelsea-agreement/",
-      "image": "",
-      "domain": "dailypost.ng",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260901T140000Z"
     },
     {
       "title": "Im happy to be plan - B to Julian Alvarez : Gabriel Jesus | The Peninsula Qatar",
@@ -218,6 +209,15 @@
       "source_country": "Canada",
       "language": "English",
       "date": "20260901T163000Z"
+    },
+    {
+      "title": "RB Leipzig sign Marc Guiu from Chelsea",
+      "url": "http://www.china.org.cn/2026-09/02/content_118676373.shtml",
+      "image": "",
+      "domain": "china.org.cn",
+      "source_country": "China",
+      "language": "English",
+      "date": "20260902T030000Z"
     }
   ]
 }
