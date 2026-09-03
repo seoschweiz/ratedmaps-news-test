@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-03T23:36:08.805723+00:00",
+  "updated_at": "2026-09-03T23:54:26.997540+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -20,15 +20,6 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260902T101500Z"
-    },
-    {
-      "title": "Premier League stars may struggle with La Liga tactical demands Gordon",
-      "url": "https://theeagleonline.com.ng/premier-league-stars-may-struggle-with-la-ligas-tactical-demands-gordon/",
-      "image": "https://theeagleonline.com.ng/wp-content/uploads/2026/09/Anthony-Gordon.jpg",
-      "domain": "theeagleonline.com.ng",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260901T234500Z"
     },
     {
       "title": "Barcelona complete signing of Arsenal striker Gabriel Jesus",
@@ -218,6 +209,15 @@
       "source_country": "Egypt",
       "language": "English",
       "date": "20260903T003000Z"
+    },
+    {
+      "title": "Quickfire Quiz 193 : Can you answer 10 questions in 90 seconds ?",
+      "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-193",
+      "image": "https://cdn.mos.cms.futurecdn.net/42fzFTCFsVimcL77bChy9V-2000-80.png",
+      "domain": "fourfourtwo.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260902T073000Z"
     }
   ]
 }
