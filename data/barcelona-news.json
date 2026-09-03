@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-03T03:52:10.857899+00:00",
+  "updated_at": "2026-09-03T06:29:25.840913+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -193,6 +193,15 @@
       "date": "20260902T101500Z"
     },
     {
+      "title": "2026 Ballon dOr : He should do it again - LaLiga chief , Tebas names winner of award",
+      "url": "https://dailypost.ng/2026/09/03/2026-ballon-dor-he-should-do-it-again-laliga-chief-tebas-names-winner-of-award/",
+      "image": "",
+      "domain": "dailypost.ng",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260903T060000Z"
+    },
+    {
       "title": "Lokayan 2026 : Indian naval ship Sudarshini arrives in Barcelona",
       "url": "https://news.webindia123.com/news/Articles/World/20260902/4493893.html",
       "image": "",
@@ -209,15 +218,6 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260902T134500Z"
-    },
-    {
-      "title": "Duo Restaurateur Couple Sarah & Jordan MacDonald On What A Holiday In Europe Taught Them About Food & Love",
-      "url": "https://www.nzherald.co.nz/viva/travel/duo-restaurateur-couple-sarah-jordan-macdonald-on-what-a-holiday-in-europe-taught-them-about-food-love/premium/57D7XMWKKREB5E54U3TD7FAX5Y/",
-      "image": "https://www.nzherald.co.nz/resizer/v2/EJ26Z5EEKJE3ZKKUE46O2ACR3U.jpg?auth=9df59faa31365ae952950bb2b99ace94a35d0343a2f50e7236b72bce9220bc85&quality=70&focal=721%2C772&smart=false",
-      "domain": "nzherald.co.nz",
-      "source_country": "New Zealand",
-      "language": "English",
-      "date": "20260901T070000Z"
     }
   ]
 }
