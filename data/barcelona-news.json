@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-03T18:59:03.830435+00:00",
+  "updated_at": "2026-09-03T20:20:56.557018+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -11,24 +11,6 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260902T210000Z"
-    },
-    {
-      "title": "Transfer deadline : Chelsea , Barcelona confirm deal for Washington , Guille Fernandez",
-      "url": "https://dailypost.ng/2026/09/01/transfer-deadline-chelsea-barcelona-confirm-deal-for-washington-guille-fernandez/",
-      "image": "https://dailypost.ng/wp-content/uploads/2026/09/Chelsea-Barcelona.jpg",
-      "domain": "dailypost.ng",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260901T201500Z"
-    },
-    {
-      "title": "Barcelona sign Brazilian striker Jesus",
-      "url": "https://arynews.tv/barcelona-sign-brazilian-striker-jesus",
-      "image": "https://static.arynews.tv/zip-archives/wp-content/uploads/2026/09/FotoJet-15.jpg",
-      "domain": "arynews.tv",
-      "source_country": "Pakistan",
-      "language": "English",
-      "date": "20260901T190000Z"
     },
     {
       "title": "Transfer deadline : Midfielders leave Real Madrid , Barcelona for new clubs",
@@ -83,15 +65,6 @@
       "source_country": "Australia",
       "language": "English",
       "date": "20260902T083000Z"
-    },
-    {
-      "title": "Barcelona Complete €10 Signing Of Gabriel Jesus From Arsenal",
-      "url": "https://leadership.ng/barcelona-complete-e10-signing-of-gabriel-jesus-from-arsenal/",
-      "image": "https://leadership.ng/wp-content/uploads/2026/09/Screenshot_20260901_172724_Chrome.jpg",
-      "domain": "leadership.ng",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260901T191500Z"
     },
     {
       "title": "He can easily score 10 - 15 goal - Sergio Aguero tips Gabriel Jesus to thrive at Barcelona",
@@ -218,6 +191,33 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260902T091500Z"
+    },
+    {
+      "title": "America Cup : Luna Rossa now level pegging with Kiwis",
+      "url": "https://www.yachtsandyachting.com/news/299361/AC-Recon-Aug-31-Italians-catch-Kiwis",
+      "image": "https://www.yachtsandyachting.com/photos/ac75/yysw584491.jpg",
+      "domain": "yachtsandyachting.com",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260902T134500Z"
+    },
+    {
+      "title": "Damián Díaz back in the XI for Barcelona SC vs Independiente Del Valle Barcelona Sc Vs Independiente Del Valle",
+      "url": "https://www.el-balad.com/17047889",
+      "image": "https://www.el-balad.com/uploads/2026/09/03/barcelona-sc-independiente-del-valle-5fa149a5_1200w.webp",
+      "domain": "el-balad.com",
+      "source_country": "Egypt",
+      "language": "English",
+      "date": "20260903T003000Z"
+    },
+    {
+      "title": "Deltamarin , Offshoretronic To Design Monopile",
+      "url": "https://www.marinelink.com/news/deltamarin-offshoretronic-design-monopile-542618",
+      "image": "https://images.marinelink.com/images/maritime/w800/credit-offshoretronic-173394.jpeg",
+      "domain": "marinelink.com",
+      "source_country": "United States",
+      "language": "English",
+      "date": "20260901T224500Z"
     }
   ]
 }
