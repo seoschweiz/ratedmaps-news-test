@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-03T10:54:49.084384+00:00",
+  "updated_at": "2026-09-03T11:37:42.090475+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -20,15 +20,6 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260901T201500Z"
-    },
-    {
-      "title": "Barcelona boss questions Arsenal transfer decision :  I was surprised",
-      "url": "https://metro.co.uk/2026/09/01/barcelona-boss-questions-arsenal-transfer-decision-i-surprised-29508293/",
-      "image": "https://metro.co.uk/wp-content/uploads/2026/09/GettyImages-2292683813-ad86_1788257835.jpg?quality=90&strip=all&crop=1",
-      "domain": "metro.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260901T111500Z"
     },
     {
       "title": "Barcelona sign Brazilian striker Jesus",
@@ -157,15 +148,6 @@
       "date": "20260902T064500Z"
     },
     {
-      "title": "Gabriel Jesus agrees to sudden contract change as Arsenal and Barcelona deal nears",
-      "url": "https://www.aol.co.uk/articles/gabriel-jesus-agrees-sudden-contract-105720000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/09/01/c003fe4d-18c5-3d83-8341-f908ff49c64b/4b803c2e-0847-4801-b7e9-607d6e52570b.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260901T113000Z"
-    },
-    {
       "title": "F1 news : Herta among three rookies set for Monza FP1",
       "url": "https://speedcafe.com/f1-news-2026-italian-grand-prix-monza-colton-herta-luke-browning-paul-aaron-rookie-drivers-practice-who-replace/",
       "image": "https://speedcafe.com/wp-content/uploads/2026/09/XPB_1428632_HiRes.jpg",
@@ -218,6 +200,24 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260902T134500Z"
+    },
+    {
+      "title": "Football : City agree Fernandez signing for record fee",
+      "url": "https://www.gdnonline.com:443/Details/1405105/City-agree-Fernandez-signing-for-record-fee",
+      "image": "https://www.gdnonline.com/gdnimages/20260902%5C20260902024008f.jpg",
+      "domain": "gdnonline.com",
+      "source_country": "United States",
+      "language": "English",
+      "date": "20260902T001500Z"
+    },
+    {
+      "title": "10 things about Gabriel Jesus",
+      "url": "https://www.fcbarcelona.com/en/news/4570087/10-things-about-gabriel-jesus",
+      "image": "https://www.fcbarcelona.com/fcbarcelona/photo/2026/09/01/85e0cc97-6bdd-475b-bd7f-33da0ed79190/3200x2000_Mercato_GABRIEL_JESUS4.jpg",
+      "domain": "fcbarcelona.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260901T131500Z"
     }
   ]
 }
