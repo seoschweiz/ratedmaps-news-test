@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-03T17:55:47.911512+00:00",
+  "updated_at": "2026-09-03T18:25:47.475682+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -38,15 +38,6 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260902T101500Z"
-    },
-    {
-      "title": "Arsenal : Gunners told to sign elite striker after Alvarez failure",
-      "url": "https://www.teamtalk.com/arsenal/gunners-told-sign-victor-osimhen-julian-alvarez-failure",
-      "image": "https://images.teamtalk.com/content/uploads/2026/08/20135526/TT-Mikel-Arteta-Andrea-Berta-1-1.jpg",
-      "domain": "teamtalk.com",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260901T181500Z"
     },
     {
       "title": "Premier League stars may struggle with La Liga tactical demands Gordon",
@@ -218,6 +209,15 @@
       "source_country": "United States",
       "language": "English",
       "date": "20260902T001500Z"
+    },
+    {
+      "title": "How Man Utd managed to end up without a new left - back despite late call to rivals",
+      "url": "https://www.aol.co.uk/articles/man-utd-managed-end-without-084640000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/09/02/51102df1-6376-3d33-bde2-abb8f302eaa5/747b4024-6349-42c8-b3c7-0df71c9f169e.jpg",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260902T091500Z"
     }
   ]
 }
