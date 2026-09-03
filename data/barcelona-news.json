@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-03T01:56:16.278454+00:00",
+  "updated_at": "2026-09-03T03:52:10.857899+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -11,15 +11,6 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260902T210000Z"
-    },
-    {
-      "title": "A top striker  - Hansi Flick talks Gabriel Jesus after Barcelona beat Rayo",
-      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/131131/top-striker-hansi-flick-gabriel-jesus",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2291801238.jpg?quality=90&strip=all&crop=0%2C8.1538139906923%2C100%2C83.692372018615",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260901T030000Z"
     },
     {
       "title": "Transfer deadline : Chelsea , Barcelona confirm deal for Washington , Guille Fernandez",
@@ -38,15 +29,6 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260901T111500Z"
-    },
-    {
-      "title": "Three talking points from Barcelona 5 - 2 Rayo Vallecano",
-      "url": "https://www.barcablaugranes.com/barcelona-la-liga/131043/three-talking-points-rayo-vallecano",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/08/gettyimages-2292882963.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260901T030000Z"
     },
     {
       "title": "Barcelona sign Brazilian striker Jesus",
@@ -130,15 +112,6 @@
       "date": "20260901T203000Z"
     },
     {
-      "title": "Yamal , Raphinha bag braces as Barcelona rout Rayo",
-      "url": "https://www.namibian.com.na/yamal-raphinha-bag-braces-as-barcelona-rout-rayo/",
-      "image": "https://d4f7y6nbupj5z.cloudfront.net/wp-content/uploads/2026/09/Barca-v-Vallecano-4-1024x683.jpeg",
-      "domain": "namibian.com.na",
-      "source_country": "Namibia",
-      "language": "English",
-      "date": "20260901T024500Z"
-    },
-    {
       "title": "Jesus Joins Barcelona – THISDAYLIVE",
       "url": "https://www.thisdaylive.com/2026/09/02/jesus-joins-barcelona/",
       "image": "https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/1-432.png",
@@ -218,6 +191,33 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260902T101500Z"
+    },
+    {
+      "title": "Lokayan 2026 : Indian naval ship Sudarshini arrives in Barcelona",
+      "url": "https://news.webindia123.com/news/Articles/World/20260902/4493893.html",
+      "image": "",
+      "domain": "news.webindia123.com",
+      "source_country": "India",
+      "language": "English",
+      "date": "20260902T134500Z"
+    },
+    {
+      "title": "Stan Kroenke handed massive £300m Arsenal boost after Liverpool and Man Utd left behind",
+      "url": "https://www.aol.co.uk/articles/stan-kroenke-handed-massive-300m-131747000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/09/02/ceae3efb-1a2a-3ceb-9633-4ff794946054/c2029fe3-9ff1-413b-ad79-0c78c9187d27.jpg",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260902T134500Z"
+    },
+    {
+      "title": "Duo Restaurateur Couple Sarah & Jordan MacDonald On What A Holiday In Europe Taught Them About Food & Love",
+      "url": "https://www.nzherald.co.nz/viva/travel/duo-restaurateur-couple-sarah-jordan-macdonald-on-what-a-holiday-in-europe-taught-them-about-food-love/premium/57D7XMWKKREB5E54U3TD7FAX5Y/",
+      "image": "https://www.nzherald.co.nz/resizer/v2/EJ26Z5EEKJE3ZKKUE46O2ACR3U.jpg?auth=9df59faa31365ae952950bb2b99ace94a35d0343a2f50e7236b72bce9220bc85&quality=70&focal=721%2C772&smart=false",
+      "domain": "nzherald.co.nz",
+      "source_country": "New Zealand",
+      "language": "English",
+      "date": "20260901T070000Z"
     }
   ]
 }
