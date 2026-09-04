@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-04T06:26:29.078989+00:00",
+  "updated_at": "2026-09-04T06:47:45.664610+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -38,15 +38,6 @@
       "source_country": "Australia",
       "language": "English",
       "date": "20260902T083000Z"
-    },
-    {
-      "title": "He can easily score 10 - 15 goal - Sergio Aguero tips Gabriel Jesus to thrive at Barcelona",
-      "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/131258/easily-score-10-15-goals-sergio-aguero-gabriel-jesus",
-      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/09/gettyimages-1141725020.jpg?quality=90&strip=all&crop=0%2C10.669135487166%2C100%2C78.661729025667",
-      "domain": "barcablaugranes.com",
-      "source_country": "Spain",
-      "language": "English",
-      "date": "20260902T064500Z"
     },
     {
       "title": "Real Madrid opens Liga weekend while Athletic plays Atletico",
@@ -218,6 +209,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260903T101500Z"
+    },
+    {
+      "title": "Callum Forbes , David Cao had  awful Barcelona altercation  before alleged French Chateau de Perreux hotel attempted murder",
+      "url": "https://www.watoday.com.au/national/callum-forbes-went-to-sleep-in-a-french-chateau-he-woke-up-in-terror-20260901-p60tfx.html",
+      "image": "https://static.ffx.io/images/$zoom_0.5849%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/80f2b6decb3410afb543232a10ef575b1f83da23121d9f101ba2c302299d6e41",
+      "domain": "watoday.com.au",
+      "source_country": "Australia",
+      "language": "English",
+      "date": "20260903T234500Z"
     }
   ]
 }
