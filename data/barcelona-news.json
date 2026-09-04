@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-04T13:39:38.542767+00:00",
+  "updated_at": "2026-09-04T13:56:29.907444+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -49,15 +49,6 @@
       "date": "20260903T060000Z"
     },
     {
-      "title": "Lokayan 2026 : Indian naval ship Sudarshini arrives in Barcelona",
-      "url": "https://news.webindia123.com/news/Articles/World/20260902/4493893.html",
-      "image": "",
-      "domain": "news.webindia123.com",
-      "source_country": "India",
-      "language": "English",
-      "date": "20260902T134500Z"
-    },
-    {
       "title": "Arsenal could sign Barcelona star , wonderkid striker and free agent in transfers next year",
       "url": "https://www.aol.co.uk/articles/arsenal-could-sign-barcelona-star-034500000.html",
       "image": "https://hermes.media.static.aol.com/media/2026/09/04/e4ff51f3-72d7-3de7-a92e-42a304761f46/740c6ef2-79f9-43be-8913-bbc918f2da20.jpg",
@@ -103,15 +94,6 @@
       "date": "20260903T070000Z"
     },
     {
-      "title": "Stan Kroenke handed massive £300m Arsenal boost after Liverpool and Man Utd left behind",
-      "url": "https://www.aol.co.uk/articles/stan-kroenke-handed-massive-300m-131747000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/09/02/ceae3efb-1a2a-3ceb-9633-4ff794946054/c2029fe3-9ff1-413b-ad79-0c78c9187d27.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260902T134500Z"
-    },
-    {
       "title": "West Ham deadline day signing explains photo outside London Stadium in 2023",
       "url": "https://www.aol.co.uk/articles/west-hams-deadline-day-signing-094450000.html",
       "image": "https://hermes.media.static.aol.com/media/2026/09/03/fd603b1f-3a04-3e9d-a326-c97f0c4f0a42/3a8b1dec-e40a-4f73-bafd-13d09cb5ef6a.jpg",
@@ -146,15 +128,6 @@
       "source_country": "United States",
       "language": "English",
       "date": "20260903T221500Z"
-    },
-    {
-      "title": "America Cup : Luna Rossa now level pegging with Kiwis",
-      "url": "https://www.yachtsandyachting.com/news/299361/AC-Recon-Aug-31-Italians-catch-Kiwis",
-      "image": "https://www.yachtsandyachting.com/photos/ac75/yysw584491.jpg",
-      "domain": "yachtsandyachting.com",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260902T134500Z"
     },
     {
       "title": "Damián Díaz back in the XI for Barcelona SC vs Independiente Del Valle Barcelona Sc Vs Independiente Del Valle",
@@ -218,6 +191,33 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260902T200000Z"
+    },
+    {
+      "title": "Man United have problems with three players after transfer deadline closes",
+      "url": "https://www.aol.co.uk/articles/man-united-problems-three-players-102600000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/09/03/fadf5089-039e-3b1d-9911-a1975a915ef2/df80a28b-bbed-43d7-b25c-fe009dcb03d7.jpg",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260903T110000Z"
+    },
+    {
+      "title": "It seemed done : La Liga boss reveals Arsenal failed Deadline Day move for talented young forward",
+      "url": "https://www.aol.co.uk/articles/seemed-done-la-liga-boss-080124000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/09/04/0d0fbf75-1687-36a2-81e8-d2a178ff121f/a628f383-64fe-4358-a1d7-b11fabacc599.webp",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260904T084500Z"
+    },
+    {
+      "title": "Asisat Oshoala U - 20 World Cup Campaign Celebrated by FIFA",
+      "url": "https://punchng.com/fifa-celebrates-oshoalas-u-20-wcup-campaign/",
+      "image": "https://cdn.punchng.com/wp-content/uploads/2025/07/27195031/IMG_1193-810x630.jpeg",
+      "domain": "punchng.com",
+      "source_country": "Nigeria",
+      "language": "English",
+      "date": "20260904T004500Z"
     }
   ]
 }
