@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-04T16:54:39.035217+00:00",
+  "updated_at": "2026-09-04T17:19:37.288012+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -13,6 +13,15 @@
       "date": "20260902T210000Z"
     },
     {
+      "title": "Barça Academy Barcelona back in action",
+      "url": "https://www.fcbarcelona.com/en/news/4572073/barca-academy-barcelona-back-in-action",
+      "image": "https://www.fcbarcelona.com/fcbarcelona/photo/2026/09/04/ec9ae2e4-ebc1-4dae-8abf-cc9e76f9174c/2026-09-03_PRESENTACIOFCBESCOLA_132.jpg",
+      "domain": "fcbarcelona.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260904T164500Z"
+    },
+    {
       "title": "Mobile World Congress | Electronics Notes",
       "url": "https://www.electronics-notes.com/events-exhibitions-trade-shows/show-event.php?id=mobile-world-congress-2027-03-01",
       "image": "",
@@ -20,6 +29,15 @@
       "source_country": "",
       "language": "English",
       "date": "20260904T040000Z"
+    },
+    {
+      "title": "La Liga : Injuries pile up for Valencia ahead of key Barcelona clash",
+      "url": "https://www.prokerala.com/news/articles/a1808620.html",
+      "image": "",
+      "domain": "prokerala.com",
+      "source_country": "India",
+      "language": "English",
+      "date": "20260904T164500Z"
     },
     {
       "title": "Lautaro Martinez responds to transfer speculation",
@@ -92,6 +110,15 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260903T070000Z"
+    },
+    {
+      "title": "FC Barcelona implements the  Security and Rival Fan Control Protocol  for the high - risk match against Feyenoord",
+      "url": "https://www.fcbarcelona.com/en/club/news/4572025/fc-barcelona-implements-the-security-and-rival-fan-control-protocol-for-the-high-risk-match-against-feyenoord",
+      "image": "https://www.fcbarcelona.com/fcbarcelona/photo/2026/09/04/56e0ba8c-6f68-44ef-bfe0-c0bf5962810e/_MGA3371.jpg",
+      "domain": "fcbarcelona.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260904T164500Z"
     },
     {
       "title": "West Ham deadline day signing explains photo outside London Stadium in 2023",
@@ -191,33 +218,6 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260902T200000Z"
-    },
-    {
-      "title": "Man United have problems with three players after transfer deadline closes",
-      "url": "https://www.aol.co.uk/articles/man-united-problems-three-players-102600000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/09/03/fadf5089-039e-3b1d-9911-a1975a915ef2/df80a28b-bbed-43d7-b25c-fe009dcb03d7.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260903T110000Z"
-    },
-    {
-      "title": "It seemed done : La Liga boss reveals Arsenal failed Deadline Day move for talented young forward",
-      "url": "https://www.aol.co.uk/articles/seemed-done-la-liga-boss-080124000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/09/04/0d0fbf75-1687-36a2-81e8-d2a178ff121f/a628f383-64fe-4358-a1d7-b11fabacc599.webp",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260904T084500Z"
-    },
-    {
-      "title": "Champions League is back - get your Road to Madrid special now",
-      "url": "https://www.aol.co.uk/articles/champions-league-back-road-madrid-152700000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/09/04/eadd67a4-9fb9-350d-b869-18e8337438b4/9e0fb84f-c780-410c-922a-b1fa9cdab52e.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260904T161500Z"
     }
   ]
 }
