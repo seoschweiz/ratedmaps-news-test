@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-04T23:34:49.577776+00:00",
+  "updated_at": "2026-09-04T23:54:11.694586+00:00",
   "articles": [
     {
       "title": "Barça Academy Barcelona back in action",
@@ -130,6 +130,15 @@
       "date": "20260903T070000Z"
     },
     {
+      "title": "New European flights out of Philadelphia next year available through XNA connection to PHL | The Arkansas Democrat - Gazette",
+      "url": "https://www.arkansasonline.com/news/2026/sep/04/new-european-flights-out-of-philadelphia-next/",
+      "image": "https://wehco.media.clients.ellingtoncms.com/imports/adg/photos/213588118_XNA-1_t1200.jpg?57a0c2296240c280e9492005c3cad63e7cbe80f4",
+      "domain": "arkansasonline.com",
+      "source_country": "United States",
+      "language": "English",
+      "date": "20260904T233000Z"
+    },
+    {
       "title": "FC Barcelona implements the  Security and Rival Fan Control Protocol  for the high - risk match against Feyenoord",
       "url": "https://www.fcbarcelona.com/en/club/news/4572025/fc-barcelona-implements-the-security-and-rival-fan-control-protocol-for-the-high-risk-match-against-feyenoord",
       "image": "https://www.fcbarcelona.com/fcbarcelona/photo/2026/09/04/56e0ba8c-6f68-44ef-bfe0-c0bf5962810e/_MGA3371.jpg",
@@ -209,15 +218,6 @@
       "source_country": "India",
       "language": "English",
       "date": "20260903T080000Z"
-    },
-    {
-      "title": "Man Utd can sign seven players in 2027 including Myles Lewis - Skelly and Tottenham star",
-      "url": "https://www.aol.co.uk/articles/man-utd-sign-seven-players-040000000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/09/04/528a8312-161c-3f61-bad5-5103c6382e17/922ce7c0-3436-40c6-84fe-622b0cdcde08.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260904T043000Z"
     }
   ]
 }
