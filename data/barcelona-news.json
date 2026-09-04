@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-04T18:23:00.089050+00:00",
+  "updated_at": "2026-09-04T18:38:50.240198+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -193,6 +193,15 @@
       "date": "20260904T043000Z"
     },
     {
+      "title": "Valencia vs Barcelona : Preview and Prediction",
+      "url": "https://thehardtackle.com/round-up/2026/09/04/valencia-vs-barcelona-preview-and-prediction-4/",
+      "image": "https://media.thehardtackle.com/uploads/2019/04/GettyImages-509982688-1024x674.jpg",
+      "domain": "thehardtackle.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260904T181500Z"
+    },
+    {
       "title": "Quiz ! Can you name Chelsea 50 most expensive signings ever ?",
       "url": "https://www.fourfourtwo.com/quiz/quiz-can-you-name-chelseas-50-most-expensive-signings-ever",
       "image": "https://cdn.mos.cms.futurecdn.net/MKFeauvZGiygSyL8B7rdXM-2560-80.jpg",
@@ -209,15 +218,6 @@
       "source_country": "Australia",
       "language": "English",
       "date": "20260903T234500Z"
-    },
-    {
-      "title": "Arsenal made approach to sign £73m striker instead of Julian Alvarez",
-      "url": "https://metro.co.uk/2026/09/02/arsenal-made-approach-sign-73m-striker-instead-julian-alvarez-deadline-day-29520258/",
-      "image": "https://metro.co.uk/wp-content/uploads/2026/07/SEI_295164591-9a75_1788378179.jpg?quality=90&strip=all&crop=1",
-      "domain": "metro.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260902T200000Z"
     }
   ]
 }
