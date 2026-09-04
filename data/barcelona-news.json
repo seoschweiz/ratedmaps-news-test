@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-04T02:55:15.908036+00:00",
+  "updated_at": "2026-09-04T03:21:42.372507+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -20,15 +20,6 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260902T101500Z"
-    },
-    {
-      "title": "Barcelona complete signing of Arsenal striker Gabriel Jesus",
-      "url": "http://www.china.org.cn/2026-09/02/content_118676351.shtml",
-      "image": "",
-      "domain": "china.org.cn",
-      "source_country": "China",
-      "language": "English",
-      "date": "20260902T030000Z"
     },
     {
       "title": "Jesus Joins Barcelona – THISDAYLIVE",
@@ -56,15 +47,6 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260902T064500Z"
-    },
-    {
-      "title": "F1 news : Herta among three rookies set for Monza FP1",
-      "url": "https://speedcafe.com/f1-news-2026-italian-grand-prix-monza-colton-herta-luke-browning-paul-aaron-rookie-drivers-practice-who-replace/",
-      "image": "https://speedcafe.com/wp-content/uploads/2026/09/XPB_1428632_HiRes.jpg",
-      "domain": "speedcafe.com",
-      "source_country": "Australia",
-      "language": "English",
-      "date": "20260902T030000Z"
     },
     {
       "title": "The three deadline day signings Man Utd decided to walk away from",
@@ -128,15 +110,6 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260903T101500Z"
-    },
-    {
-      "title": "RB Leipzig sign Marc Guiu from Chelsea",
-      "url": "http://www.china.org.cn/2026-09/02/content_118676373.shtml",
-      "image": "",
-      "domain": "china.org.cn",
-      "source_country": "China",
-      "language": "English",
-      "date": "20260902T030000Z"
     },
     {
       "title": "The GQ Guide to Barcelona",
@@ -218,6 +191,33 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260903T101500Z"
+    },
+    {
+      "title": "Callum Forbes , David Cao had  awful Barcelona altercation  before alleged French Chateau de Perreux hotel attempted murder",
+      "url": "https://www.watoday.com.au/national/callum-forbes-went-to-sleep-in-a-french-chateau-he-woke-up-in-terror-20260901-p60tfx.html",
+      "image": "https://static.ffx.io/images/$zoom_0.5849%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/80f2b6decb3410afb543232a10ef575b1f83da23121d9f101ba2c302299d6e41",
+      "domain": "watoday.com.au",
+      "source_country": "Australia",
+      "language": "English",
+      "date": "20260903T234500Z"
+    },
+    {
+      "title": "Raphinha , Yamal doubles lift Barca past Vallecano",
+      "url": "https://ghanaiantimes.com.gh/raphinha-yamal-doubles-lift-barca-past-vallecano/",
+      "image": "https://ghanaiantimes.com.gh/wp-content/uploads/2026/09/Lamine-Yamal-leads-the-celebration-with-Raphinha.webp",
+      "domain": "ghanaiantimes.com.gh",
+      "source_country": "Ghana",
+      "language": "English",
+      "date": "20260902T114500Z"
+    },
+    {
+      "title": "Arsenal made approach to sign £73m striker instead of Julian Alvarez",
+      "url": "https://metro.co.uk/2026/09/02/arsenal-made-approach-sign-73m-striker-instead-julian-alvarez-deadline-day-29520258/",
+      "image": "https://metro.co.uk/wp-content/uploads/2026/07/SEI_295164591-9a75_1788378179.jpg?quality=90&strip=all&crop=1",
+      "domain": "metro.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260902T200000Z"
     }
   ]
 }
