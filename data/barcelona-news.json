@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-04T08:23:21.405309+00:00",
+  "updated_at": "2026-09-04T08:41:16.860191+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -29,15 +29,6 @@
       "source_country": "",
       "language": "English",
       "date": "20260904T040000Z"
-    },
-    {
-      "title": "Sergio Perez replaced as Cadillac makes Colton Herta FP1 announcement",
-      "url": "https://www.planetf1.com/news/sergio-perez-colton-herta-italian-grand-prix-2026-fp1",
-      "image": "https://d3cm515ijfiu6w.cloudfront.net/wp-content/uploads/2026/09/02070305/sergio-perez-colton-herta-cadillac-f1-2026.jpg",
-      "domain": "planetf1.com",
-      "source_country": "Australia",
-      "language": "English",
-      "date": "20260902T083000Z"
     },
     {
       "title": "Real Madrid opens Liga weekend while Athletic plays Atletico",
@@ -218,6 +209,15 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260904T043000Z"
+    },
+    {
+      "title": "Quiz ! Can you name Chelsea 50 most expensive signings ever ?",
+      "url": "https://www.fourfourtwo.com/quiz/quiz-can-you-name-chelseas-50-most-expensive-signings-ever",
+      "image": "https://cdn.mos.cms.futurecdn.net/MKFeauvZGiygSyL8B7rdXM-2560-80.jpg",
+      "domain": "fourfourtwo.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260903T101500Z"
     }
   ]
 }
