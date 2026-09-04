@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-04T04:39:52.431692+00:00",
+  "updated_at": "2026-09-04T05:54:52.082801+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -20,15 +20,6 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260902T101500Z"
-    },
-    {
-      "title": "Jesus Joins Barcelona – THISDAYLIVE",
-      "url": "https://www.thisdaylive.com/2026/09/02/jesus-joins-barcelona/",
-      "image": "https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/1-432.png",
-      "domain": "thisdaylive.com",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260902T044500Z"
     },
     {
       "title": "Mobile World Congress | Electronics Notes",
@@ -58,6 +49,15 @@
       "date": "20260902T064500Z"
     },
     {
+      "title": "Real Madrid opens Liga weekend while Athletic plays Atletico",
+      "url": "http://www.china.org.cn/2026-09/04/content_118680276.shtml",
+      "image": "",
+      "domain": "china.org.cn",
+      "source_country": "China",
+      "language": "English",
+      "date": "20260904T044500Z"
+    },
+    {
       "title": "The three deadline day signings Man Utd decided to walk away from",
       "url": "https://metro.co.uk/2026/09/02/three-deadline-day-signings-man-utd-decided-walk-away-29516555/",
       "image": "https://metro.co.uk/wp-content/uploads/2026/08/GettyImages-2289760520-b9ec_1788339809.jpg?quality=90&strip=all&crop=1",
@@ -83,6 +83,15 @@
       "source_country": "India",
       "language": "English",
       "date": "20260902T134500Z"
+    },
+    {
+      "title": "Arsenal could sign Barcelona star , wonderkid striker and free agent in transfers next year",
+      "url": "https://www.aol.co.uk/articles/arsenal-could-sign-barcelona-star-034500000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/09/04/e4ff51f3-72d7-3de7-a92e-42a304761f46/740c6ef2-79f9-43be-8913-bbc918f2da20.jpg",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260904T043000Z"
     },
     {
       "title": "FC Barcelona announcement",
@@ -193,6 +202,15 @@
       "date": "20260903T080000Z"
     },
     {
+      "title": "Man Utd can sign seven players in 2027 including Myles Lewis - Skelly and Tottenham star",
+      "url": "https://www.aol.co.uk/articles/man-utd-sign-seven-players-040000000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/09/04/528a8312-161c-3f61-bad5-5103c6382e17/922ce7c0-3436-40c6-84fe-622b0cdcde08.jpg",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260904T043000Z"
+    },
+    {
       "title": "Quiz ! Can you name Chelsea 50 most expensive signings ever ?",
       "url": "https://www.fourfourtwo.com/quiz/quiz-can-you-name-chelseas-50-most-expensive-signings-ever",
       "image": "https://cdn.mos.cms.futurecdn.net/MKFeauvZGiygSyL8B7rdXM-2560-80.jpg",
@@ -200,24 +218,6 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260903T101500Z"
-    },
-    {
-      "title": "Callum Forbes , David Cao had  awful Barcelona altercation  before alleged French Chateau de Perreux hotel attempted murder",
-      "url": "https://www.watoday.com.au/national/callum-forbes-went-to-sleep-in-a-french-chateau-he-woke-up-in-terror-20260901-p60tfx.html",
-      "image": "https://static.ffx.io/images/$zoom_0.5849%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/80f2b6decb3410afb543232a10ef575b1f83da23121d9f101ba2c302299d6e41",
-      "domain": "watoday.com.au",
-      "source_country": "Australia",
-      "language": "English",
-      "date": "20260903T234500Z"
-    },
-    {
-      "title": "Raphinha , Yamal doubles lift Barca past Vallecano",
-      "url": "https://ghanaiantimes.com.gh/raphinha-yamal-doubles-lift-barca-past-vallecano/",
-      "image": "https://ghanaiantimes.com.gh/wp-content/uploads/2026/09/Lamine-Yamal-leads-the-celebration-with-Raphinha.webp",
-      "domain": "ghanaiantimes.com.gh",
-      "source_country": "Ghana",
-      "language": "English",
-      "date": "20260902T114500Z"
     }
   ]
 }
