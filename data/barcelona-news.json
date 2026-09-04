@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-04T08:41:16.860191+00:00",
+  "updated_at": "2026-09-04T09:22:04.682794+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -148,15 +148,6 @@
       "date": "20260903T034500Z"
     },
     {
-      "title": "How Man Utd managed to end up without a new left - back despite late call to rivals",
-      "url": "https://www.aol.co.uk/articles/man-utd-managed-end-without-084640000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/09/02/51102df1-6376-3d33-bde2-abb8f302eaa5/747b4024-6349-42c8-b3c7-0df71c9f169e.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260902T091500Z"
-    },
-    {
       "title": "American Airlines to connect Savannah travelers to Europe , Asia with new summer 2027 routes",
       "url": "https://www.wtoc.com/2026/09/03/american-airlines-connect-savannah-travelers-europe-asia-with-new-summer-2027-routes/",
       "image": "https://gray-wtoc-prod.gtv-cdn.com/resizer/v2/4MLLSI7S3BHOJGSZM3MFWC65AM.jpg?auth=dc3b4771e6c463fd64b60a81a406431920a7dc9dbdec4bdc68b90e5cf55480e5&smart=true",
@@ -218,6 +209,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260903T101500Z"
+    },
+    {
+      "title": "Callum Forbes , David Cao had  awful Barcelona altercation  before alleged French Chateau de Perreux hotel attempted murder",
+      "url": "https://www.watoday.com.au/national/callum-forbes-went-to-sleep-in-a-french-chateau-he-woke-up-in-terror-20260901-p60tfx.html",
+      "image": "https://static.ffx.io/images/$zoom_0.5849%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/80f2b6decb3410afb543232a10ef575b1f83da23121d9f101ba2c302299d6e41",
+      "domain": "watoday.com.au",
+      "source_country": "Australia",
+      "language": "English",
+      "date": "20260903T234500Z"
     }
   ]
 }
