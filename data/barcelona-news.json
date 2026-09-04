@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-03T23:54:26.997540+00:00",
+  "updated_at": "2026-09-04T00:29:05.022144+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -121,15 +121,6 @@
       "date": "20260902T134500Z"
     },
     {
-      "title": "Football : City agree Fernandez signing for record fee",
-      "url": "https://www.gdnonline.com:443/Details/1405105/City-agree-Fernandez-signing-for-record-fee",
-      "image": "https://www.gdnonline.com/gdnimages/20260902%5C20260902024008f.jpg",
-      "domain": "gdnonline.com",
-      "source_country": "United States",
-      "language": "English",
-      "date": "20260902T001500Z"
-    },
-    {
       "title": "West Ham deadline day signing explains photo outside London Stadium in 2023",
       "url": "https://www.aol.co.uk/articles/west-hams-deadline-day-signing-094450000.html",
       "image": "https://hermes.media.static.aol.com/media/2026/09/03/fd603b1f-3a04-3e9d-a326-c97f0c4f0a42/3a8b1dec-e40a-4f73-bafd-13d09cb5ef6a.jpg",
@@ -164,15 +155,6 @@
       "source_country": "United States",
       "language": "English",
       "date": "20260903T034500Z"
-    },
-    {
-      "title": "Football : Premier League clubs smash summer transfer spending record",
-      "url": "https://www.gdnonline.com:443/Details/1405092/Premier-League-clubs-smash-summer-transfer-spending-record",
-      "image": "https://www.gdnonline.com/gdnimages/20260902%5C20260902012320ILM.jpg",
-      "domain": "gdnonline.com",
-      "source_country": "United States",
-      "language": "English",
-      "date": "20260902T001500Z"
     },
     {
       "title": "How Man Utd managed to end up without a new left - back despite late call to rivals",
@@ -218,6 +200,24 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260902T073000Z"
+    },
+    {
+      "title": "Javier Bardem , Marion Cotillard , Vanessa Redgrave join cast of animated movie  The Turning Door",
+      "url": "https://www.hindustantimes.com/entertainment/hollywood/javier-bardem-marion-cotillard-vanessa-redgrave-join-cast-of-animated-movie-the-turning-door-101788420128932.html",
+      "image": "",
+      "domain": "hindustantimes.com",
+      "source_country": "India",
+      "language": "English",
+      "date": "20260903T080000Z"
+    },
+    {
+      "title": "Quiz ! Can you name Chelsea 50 most expensive signings ever ?",
+      "url": "https://www.fourfourtwo.com/quiz/quiz-can-you-name-chelseas-50-most-expensive-signings-ever",
+      "image": "https://cdn.mos.cms.futurecdn.net/MKFeauvZGiygSyL8B7rdXM-2560-80.jpg",
+      "domain": "fourfourtwo.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260903T101500Z"
     }
   ]
 }
