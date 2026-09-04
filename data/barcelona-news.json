@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-04T11:38:06.359370+00:00",
+  "updated_at": "2026-09-04T11:54:46.881324+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -211,13 +211,13 @@
       "date": "20260903T234500Z"
     },
     {
-      "title": "Raphinha , Yamal doubles lift Barca past Vallecano",
-      "url": "https://ghanaiantimes.com.gh/raphinha-yamal-doubles-lift-barca-past-vallecano/",
-      "image": "https://ghanaiantimes.com.gh/wp-content/uploads/2026/09/Lamine-Yamal-leads-the-celebration-with-Raphinha.webp",
-      "domain": "ghanaiantimes.com.gh",
-      "source_country": "Ghana",
+      "title": "Arsenal made approach to sign £73m striker instead of Julian Alvarez",
+      "url": "https://metro.co.uk/2026/09/02/arsenal-made-approach-sign-73m-striker-instead-julian-alvarez-deadline-day-29520258/",
+      "image": "https://metro.co.uk/wp-content/uploads/2026/07/SEI_295164591-9a75_1788378179.jpg?quality=90&strip=all&crop=1",
+      "domain": "metro.co.uk",
+      "source_country": "United Kingdom",
       "language": "English",
-      "date": "20260902T114500Z"
+      "date": "20260902T200000Z"
     }
   ]
 }
