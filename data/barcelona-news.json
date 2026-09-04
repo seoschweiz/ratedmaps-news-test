@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-04T09:56:04.367352+00:00",
+  "updated_at": "2026-09-04T10:22:41.757866+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -11,15 +11,6 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260902T210000Z"
-    },
-    {
-      "title": "Transfer deadline : Midfielders leave Real Madrid , Barcelona for new clubs",
-      "url": "https://dailypost.ng/2026/09/02/transfer-deadline-midfielders-leave-real-madrid-barcelona-for-new-clubs/",
-      "image": "https://dailypost.ng/wp-content/uploads/2026/09/01kek1bvwmv9gz6z3zyg-1.jpg",
-      "domain": "dailypost.ng",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260902T101500Z"
     },
     {
       "title": "Mobile World Congress | Electronics Notes",
@@ -38,15 +29,6 @@
       "source_country": "China",
       "language": "English",
       "date": "20260904T044500Z"
-    },
-    {
-      "title": "The three deadline day signings Man Utd decided to walk away from",
-      "url": "https://metro.co.uk/2026/09/02/three-deadline-day-signings-man-utd-decided-walk-away-29516555/",
-      "image": "https://metro.co.uk/wp-content/uploads/2026/08/GettyImages-2289760520-b9ec_1788339809.jpg?quality=90&strip=all&crop=1",
-      "domain": "metro.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260902T101500Z"
     },
     {
       "title": "2026 Ballon dOr : He should do it again - LaLiga chief , Tebas names winner of award",
@@ -218,6 +200,24 @@
       "source_country": "Australia",
       "language": "English",
       "date": "20260903T234500Z"
+    },
+    {
+      "title": "Raphinha , Yamal doubles lift Barca past Vallecano",
+      "url": "https://ghanaiantimes.com.gh/raphinha-yamal-doubles-lift-barca-past-vallecano/",
+      "image": "https://ghanaiantimes.com.gh/wp-content/uploads/2026/09/Lamine-Yamal-leads-the-celebration-with-Raphinha.webp",
+      "domain": "ghanaiantimes.com.gh",
+      "source_country": "Ghana",
+      "language": "English",
+      "date": "20260902T114500Z"
+    },
+    {
+      "title": "Arsenal made approach to sign £73m striker instead of Julian Alvarez",
+      "url": "https://metro.co.uk/2026/09/02/arsenal-made-approach-sign-73m-striker-instead-julian-alvarez-deadline-day-29520258/",
+      "image": "https://metro.co.uk/wp-content/uploads/2026/07/SEI_295164591-9a75_1788378179.jpg?quality=90&strip=all&crop=1",
+      "domain": "metro.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260902T200000Z"
     }
   ]
 }
