@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-04T03:38:21.274271+00:00",
+  "updated_at": "2026-09-04T04:39:52.431692+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -29,6 +29,15 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260902T044500Z"
+    },
+    {
+      "title": "Mobile World Congress | Electronics Notes",
+      "url": "https://www.electronics-notes.com/events-exhibitions-trade-shows/show-event.php?id=mobile-world-congress-2027-03-01",
+      "image": "",
+      "domain": "electronics-notes.com",
+      "source_country": "",
+      "language": "English",
+      "date": "20260904T040000Z"
     },
     {
       "title": "Sergio Perez replaced as Cadillac makes Colton Herta FP1 announcement",
@@ -209,15 +218,6 @@
       "source_country": "Ghana",
       "language": "English",
       "date": "20260902T114500Z"
-    },
-    {
-      "title": "Arsenal made approach to sign £73m striker instead of Julian Alvarez",
-      "url": "https://metro.co.uk/2026/09/02/arsenal-made-approach-sign-73m-striker-instead-julian-alvarez-deadline-day-29520258/",
-      "image": "https://metro.co.uk/wp-content/uploads/2026/07/SEI_295164591-9a75_1788378179.jpg?quality=90&strip=all&crop=1",
-      "domain": "metro.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260902T200000Z"
     }
   ]
 }
