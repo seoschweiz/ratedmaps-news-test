@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-04T10:22:41.757866+00:00",
+  "updated_at": "2026-09-04T10:39:05.578976+00:00",
   "articles": [
     {
       "title": "I dont understand it  - Barcelona star Dani Olmo baffled by Atletico Julian Alvarez stance",
@@ -20,6 +20,15 @@
       "source_country": "",
       "language": "English",
       "date": "20260904T040000Z"
+    },
+    {
+      "title": "Lautaro Martinez responds to transfer speculation",
+      "url": "https://www.caughtoffside.com/2026/09/04/lautaro-martinez-transfer-speculation/",
+      "image": "https://icdn.caughtoffside.com/wp-content/uploads/2026/09/COS-FeaturedHero-Image-Templates-72.jpg",
+      "domain": "caughtoffside.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260904T101500Z"
     },
     {
       "title": "Real Madrid opens Liga weekend while Athletic plays Atletico",
@@ -209,15 +218,6 @@
       "source_country": "Ghana",
       "language": "English",
       "date": "20260902T114500Z"
-    },
-    {
-      "title": "Arsenal made approach to sign £73m striker instead of Julian Alvarez",
-      "url": "https://metro.co.uk/2026/09/02/arsenal-made-approach-sign-73m-striker-instead-julian-alvarez-deadline-day-29520258/",
-      "image": "https://metro.co.uk/wp-content/uploads/2026/07/SEI_295164591-9a75_1788378179.jpg?quality=90&strip=all&crop=1",
-      "domain": "metro.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260902T200000Z"
     }
   ]
 }
