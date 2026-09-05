@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-05T03:20:33.551983+00:00",
+  "updated_at": "2026-09-05T03:54:22.847648+00:00",
   "articles": [
     {
       "title": "Exceptional  Xavi Espart tipped to stay in Barcelona first team by ex - La Masia chief",
@@ -175,15 +175,6 @@
       "date": "20260903T124500Z"
     },
     {
-      "title": "Progesterone levels linked to brain patterns underlying mood changes",
-      "url": "https://www.news-medical.net/news/20260902/Progesterone-levels-linked-to-brain-patterns-underlying-mood-changes.aspx",
-      "image": "https://www.news-medical.net/image-handler/picture/2014/7/Hormone-620x480.jpg",
-      "domain": "news-medical.net",
-      "source_country": "United States",
-      "language": "English",
-      "date": "20260903T034500Z"
-    },
-    {
       "title": "American Airlines to connect Savannah travelers to Europe , Asia with new summer 2027 routes",
       "url": "https://www.wtoc.com/2026/09/03/american-airlines-connect-savannah-travelers-europe-asia-with-new-summer-2027-routes/",
       "image": "https://gray-wtoc-prod.gtv-cdn.com/resizer/v2/4MLLSI7S3BHOJGSZM3MFWC65AM.jpg?auth=dc3b4771e6c463fd64b60a81a406431920a7dc9dbdec4bdc68b90e5cf55480e5&smart=true",
@@ -218,6 +209,15 @@
       "source_country": "India",
       "language": "English",
       "date": "20260903T080000Z"
+    },
+    {
+      "title": "Man Utd can sign seven players in 2027 including Myles Lewis - Skelly and Tottenham star",
+      "url": "https://www.aol.co.uk/articles/man-utd-sign-seven-players-040000000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/09/04/528a8312-161c-3f61-bad5-5103c6382e17/922ce7c0-3436-40c6-84fe-622b0cdcde08.jpg",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260904T043000Z"
     }
   ]
 }
