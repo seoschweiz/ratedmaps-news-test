@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-05T08:54:09.004798+00:00",
+  "updated_at": "2026-09-05T09:54:37.553669+00:00",
   "articles": [
     {
       "title": "FC Barcelona Legend Carles Puyol Joins Midea at IFA 2026",
@@ -29,6 +29,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260905T063000Z"
+    },
+    {
+      "title": "Arsenal considering Raphinha transfer bid in January",
+      "url": "https://www.caughtoffside.com/2026/09/05/arsenal-raphinha-transfer-bid-january/",
+      "image": "https://icdn.caughtoffside.com/wp-content/uploads/2026/09/COS-FeaturedHero-Image-Templates-89.jpg",
+      "domain": "caughtoffside.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260905T093000Z"
     },
     {
       "title": "Barça Academy Barcelona back in action",
@@ -157,6 +166,15 @@
       "date": "20260904T074500Z"
     },
     {
+      "title": "Luis Enrique signs extension with PSG – Shafaqna English | International Shia News & Fatwas",
+      "url": "https://en.shafaqna.com/475308/luis-enrique-signs-extension-with-psg/",
+      "image": "",
+      "domain": "en.shafaqna.com",
+      "source_country": "Saudi Arabia",
+      "language": "English",
+      "date": "20260905T093000Z"
+    },
+    {
       "title": "New European flights out of Philadelphia next year available through XNA connection to PHL | The Arkansas Democrat - Gazette",
       "url": "https://www.arkansasonline.com/news/2026/sep/04/new-european-flights-out-of-philadelphia-next/",
       "image": "https://wehco.media.clients.ellingtoncms.com/imports/adg/photos/213588118_XNA-1_t1200.jpg?57a0c2296240c280e9492005c3cad63e7cbe80f4",
@@ -200,24 +218,6 @@
       "source_country": "United States",
       "language": "English",
       "date": "20260903T221500Z"
-    },
-    {
-      "title": "A Fun Bunch of Memes to Take the Edge Off and Bring Back That TGIF Feeling ( September 4 , 2026 )",
-      "url": "https://trivia.cracked.com/image-pictofact-23075-a-fun-bunch-of-memes-to-take-the-edge-off-and-bring-back-that-tgif-feeling-september-4-2026",
-      "image": "https://s3.crackedcdn.com/phpimages/imageset/5/5/1/1580551.jpg",
-      "domain": "trivia.cracked.com",
-      "source_country": "United States",
-      "language": "English",
-      "date": "20260904T203000Z"
-    },
-    {
-      "title": "How to watch London City Lionesses vs Manchester United : TV channel and live stream for WSL today",
-      "url": "https://www.aol.co.uk/articles/watch-london-city-lionesses-vs-070005000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/09/04/2f6817dc-e6fc-3cbf-a811-4ff2a8bcd143/d8c03ecb-0b43-4213-9ded-b75452f02f38.webp",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260904T074500Z"
     }
   ]
 }
