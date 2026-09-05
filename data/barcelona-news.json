@@ -1,8 +1,17 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-05T11:18:53.426477+00:00",
+  "updated_at": "2026-09-05T11:55:08.515471+00:00",
   "articles": [
+    {
+      "title": "Hansi Flick offers Lamine Yamal update after Barcelona star misses training before Valencia match",
+      "url": "https://www.barcablaugranes.com/barcelona-la-liga/131543/hansi-flick-lamine-yamal-update-valencia",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/09/gettyimages-2292983979.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260905T110000Z"
+    },
     {
       "title": "FC Barcelona Legend Carles Puyol Joins Midea at IFA 2026",
       "url": "http://www.prnewswire.com/news-releases/fc-barcelona-legend-carles-puyol-joins-midea-at-ifa-2026-302870601.html",
@@ -20,6 +29,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260905T021500Z"
+    },
+    {
+      "title": "Barcelona train without Lamine Yamal ahead of Valencia clash",
+      "url": "https://www.barcablaugranes.com/barcelona-la-liga/131536/lamine-yamal-not-training-ahead-valencia",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/09/gettyimages-2291876847.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260905T110000Z"
     },
     {
       "title": "How will Barcelona line up against Valencia in their next La Liga match ?",
@@ -193,31 +211,13 @@
       "date": "20260904T164500Z"
     },
     {
-      "title": "The GQ Guide to Barcelona",
-      "url": "https://www.gq.com/story/barcelona-travel-guide-2026",
-      "image": "https://media.gq.com/photos/6a9193f9cf74e033a3212d24/16:9/w_1280,c_limit/0903-Barcelona-Guide-Lede-16x9.jpg",
-      "domain": "gq.com",
-      "source_country": "United States",
+      "title": "Mikel Arteta sends message to Arsenal board after missing out on Julian Alvarez",
+      "url": "https://metro.co.uk/2026/09/05/mikel-arteta-sends-message-arsenal-board-missing-julian-alvarez-29540552/",
+      "image": "https://metro.co.uk/wp-content/uploads/2026/09/SEI_308912320-7153_1788593451.jpg?quality=90&strip=all&crop=1",
+      "domain": "metro.co.uk",
+      "source_country": "United Kingdom",
       "language": "English",
-      "date": "20260903T124500Z"
-    },
-    {
-      "title": "American Airlines to connect Savannah travelers to Europe , Asia with new summer 2027 routes",
-      "url": "https://www.wtoc.com/2026/09/03/american-airlines-connect-savannah-travelers-europe-asia-with-new-summer-2027-routes/",
-      "image": "https://gray-wtoc-prod.gtv-cdn.com/resizer/v2/4MLLSI7S3BHOJGSZM3MFWC65AM.jpg?auth=dc3b4771e6c463fd64b60a81a406431920a7dc9dbdec4bdc68b90e5cf55480e5&smart=true",
-      "domain": "wtoc.com",
-      "source_country": "United States",
-      "language": "English",
-      "date": "20260903T221500Z"
-    },
-    {
-      "title": "A Fun Bunch of Memes to Take the Edge Off and Bring Back That TGIF Feeling ( September 4 , 2026 )",
-      "url": "https://trivia.cracked.com/image-pictofact-23075-a-fun-bunch-of-memes-to-take-the-edge-off-and-bring-back-that-tgif-feeling-september-4-2026",
-      "image": "https://s3.crackedcdn.com/phpimages/imageset/5/5/1/1580551.jpg",
-      "domain": "trivia.cracked.com",
-      "source_country": "United States",
-      "language": "English",
-      "date": "20260904T203000Z"
+      "date": "20260905T110000Z"
     }
   ]
 }
