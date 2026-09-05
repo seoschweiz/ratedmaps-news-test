@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-04T23:54:11.694586+00:00",
+  "updated_at": "2026-09-05T01:19:14.514464+00:00",
   "articles": [
     {
       "title": "Barça Academy Barcelona back in action",
@@ -184,15 +184,6 @@
       "date": "20260903T221500Z"
     },
     {
-      "title": "Damián Díaz back in the XI for Barcelona SC vs Independiente Del Valle Barcelona Sc Vs Independiente Del Valle",
-      "url": "https://www.el-balad.com/17047889",
-      "image": "https://www.el-balad.com/uploads/2026/09/03/barcelona-sc-independiente-del-valle-5fa149a5_1200w.webp",
-      "domain": "el-balad.com",
-      "source_country": "Egypt",
-      "language": "English",
-      "date": "20260903T003000Z"
-    },
-    {
       "title": "A Fun Bunch of Memes to Take the Edge Off and Bring Back That TGIF Feeling ( September 4 , 2026 )",
       "url": "https://trivia.cracked.com/image-pictofact-23075-a-fun-bunch-of-memes-to-take-the-edge-off-and-bring-back-that-tgif-feeling-september-4-2026",
       "image": "https://s3.crackedcdn.com/phpimages/imageset/5/5/1/1580551.jpg",
@@ -218,6 +209,15 @@
       "source_country": "India",
       "language": "English",
       "date": "20260903T080000Z"
+    },
+    {
+      "title": "Man Utd can sign seven players in 2027 including Myles Lewis - Skelly and Tottenham star",
+      "url": "https://www.aol.co.uk/articles/man-utd-sign-seven-players-040000000.html",
+      "image": "https://hermes.media.static.aol.com/media/2026/09/04/528a8312-161c-3f61-bad5-5103c6382e17/922ce7c0-3436-40c6-84fe-622b0cdcde08.jpg",
+      "domain": "aol.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "date": "20260904T043000Z"
     }
   ]
 }
