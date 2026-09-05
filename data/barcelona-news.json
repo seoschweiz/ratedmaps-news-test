@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-05T07:36:12.842933+00:00",
+  "updated_at": "2026-09-05T07:54:13.126240+00:00",
   "articles": [
     {
       "title": "FC Barcelona Legend Carles Puyol Joins Midea at IFA 2026",
@@ -112,6 +112,15 @@
       "date": "20260904T211500Z"
     },
     {
+      "title": "EU to help cities clamp down on tourist rentals",
+      "url": "https://www.thelocal.dk/20260905/eu-to-help-cities-clamp-down-on-tourist-rentals",
+      "image": "",
+      "domain": "thelocal.dk",
+      "source_country": "Denmark",
+      "language": "English",
+      "date": "20260905T073000Z"
+    },
+    {
       "title": "Arsenal could sign Barcelona star , wonderkid striker and free agent in transfers next year",
       "url": "https://www.aol.co.uk/articles/arsenal-could-sign-barcelona-star-034500000.html",
       "image": "https://hermes.media.static.aol.com/media/2026/09/04/e4ff51f3-72d7-3de7-a92e-42a304761f46/740c6ef2-79f9-43be-8913-bbc918f2da20.jpg",
@@ -209,15 +218,6 @@
       "source_country": "United Kingdom",
       "language": "English",
       "date": "20260904T074500Z"
-    },
-    {
-      "title": "Javier Bardem , Marion Cotillard , Vanessa Redgrave join cast of animated movie  The Turning Door",
-      "url": "https://www.hindustantimes.com/entertainment/hollywood/javier-bardem-marion-cotillard-vanessa-redgrave-join-cast-of-animated-movie-the-turning-door-101788420128932.html",
-      "image": "",
-      "domain": "hindustantimes.com",
-      "source_country": "India",
-      "language": "English",
-      "date": "20260903T080000Z"
     }
   ]
 }
