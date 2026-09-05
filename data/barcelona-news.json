@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-05T05:36:19.410626+00:00",
+  "updated_at": "2026-09-05T05:54:37.428013+00:00",
   "articles": [
     {
       "title": "Exceptional  Xavi Espart tipped to stay in Barcelona first team by ex - La Masia chief",
@@ -74,6 +74,15 @@
       "source_country": "Pakistan",
       "language": "English",
       "date": "20260904T204500Z"
+    },
+    {
+      "title": "Brigade Enterprises launches Rs 2 , 700 - cr residential project in Neopolis",
+      "url": "https://www.business-standard.com/markets/capital-market-news/brigade-enterprises-launches-rs-2-700-cr-residential-project-in-neopolis-126090500182_1.html",
+      "image": "https://www.business-standard.com/assets/web-assets/images/Business_Standard_1_685x385.jpg",
+      "domain": "business-standard.com",
+      "source_country": "India",
+      "language": "English",
+      "date": "20260905T053000Z"
     },
     {
       "title": "A learning experience  - Diego Simeone sends message to Barcelona target Julian Alvarez",
@@ -209,15 +218,6 @@
       "source_country": "India",
       "language": "English",
       "date": "20260903T080000Z"
-    },
-    {
-      "title": "Man Utd can sign seven players in 2027 including Myles Lewis - Skelly and Tottenham star",
-      "url": "https://www.aol.co.uk/articles/man-utd-sign-seven-players-040000000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/09/04/528a8312-161c-3f61-bad5-5103c6382e17/922ce7c0-3436-40c6-84fe-622b0cdcde08.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260904T043000Z"
     }
   ]
 }
