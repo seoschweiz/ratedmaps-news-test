@@ -1,7 +1,7 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-05T09:54:37.553669+00:00",
+  "updated_at": "2026-09-05T10:19:32.399548+00:00",
   "articles": [
     {
       "title": "FC Barcelona Legend Carles Puyol Joins Midea at IFA 2026",
@@ -193,15 +193,6 @@
       "date": "20260904T164500Z"
     },
     {
-      "title": "West Ham deadline day signing explains photo outside London Stadium in 2023",
-      "url": "https://www.aol.co.uk/articles/west-hams-deadline-day-signing-094450000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/09/03/fd603b1f-3a04-3e9d-a326-c97f0c4f0a42/3a8b1dec-e40a-4f73-bafd-13d09cb5ef6a.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260903T101500Z"
-    },
-    {
       "title": "The GQ Guide to Barcelona",
       "url": "https://www.gq.com/story/barcelona-travel-guide-2026",
       "image": "https://media.gq.com/photos/6a9193f9cf74e033a3212d24/16:9/w_1280,c_limit/0903-Barcelona-Guide-Lede-16x9.jpg",
@@ -218,6 +209,15 @@
       "source_country": "United States",
       "language": "English",
       "date": "20260903T221500Z"
+    },
+    {
+      "title": "A Fun Bunch of Memes to Take the Edge Off and Bring Back That TGIF Feeling ( September 4 , 2026 )",
+      "url": "https://trivia.cracked.com/image-pictofact-23075-a-fun-bunch-of-memes-to-take-the-edge-off-and-bring-back-that-tgif-feeling-september-4-2026",
+      "image": "https://s3.crackedcdn.com/phpimages/imageset/5/5/1/1580551.jpg",
+      "domain": "trivia.cracked.com",
+      "source_country": "United States",
+      "language": "English",
+      "date": "20260904T203000Z"
     }
   ]
 }
