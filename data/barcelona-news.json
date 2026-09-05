@@ -1,8 +1,17 @@
 {
   "city": "Barcelona",
   "country": "Spain",
-  "updated_at": "2026-09-05T05:54:37.428013+00:00",
+  "updated_at": "2026-09-05T07:18:45.391793+00:00",
   "articles": [
+    {
+      "title": "FC Barcelona Legend Carles Puyol Joins Midea at IFA 2026",
+      "url": "http://www.prnewswire.com/news-releases/fc-barcelona-legend-carles-puyol-joins-midea-at-ifa-2026-302870601.html",
+      "image": "https://mmx.prnewswire.com/media/MS1982308/20260904150202EDT_image_1.jpg?id=OA2931789&p=facebook",
+      "domain": "prnewswire.com",
+      "source_country": "United States",
+      "language": "English",
+      "date": "20260905T061500Z"
+    },
     {
       "title": "Exceptional  Xavi Espart tipped to stay in Barcelona first team by ex - La Masia chief",
       "url": "https://www.barcablaugranes.com/barcelona-la-liga/131484/exceptional-xavi-espart-tipped-first-team-stay",
@@ -11,6 +20,15 @@
       "source_country": "Spain",
       "language": "English",
       "date": "20260905T021500Z"
+    },
+    {
+      "title": "How will Barcelona line up against Valencia in their next La Liga match ?",
+      "url": "https://www.barcablaugranes.com/barcelona-la-liga/131503/line-up-against-valencia-la-liga-match",
+      "image": "https://platform.barcablaugranes.com/wp-content/uploads/sites/21/2026/09/gettyimages-2292509254.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613",
+      "domain": "barcablaugranes.com",
+      "source_country": "Spain",
+      "language": "English",
+      "date": "20260905T063000Z"
     },
     {
       "title": "Barça Academy Barcelona back in action",
@@ -94,15 +112,6 @@
       "date": "20260904T211500Z"
     },
     {
-      "title": "2026 Ballon dOr : He should do it again - LaLiga chief , Tebas names winner of award",
-      "url": "https://dailypost.ng/2026/09/03/2026-ballon-dor-he-should-do-it-again-laliga-chief-tebas-names-winner-of-award/",
-      "image": "",
-      "domain": "dailypost.ng",
-      "source_country": "Nigeria",
-      "language": "English",
-      "date": "20260903T060000Z"
-    },
-    {
       "title": "Arsenal could sign Barcelona star , wonderkid striker and free agent in transfers next year",
       "url": "https://www.aol.co.uk/articles/arsenal-could-sign-barcelona-star-034500000.html",
       "image": "https://hermes.media.static.aol.com/media/2026/09/04/e4ff51f3-72d7-3de7-a92e-42a304761f46/740c6ef2-79f9-43be-8913-bbc918f2da20.jpg",
@@ -137,15 +146,6 @@
       "source_country": "Nigeria",
       "language": "English",
       "date": "20260904T074500Z"
-    },
-    {
-      "title": "Arsenal  approached  £73m forward days before deadline in desperate late scramble",
-      "url": "https://www.aol.co.uk/articles/arsenal-approached-73m-forward-days-063321000.html",
-      "image": "https://hermes.media.static.aol.com/media/2026/09/03/bb7c4276-0216-31b4-a40f-4cebc6c09aef/c38dc343-a102-4bf6-b6ec-2a1bb37118ab.jpg",
-      "domain": "aol.co.uk",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "date": "20260903T070000Z"
     },
     {
       "title": "New European flights out of Philadelphia next year available through XNA connection to PHL | The Arkansas Democrat - Gazette",
